@@ -1,6 +1,10 @@
 name: Sector Scanner
 
 on:
+  push:
+    paths:
+      - sector_scanner.py
+      - .github/workflows/scanner.yml
   workflow_dispatch:
   schedule:
     # Weekdays at 21:15 UTC, shortly after the US market close
