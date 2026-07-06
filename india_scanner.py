@@ -21,6 +21,7 @@ Usage:  pip install yfinance pandas requests && python india_scanner.py
 
 import datetime as dt
 import io
+import json
 from zoneinfo import ZoneInfo
 
 import pandas as pd
@@ -198,6 +199,17 @@ def main():
     md = render(df, failures, universe_note, now_ist, elapsed_frac)
     with open("india_dashboard.md", "w") as fh:
         fh.write(md + "\n")
+    payload = {
+        "run_time_ist": now_ist.strftime("%Y-%m-%d %I:%M %p IST"),
+        "elapsed_frac": round(elapsed_frac, 3),
+        "market_open": elapsed_frac < 1.0,
+        "universe": universe_note,
+        "scanned": len(df),
+        "rows": df.sort_values("RVOL", ascending=False).to_dict(orient="records"),
+        "failures": sorted(failures),
+    }
+    with open("india_dashboard.json", "w") as fh:
+        json.dump(payload, fh, indent=1)
     print(md)
 
 

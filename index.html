@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Trading Scanner</title>
+<style>
+  :root {
+    --bg: #f8fafc; --surface: #ffffff; --border: #e2e8f0;
+    --ink: #0f172a; --ink-2: #475569; --ink-3: #94a3b8;
+    --up: #047857; --down: #b91c1c; --accent: #2563eb;
+    --bar: rgba(37, 99, 235, 0.16); --chip: #eff6ff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0b1220; --surface: #101a2e; --border: #1e2a44;
+      --ink: #e6edf7; --ink-2: #9fb0c9; --ink-3: #64748b;
+      --up: #34d399; --down: #f87171; --accent: #60a5fa;
+      --bar: rgba(96, 165, 250, 0.18); --chip: #16233d;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--ink);
+    font: 15px/1.5 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap { max-width: 980px; margin: 0 auto; padding: 20px 14px 60px; }
+  header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 14px; margin-bottom: 6px; }
+  h1 { font-size: 21px; margin: 0; }
+  .stamp { color: var(--ink-3); font-size: 12.5px; }
+  .stamp button {
+    background: none; border: 1px solid var(--border); color: var(--ink-2);
+    border-radius: 6px; padding: 2px 10px; font-size: 12.5px; cursor: pointer;
+  }
+  nav { display: flex; gap: 6px; margin: 14px 0 18px; }
+  nav button {
+    border: 1px solid var(--border); background: var(--surface); color: var(--ink-2);
+    padding: 7px 16px; border-radius: 8px; font-size: 14px; cursor: pointer;
+  }
+  nav button.active { color: var(--ink); border-color: var(--accent); font-weight: 600; }
+  .meta { color: var(--ink-2); font-size: 13px; margin: 2px 0 14px; }
+  .meta b { color: var(--ink); font-weight: 600; }
+  h2 { font-size: 15px; margin: 26px 0 8px; }
+  h2 .count { color: var(--ink-3); font-weight: 400; }
+  .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; min-width: 560px; }
+  th, td { padding: 7px 12px; text-align: right; white-space: nowrap; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--ink-3); font-size: 11.5px; text-transform: uppercase; letter-spacing: .04em;
+       border-bottom: 1px solid var(--border); font-weight: 600; }
+  tr + tr td { border-top: 1px solid var(--border); }
+  td.name { color: var(--ink); font-weight: 600; }
+  td.sub { color: var(--ink-2); }
+  .up { color: var(--up); } .down { color: var(--down); }
+  .chip { background: var(--chip); color: var(--ink-2); border-radius: 6px;
+          padding: 1px 8px; font-size: 12px; }
+  .barcell { position: relative; }
+  .barcell .fill { position: absolute; right: 8px; top: 20%; height: 60%;
+                   background: var(--bar); border-radius: 3px; z-index: 0; }
+  .barcell span { position: relative; z-index: 1; }
+  .empty { color: var(--ink-3); padding: 14px; }
+  .err { color: var(--down); padding: 14px; }
+  footer { color: var(--ink-3); font-size: 12px; margin-top: 28px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <h1>📊 Daily Trading Scanner</h1>
+    <span class="stamp" id="stamp">loading…</span>
+    <span class="stamp"><button onclick="loadAll()">↻ Refresh</button></span>
+  </header>
+  <nav>
+    <button id="tab-in" class="active" onclick="show('in')">🇮🇳 India — RVOL &amp; Breakouts</button>
+    <button id="tab-us" onclick="show('us')">🇺🇸 US — Equal-Weight Sectors</button>
+  </nav>
+
+  <section id="pane-in"><div class="empty">Loading India dashboard…</div></section>
+  <section id="pane-us" style="display:none"><div class="empty">Loading US sector table…</div></section>
+
+  <footer>
+    Data: Yahoo Finance via yfinance, refreshed by GitHub Actions —
+    🇮🇳 weekdays 2:45&nbsp;PM AEST (intraday) · 🇺🇸 weekdays after the US close.
+    Page re-fetches the latest data every 5 minutes.
+  </footer>
+</div>
+
+<script>
+const RAW = "https://raw.githubusercontent.com/bhatashwani-hash/daily-trading-scanner/claude/sector-performance-table-8s8dqg/";
+
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pct = (v, signed = true) =>
+  `<span class="${v > 0 ? "up" : v < 0 ? "down" : ""}">${signed && v > 0 ? "+" : ""}${v.toFixed(2)}%</span>`;
+
+function show(which) {
+  for (const k of ["in", "us"]) {
+    document.getElementById("pane-" + k).style.display = k === which ? "" : "none";
+    document.getElementById("tab-" + k).classList.toggle("active", k === which);
+  }
+}
+
+async function getJSON(file) {
+  const r = await fetch(RAW + file + "?cb=" + Date.now(), { cache: "no-store" });
+  if (!r.ok) throw new Error(file + " → HTTP " + r.status);
+  return r.json();
+}
+
+function indiaTable(rows, maxRvol) {
+  if (!rows.length) return '<div class="empty">None right now.</div>';
+  const tr = rows.map(r => `
+    <tr>
+      <td class="name">${esc(r.Stock)}</td>
+      <td class="sub">${r.Price.toLocaleString("en-IN", {maximumFractionDigits: 1})}</td>
+      <td>${pct(r["% Chg"])}</td>
+      <td class="barcell"><div class="fill" style="width:${Math.min(96, r.RVOL / maxRvol * 96)}px"></div>
+          <span><b>${r.RVOL.toFixed(1)}x</b></span></td>
+      <td>${r.Breakout ? `<span class="chip">${esc(r.Breakout)}</span>` : '<span class="sub">—</span>'}</td>
+      <td class="sub">${r["Off 52W Low"].toFixed(0)}%</td>
+    </tr>`).join("");
+  return `<div class="card"><table>
+    <tr><th>Stock</th><th>Price ₹</th><th>% Chg</th><th>RVOL</th><th>Breakout</th><th>Off 52W Low</th></tr>
+    ${tr}</table></div>`;
+}
+
+function renderIndia(d) {
+  const rows = d.rows;
+  const maxRvol = Math.max(2, ...rows.map(r => r.RVOL));
+  const aList = rows.filter(r => r.RVOL >= 1.5 && r.Breakout);
+  const breakouts = rows.filter(r => r.Breakout && !(r.RVOL >= 1.5))
+    .sort((a, b) => (b.Breakout > a.Breakout ? 1 : -1) || b.RVOL - a.RVOL);
+  const rvolOnly = rows.filter(r => r.RVOL >= 2 && !r.Breakout);
+  document.getElementById("pane-in").innerHTML = `
+    <div class="meta"><b>${esc(d.run_time_ist)}</b> ·
+      ${d.market_open
+        ? `market OPEN — ${Math.round(d.elapsed_frac * 100)}% of session elapsed, RVOL is pace-adjusted`
+        : "market CLOSED — full-day data from the last session"} ·
+      ${esc(d.universe)} · ${d.scanned} scanned</div>
+    <h2>🚀 High RVOL + Breakout <span class="count">(${aList.length})</span></h2>
+    ${indiaTable(aList, maxRvol)}
+    <h2>📈 Other Breakouts <span class="count">(${breakouts.length})</span></h2>
+    ${indiaTable(breakouts.slice(0, 30), maxRvol)}
+    <h2>🔊 High RVOL (≥2x), No Breakout Yet <span class="count">(${rvolOnly.length})</span></h2>
+    ${indiaTable(rvolOnly.slice(0, 20), maxRvol)}
+    ${d.failures.length ? `<div class="meta">No data: ${esc(d.failures.join(", "))}</div>` : ""}`;
+}
+
+function renderUS(d) {
+  const max = Math.max(...d.rows.map(r => r["52-Weeks"]));
+  const tr = d.rows.map((r, i) => `
+    <tr>
+      <td class="sub">${i + 1}</td>
+      <td class="name">${esc(r["Equal Weight Industry Group"])}</td>
+      <td class="sub">${esc(r.Ticker)}</td>
+      <td class="barcell"><div class="fill" style="width:${Math.min(110, r["52-Weeks"] / max * 110)}px"></div>
+          <span><b>${r["52-Weeks"].toFixed(0)}%</b></span></td>
+      <td>${pct(r["% Daily Chg"])}</td>
+    </tr>`).join("");
+  document.getElementById("pane-us").innerHTML = `
+    <div class="meta"><b>Last close: ${esc(d.last_bar)}</b> · generated ${esc(d.generated_utc)} ·
+      52-Weeks = % above the 52-week low</div>
+    <div class="card"><table>
+      <tr><th>#</th><th>Equal Weight Industry Group</th><th>Ticker</th><th>52-Weeks</th><th>% Daily Chg</th></tr>
+      ${tr}</table></div>
+    ${d.failures.length ? `<div class="meta">Failed: ${esc(d.failures.join(", "))}</div>` : ""}`;
+}
+
+async function loadAll() {
+  document.getElementById("stamp").textContent = "refreshing…";
+  const jobs = [
+    getJSON("india_dashboard.json").then(renderIndia)
+      .catch(e => document.getElementById("pane-in").innerHTML = `<div class="err">India data unavailable: ${esc(e.message)}</div>`),
+    getJSON("sector_table.json").then(renderUS)
+      .catch(e => document.getElementById("pane-us").innerHTML = `<div class="err">US data unavailable: ${esc(e.message)}</div>`),
+  ];
+  await Promise.allSettled(jobs);
+  document.getElementById("stamp").textContent = "page refreshed " + new Date().toLocaleTimeString();
+}
+
+loadAll();
+setInterval(loadAll, 5 * 60 * 1000);
+</script>
+</body>
+</html>

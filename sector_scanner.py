@@ -15,6 +15,7 @@ Usage:  pip install yfinance pandas && python sector_scanner.py
 """
 
 import datetime as dt
+import json
 
 import pandas as pd
 import yfinance as yf
@@ -166,6 +167,14 @@ def main():
     md = render_markdown(rows, failures)
     with open("sector_table.md", "w") as fh:
         fh.write(md + "\n")
+    payload = {
+        "generated_utc": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+        "last_bar": max(r["Last Bar"] for r in rows),
+        "rows": sorted(rows, key=lambda r: r["52-Weeks"], reverse=True),
+        "failures": [f"{n} ({t})" for n, t in failures],
+    }
+    with open("sector_table.json", "w") as fh:
+        json.dump(payload, fh, indent=1)
     print(md)
 
 

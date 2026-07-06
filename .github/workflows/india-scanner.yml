@@ -39,7 +39,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add india_dashboard.md
+          git add india_dashboard.md india_dashboard.json
           if ! git diff --cached --quiet; then
             git commit -m "Update India RVOL & breakout dashboard"
             git pull --rebase
