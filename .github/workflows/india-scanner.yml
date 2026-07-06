@@ -1,0 +1,44 @@
+name: India Scanner
+
+on:
+  push:
+    paths:
+      - india_scanner.py
+      - .github/workflows/india-scanner.yml
+  workflow_dispatch:
+  schedule:
+    # Weekdays at 09:15 UTC = 2:45 PM IST, 45 min before the NSE close
+    - cron: "15 9 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install yfinance pandas requests
+
+      - name: Run India scanner
+        run: python india_scanner.py
+
+      - name: Publish dashboard to job summary
+        run: cat india_dashboard.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit updated dashboard
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add india_dashboard.md
+          if ! git diff --cached --quiet; then
+            git commit -m "Update India RVOL & breakout dashboard"
+            git pull --rebase
+            git push
+          fi
