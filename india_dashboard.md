@@ -1,68 +1,66 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Monday, July 06, 2026 09:57 AM IST  
-**Market status:** market OPEN — intraday scan, 11% of session elapsed (RVOL is pace-adjusted)  
-**Universe:** Nifty 200 (NSE constituents file) · 198 scanned  
+**Run time:** Monday, July 06, 2026 02:20 PM IST  
+**Market status:** market OPEN — intraday scan, 82% of session elapsed (RVOL is pace-adjusted)  
+**Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (20)
+## 🚀 High RVOL + Breakout (16)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| GODREJCP | 1,088.2 | 🟢 +1.05% | **13.2x** | 20D High | 13% |
-| LODHA | 1,070.7 | 🟢 +1.30% | **5.3x** | 20D High | 65% |
-| OBEROIRLTY | 1,973.8 | 🟢 +2.04% | **5.2x** | 52W High | 42% |
-| PHOENIXLTD | 2,066.0 | 🟢 +0.90% | **4.3x** | 52W High | 48% |
-| GODREJPROP | 2,025.1 | 🟢 +1.44% | **4.0x** | 20D High | 41% |
-| RADICO | 4,027.9 | 🟢 +3.48% | **4.0x** | 52W High | 61% |
-| M&MFIN | 333.5 | 🔴 -0.18% | **3.9x** | 20D High | 35% |
-| HDFCBANK | 821.8 | 🟢 +2.58% | **3.9x** | 20D High | 15% |
-| INDUSINDBK | 980.7 | 🟢 +0.65% | **2.8x** | 52W High | 38% |
-| NYKAA | 316.9 | 🟢 +2.13% | **2.8x** | 52W High | 59% |
-| CHOLAFIN | 1,826.9 | 🟢 +2.07% | **2.6x** | 52W High | 41% |
-| BIOCON | 425.2 | 🔴 -0.37% | **2.6x** | 20D High | 29% |
-| ZYDUSLIFE | 1,135.1 | 🔴 -0.48% | **2.3x** | 52W High | 36% |
-| ADANIENT | 3,228.1 | 🟢 +0.50% | **2.2x** | 52W High | 84% |
-| SRF | 2,839.5 | 🟢 +1.61% | **2.2x** | 20D High | 21% |
-| EXIDEIND | 421.2 | 🟢 +1.10% | **2.1x** | 20D High | 47% |
-| LTF | 328.5 | 🟢 +0.44% | **2.0x** | 52W High | 71% |
-| INDHOTEL | 738.5 | 🟢 +1.35% | **1.8x** | 20D High | 31% |
-| LUPIN | 2,487.6 | 🟢 +0.47% | **1.7x** | 52W High | 35% |
-| ADANIGREEN | 1,569.7 | 🟢 +0.87% | **1.5x** | 52W High | 105% |
+| GODREJCP | 1,097.6 | 🟢 +1.92% | **3.7x** | 20D High | 14% |
+| JUBLFOOD | 438.9 | 🟢 +2.15% | **3.2x** | 20D High | 7% |
+| PHOENIXLTD | 2,096.3 | 🟢 +2.38% | **3.0x** | 52W High | 50% |
+| RADICO | 4,057.4 | 🟢 +4.24% | **2.8x** | 52W High | 62% |
+| LODHA | 1,090.0 | 🟢 +3.12% | **2.6x** | 20D High | 67% |
+| OBEROIRLTY | 1,955.7 | 🟢 +1.10% | **2.4x** | 52W High | 41% |
+| DIXON | 13,193.0 | 🟢 +5.92% | **2.3x** | 20D High | 37% |
+| ADANIENSOL | 1,643.7 | 🟢 +4.77% | **2.2x** | 52W High | 121% |
+| AUBANK | 1,067.9 | 🟢 +0.90% | **2.0x** | 52W High | 57% |
+| INDUSINDBK | 1,003.3 | 🟢 +2.97% | **2.0x** | 52W High | 41% |
+| GODREJPROP | 2,036.6 | 🟢 +2.01% | **1.9x** | 20D High | 42% |
+| PRESTIGE | 1,701.2 | 🟢 +1.99% | **1.9x** | 20D High | 56% |
+| HDFCBANK | 829.2 | 🟢 +3.51% | **1.9x** | 20D High | 16% |
+| CHOLAFIN | 1,834.0 | 🟢 +2.47% | **1.8x** | 52W High | 41% |
+| DLF | 673.2 | 🔴 -0.39% | **1.6x** | 20D High | 38% |
+| ZYDUSLIFE | 1,145.5 | 🟢 +0.43% | **1.6x** | 52W High | 37% |
 
-## 📈 Other Breakouts (10)
+## 📈 Other Breakouts (29)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| OFSS | 11,181.0 | 🔴 -0.60% | **1.2x** | 52W High | 84% |
-| TORNTPHARM | 4,756.1 | 🔴 -0.26% | **0.6x** | 52W High | 46% |
-| MAXHEALTH | 1,155.1 | 🟢 +0.15% | **1.3x** | 20D High | 28% |
-| DLF | 675.8 | 🔴 -0.01% | **1.3x** | 20D High | 38% |
-| ICICIBANK | 1,426.2 | 🟢 +1.05% | **1.3x** | 20D High | 20% |
-| AMBUJACEM | 442.4 | 🔴 -0.23% | **1.2x** | 20D High | 13% |
-| UNITDSPR | 1,408.1 | 🟢 +1.06% | **1.1x** | 20D High | 16% |
-| HDFCAMC | 2,825.0 | 🟢 +0.89% | **1.0x** | 20D High | 31% |
-| BAJFINANCE | 1,036.1 | 🟢 +0.46% | **1.0x** | 20D High | 32% |
-| ULTRACEMCO | 11,748.0 | 🟢 +0.21% | **0.5x** | 20D High | 14% |
+| NYKAA | 312.9 | 🟢 +0.84% | **1.2x** | 52W High | 57% |
+| LTF | 335.2 | 🟢 +2.52% | **1.0x** | 52W High | 74% |
+| ADANIENT | 3,202.2 | 🔴 -0.31% | **1.0x** | 52W High | 83% |
+| ADANIGREEN | 1,566.4 | 🟢 +0.66% | **0.9x** | 52W High | 105% |
+| ABCAPITAL | 409.6 | 🟢 +2.08% | **0.8x** | 52W High | 69% |
+| APOLLOHOSP | 8,838.5 | 🔴 -0.62% | **0.6x** | 52W High | 32% |
+| LUPIN | 2,482.3 | 🟢 +0.25% | **0.5x** | 52W High | 35% |
+| TORNTPHARM | 4,815.9 | 🟢 +1.00% | **0.5x** | 52W High | 47% |
+| OFSS | 11,072.0 | 🔴 -1.56% | **0.4x** | 52W High | 83% |
+| M&MFIN | 332.3 | 🔴 -0.52% | **1.4x** | 20D High | 35% |
+| UNITDSPR | 1,423.0 | 🟢 +2.13% | **1.2x** | 20D High | 18% |
+| GLENMARK | 2,271.9 | 🟢 +2.75% | **1.0x** | 20D High | 27% |
+| MRF | 135,455.0 | 🟢 +0.59% | **1.0x** | 20D High | 11% |
+| SRF | 2,823.1 | 🟢 +1.02% | **0.9x** | 20D High | 20% |
+| M&M | 3,200.2 | 🟢 +2.02% | **0.9x** | 20D High | 12% |
+| EXIDEIND | 415.5 | 🔴 -0.26% | **0.9x** | 20D High | 45% |
+| BIOCON | 425.0 | 🔴 -0.42% | **0.9x** | 20D High | 29% |
+| AMBUJACEM | 439.8 | 🔴 -0.81% | **0.8x** | 20D High | 12% |
+| IDFCFIRSTB | 81.7 | 🟢 +1.52% | **0.8x** | 20D High | 41% |
+| ICICIBANK | 1,425.6 | 🟢 +1.01% | **0.8x** | 20D High | 20% |
+| INDHOTEL | 736.1 | 🟢 +1.03% | **0.7x** | 20D High | 31% |
+| TVSMOTOR | 3,696.0 | 🟢 +1.89% | **0.6x** | 20D High | 36% |
+| NESTLEIND | 1,464.8 | 🟢 +0.34% | **0.6x** | 20D High | 36% |
+| BRITANNIA | 5,450.5 | 🟢 +1.33% | **0.6x** | 20D High | 8% |
+| MAXHEALTH | 1,135.7 | 🔴 -1.53% | **0.5x** | 20D High | 26% |
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (29)
+_...and 4 more breakouts not shown._
+
+## 🔊 High RVOL (≥2x), No Breakout Yet (2)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| CONCOR | 488.0 | 🔴 -0.05% | **8.1x** | — | 16% |
-| BDL | 1,416.0 | 🟢 +2.00% | **6.3x** | — | 30% |
-| HUDCO | 214.5 | 🔴 -0.49% | **5.6x** | — | 35% |
-| BEL | 426.8 | 🟢 +2.08% | **5.4x** | — | 19% |
-| POWERINDIA | 32,155.0 | 🟢 +3.59% | **5.0x** | — | 100% |
-| AUBANK | 1,075.9 | 🟢 +1.65% | **4.9x** | — | 58% |
-| KOTAKBANK | 383.3 | 🔴 -3.39% | **4.6x** | — | 11% |
-| CGPOWER | 918.2 | 🟢 +2.87% | **4.6x** | — | 75% |
-| ENRIN | 3,390.5 | 🟢 +3.32% | **4.3x** | — | 61% |
-| KPITTECH | 545.2 | 🔴 -2.40% | **4.2x** | — | 0% |
-| GVT&D | 4,579.9 | 🟢 +4.05% | **3.8x** | — | 103% |
-| DABUR | 439.9 | 🔴 -1.00% | **3.5x** | — | 9% |
-| MCX | 2,753.9 | 🔴 -2.14% | **3.3x** | — | 89% |
-| ASTRAL | 1,395.8 | 🟢 +0.78% | **3.2x** | — | 11% |
-| BSE | 3,750.0 | 🔴 -1.75% | **3.0x** | — | 86% |
-
-**No data (2):** ABCAPITAL, COLPAL
+| KOTAKBANK | 381.7 | 🔴 -3.79% | **2.2x** | — | 10% |
+| INDUSTOWER | 386.2 | 🟢 +0.77% | **2.1x** | — | 24% |
