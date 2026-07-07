@@ -51,8 +51,31 @@ TATAELXSI KPITTECH CYIENT ZENSARTECH BSOFT TATACOMM IDEA INDUSTOWER HFCL TEJASNE
 """.split()
 
 
+# NSE macro-industry names → familiar F&O-style sector labels
+SECTOR_RENAME = {
+    "Financial Services": "Financial Services",
+    "Information Technology": "IT",
+    "Oil Gas & Consumable Fuels": "Oil & Gas",
+    "Fast Moving Consumer Goods": "FMCG",
+    "Automobile and Auto Components": "Auto",
+    "Healthcare": "Pharma & Healthcare",
+    "Metals & Mining": "Metals & Mining",
+    "Consumer Services": "Consumer Services",
+    "Power": "Power",
+    "Capital Goods": "Capital Goods",
+    "Construction": "Infrastructure",
+    "Construction Materials": "Cement",
+    "Telecommunication": "Telecom",
+    "Chemicals": "Chemicals",
+    "Consumer Durables": "Consumer Durables",
+    "Realty": "Realty",
+    "Media Entertainment & Publication": "Media",
+    "Services": "Services",
+}
+
+
 def load_universe():
-    """Nifty 200 symbols from NSE archives, else the embedded fallback."""
+    """Nifty 200 symbols + sector map from NSE archives, else the embedded fallback."""
     try:
         import requests
 
@@ -64,11 +87,20 @@ def load_universe():
         resp.raise_for_status()
         df = pd.read_csv(io.StringIO(resp.text))
         symbols = df["Symbol"].astype(str).str.strip().tolist()
+        industries = df.get("Industry", pd.Series(dtype=str)).astype(str).str.strip()
+        sectors = {
+            s: SECTOR_RENAME.get(i, i or "Other")
+            for s, i in zip(symbols, industries)
+        }
         if len(symbols) >= 150:
-            return symbols, "Nifty 200 (NSE constituents file)"
+            return symbols, sectors, "Nifty 200 (NSE constituents file)"
     except Exception as exc:
         print(f"  ! Nifty 200 download failed ({exc}); using embedded fallback list")
-    return FALLBACK_UNIVERSE, f"embedded liquid-stock list ({len(FALLBACK_UNIVERSE)} names)"
+    return (
+        FALLBACK_UNIVERSE,
+        {},
+        f"embedded liquid-stock list ({len(FALLBACK_UNIVERSE)} names)",
+    )
 
 
 def session_elapsed_fraction(now_ist: dt.datetime) -> float:
@@ -81,7 +113,7 @@ def session_elapsed_fraction(now_ist: dt.datetime) -> float:
     return max(frac, 0.10)  # avoid silly RVOL inflation right at the open
 
 
-def scan(symbols, elapsed_frac):
+def scan(symbols, elapsed_frac, sectors):
     """Batch-download 1y of daily bars and compute RVOL/breakout stats."""
     tickers = [s + ".NS" for s in symbols]
     rows, failures = [], []
@@ -124,11 +156,13 @@ def scan(symbols, elapsed_frac):
                 rows.append(
                     {
                         "Stock": symbol,
+                        "Sector": sectors.get(symbol, "Other"),
                         "Price": price,
                         "% Chg": chg,
                         "RVOL": rvol,
                         "Breakout": breakout,
                         "Off 52W Low": (price - low_52w) / low_52w * 100.0,
+                        "Spark": [round(float(c), 2) for c in closes.iloc[-30:]],
                     }
                 )
             except Exception:
@@ -192,8 +226,8 @@ def render(df, failures, universe_note, now_ist, elapsed_frac):
 def main():
     now_ist = dt.datetime.now(IST)
     elapsed_frac = session_elapsed_fraction(now_ist)
-    symbols, universe_note = load_universe()
-    df, failures = scan(symbols, elapsed_frac)
+    symbols, sectors, universe_note = load_universe()
+    df, failures = scan(symbols, elapsed_frac, sectors)
     if df.empty:
         raise SystemExit("No data retrieved — check network access to Yahoo Finance.")
     md = render(df, failures, universe_note, now_ist, elapsed_frac)

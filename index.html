@@ -22,9 +22,9 @@
   * { box-sizing: border-box; }
   body {
     margin: 0; background: var(--bg); color: var(--ink);
-    font: 15px/1.5 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font: 14.5px/1.5 -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   }
-  .wrap { max-width: 980px; margin: 0 auto; padding: 20px 14px 60px; }
+  .wrap { width: 100%; margin: 0; padding: 18px 22px 60px; }
   header { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px 14px; margin-bottom: 6px; }
   h1 { font-size: 21px; margin: 0; }
   .stamp { color: var(--ink-3); font-size: 12.5px; }
@@ -32,7 +32,7 @@
     background: none; border: 1px solid var(--border); color: var(--ink-2);
     border-radius: 6px; padding: 2px 10px; font-size: 12.5px; cursor: pointer;
   }
-  nav { display: flex; gap: 6px; margin: 14px 0 18px; }
+  nav { display: flex; gap: 6px; margin: 12px 0 16px; }
   nav button {
     border: 1px solid var(--border); background: var(--surface); color: var(--ink-2);
     padding: 7px 16px; border-radius: 8px; font-size: 14px; cursor: pointer;
@@ -40,13 +40,13 @@
   nav button.active { color: var(--ink); border-color: var(--accent); font-weight: 600; }
   .meta { color: var(--ink-2); font-size: 13px; margin: 2px 0 14px; }
   .meta b { color: var(--ink); font-weight: 600; }
-  h2 { font-size: 15px; margin: 26px 0 8px; }
+  h2 { font-size: 15px; margin: 24px 0 8px; }
   h2 .count { color: var(--ink-3); font-weight: 400; }
   .card { background: var(--surface); border: 1px solid var(--border); border-radius: 10px; overflow-x: auto; }
-  table { border-collapse: collapse; width: 100%; min-width: 560px; }
-  th, td { padding: 7px 12px; text-align: right; white-space: nowrap; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { padding: 6px 10px; text-align: right; white-space: nowrap; }
   th:first-child, td:first-child { text-align: left; }
-  th { color: var(--ink-3); font-size: 11.5px; text-transform: uppercase; letter-spacing: .04em;
+  th { color: var(--ink-3); font-size: 11px; text-transform: uppercase; letter-spacing: .04em;
        border-bottom: 1px solid var(--border); font-weight: 600; }
   tr + tr td { border-top: 1px solid var(--border); }
   td.name { color: var(--ink); font-weight: 600; }
@@ -58,6 +58,17 @@
   .barcell .fill { position: absolute; right: 8px; top: 20%; height: 60%;
                    background: var(--bar); border-radius: 3px; z-index: 0; }
   .barcell span { position: relative; z-index: 1; }
+  .spark { vertical-align: middle; }
+  .spark polyline { fill: none; stroke: var(--accent); stroke-width: 1.6; }
+  .spark circle.u { fill: var(--up); }
+  .spark circle.d { fill: var(--down); }
+  .sectors { display: grid; grid-template-columns: repeat(auto-fill, minmax(480px, 1fr));
+             gap: 14px; align-items: start; }
+  @media (max-width: 560px) { .sectors { grid-template-columns: 1fr; } }
+  .sector-head { display: flex; justify-content: space-between; align-items: baseline;
+                 padding: 9px 12px; border-bottom: 1px solid var(--border); }
+  .sector-head .nm { font-weight: 600; font-size: 14px; }
+  .sector-head .avg { font-size: 12.5px; color: var(--ink-2); }
   .empty { color: var(--ink-3); padding: 14px; }
   .err { color: var(--down); padding: 14px; }
   footer { color: var(--ink-3); font-size: 12px; margin-top: 28px; }
@@ -81,6 +92,7 @@
   <footer>
     Data: Yahoo Finance via yfinance, refreshed by GitHub Actions —
     🇮🇳 weekdays 2:45&nbsp;PM AEST (intraday) · 🇺🇸 weekdays after the US close.
+    Chart = last 30 daily closes ending at the latest price.
     Page re-fetches the latest data every 5 minutes.
   </footer>
 </div>
@@ -89,8 +101,22 @@
 const RAW = "https://raw.githubusercontent.com/bhatashwani-hash/daily-trading-scanner/claude/sector-performance-table-8s8dqg/";
 
 const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const pct = (v, signed = true) =>
-  `<span class="${v > 0 ? "up" : v < 0 ? "down" : ""}">${signed && v > 0 ? "+" : ""}${v.toFixed(2)}%</span>`;
+const pct = (v, dp = 2) =>
+  `<span class="${v > 0 ? "up" : v < 0 ? "down" : ""}">${v > 0 ? "+" : ""}${v.toFixed(dp)}%</span>`;
+
+function spark(prices, chg) {
+  if (!prices || prices.length < 2) return "";
+  const w = 110, h = 28, pad = 3;
+  const min = Math.min(...prices), max = Math.max(...prices), span = max - min || 1;
+  const pts = prices.map((p, i) =>
+    `${(pad + i * (w - 2 * pad - 4) / (prices.length - 1)).toFixed(1)},` +
+    `${(h - pad - (p - min) / span * (h - 2 * pad)).toFixed(1)}`);
+  const [lx, ly] = pts[pts.length - 1].split(",");
+  return `<svg class="spark" width="${w}" height="${h}" role="img">
+    <title>last ${prices.length} closes: ${min} – ${max}</title>
+    <polyline points="${pts.join(" ")}"/>
+    <circle class="${chg >= 0 ? "u" : "d"}" cx="${lx}" cy="${ly}" r="3"/></svg>`;
+}
 
 function show(which) {
   for (const k of ["in", "us"]) {
@@ -105,42 +131,64 @@ async function getJSON(file) {
   return r.json();
 }
 
-function indiaTable(rows, maxRvol) {
-  if (!rows.length) return '<div class="empty">None right now.</div>';
-  const tr = rows.map(r => `
+function indiaRows(rows, maxRvol, withSector) {
+  return rows.map(r => `
     <tr>
       <td class="name">${esc(r.Stock)}</td>
+      ${withSector ? `<td class="sub">${esc(r.Sector || "—")}</td>` : ""}
       <td class="sub">${r.Price.toLocaleString("en-IN", {maximumFractionDigits: 1})}</td>
       <td>${pct(r["% Chg"])}</td>
-      <td class="barcell"><div class="fill" style="width:${Math.min(96, r.RVOL / maxRvol * 96)}px"></div>
+      <td class="barcell"><div class="fill" style="width:${Math.min(90, r.RVOL / maxRvol * 90)}px"></div>
           <span><b>${r.RVOL.toFixed(1)}x</b></span></td>
       <td>${r.Breakout ? `<span class="chip">${esc(r.Breakout)}</span>` : '<span class="sub">—</span>'}</td>
-      <td class="sub">${r["Off 52W Low"].toFixed(0)}%</td>
+      <td>${spark(r.Spark, r["% Chg"])}</td>
     </tr>`).join("");
-  return `<div class="card"><table>
-    <tr><th>Stock</th><th>Price ₹</th><th>% Chg</th><th>RVOL</th><th>Breakout</th><th>Off 52W Low</th></tr>
-    ${tr}</table></div>`;
+}
+
+function indiaHeader(withSector) {
+  return `<tr><th>Stock</th>${withSector ? "<th>Sector</th>" : ""}<th>Price ₹</th>
+    <th>% Chg</th><th>RVOL</th><th>Breakout</th><th>30D Chart</th></tr>`;
 }
 
 function renderIndia(d) {
   const rows = d.rows;
   const maxRvol = Math.max(2, ...rows.map(r => r.RVOL));
   const aList = rows.filter(r => r.RVOL >= 1.5 && r.Breakout);
-  const breakouts = rows.filter(r => r.Breakout && !(r.RVOL >= 1.5))
-    .sort((a, b) => (b.Breakout > a.Breakout ? 1 : -1) || b.RVOL - a.RVOL);
-  const rvolOnly = rows.filter(r => r.RVOL >= 2 && !r.Breakout);
+
+  // group everything by sector
+  const bySector = new Map();
+  for (const r of rows) {
+    const s = r.Sector || "Other";
+    if (!bySector.has(s)) bySector.set(s, []);
+    bySector.get(s).push(r);
+  }
+  const sectors = [...bySector.entries()].map(([name, list]) => ({
+    name, list: list.sort((a, b) => b.RVOL - a.RVOL),
+    avg: list.reduce((t, r) => t + r["% Chg"], 0) / list.length,
+    hot: list.filter(r => r.RVOL >= 1.5 && r.Breakout).length,
+  })).sort((a, b) => b.avg - a.avg);
+
+  const sectorCards = sectors.map(s => `
+    <div class="card">
+      <div class="sector-head">
+        <span class="nm">${esc(s.name)} ${s.hot ? "🚀".repeat(Math.min(s.hot, 3)) : ""}</span>
+        <span class="avg">${s.list.length} stocks · avg ${pct(s.avg)}</span>
+      </div>
+      <table>${indiaHeader(false)}${indiaRows(s.list, maxRvol, false)}</table>
+    </div>`).join("");
+
   document.getElementById("pane-in").innerHTML = `
     <div class="meta"><b>${esc(d.run_time_ist)}</b> ·
       ${d.market_open
         ? `market OPEN — ${Math.round(d.elapsed_frac * 100)}% of session elapsed, RVOL is pace-adjusted`
         : "market CLOSED — full-day data from the last session"} ·
-      ${esc(d.universe)} · ${d.scanned} scanned</div>
+      ${esc(d.universe)} · ${d.scanned} scanned · sectors sorted by avg % change</div>
     <h2>🚀 High RVOL + Breakout <span class="count">(${aList.length})</span></h2>
-    ${indiaTable(aList, maxRvol)}
-    <h2>📈 Other Breakouts <span class="count">(${breakouts.length})</span></h2>
-    ${indiaTable(breakouts.slice(0, 30), maxRvol)}
-    <h2>🔊 High RVOL (≥2x), No Breakout Yet <span class="count">(${rvolOnly.length})</span></h2>
-    ${indiaTable(rvolOnly.slice(0, 20), maxRvol)}
+    ${aList.length
+      ? `<div class="card"><table>${indiaHeader(true)}${indiaRows(aList, maxRvol, true)}</table></div>`
+      : '<div class="empty">None right now.</div>'}
+    <h2>🏷️ By Sector <span class="count">(${sectors.length} sectors)</span></h2>
+    <div class="sectors">${sectorCards}</div>
     ${d.failures.length ? `<div class="meta">No data: ${esc(d.failures.join(", "))}</div>` : ""}`;
 }
 
@@ -154,12 +202,14 @@ function renderUS(d) {
       <td class="barcell"><div class="fill" style="width:${Math.min(110, r["52-Weeks"] / max * 110)}px"></div>
           <span><b>${r["52-Weeks"].toFixed(0)}%</b></span></td>
       <td>${pct(r["% Daily Chg"])}</td>
+      <td>${spark(r.Spark, r["% Daily Chg"])}</td>
     </tr>`).join("");
   document.getElementById("pane-us").innerHTML = `
     <div class="meta"><b>Last close: ${esc(d.last_bar)}</b> · generated ${esc(d.generated_utc)} ·
       52-Weeks = % above the 52-week low</div>
     <div class="card"><table>
-      <tr><th>#</th><th>Equal Weight Industry Group</th><th>Ticker</th><th>52-Weeks</th><th>% Daily Chg</th></tr>
+      <tr><th>#</th><th>Equal Weight Industry Group</th><th>Ticker</th><th>52-Weeks</th>
+      <th>% Daily Chg</th><th>30D Chart</th></tr>
       ${tr}</table></div>
     ${d.failures.length ? `<div class="meta">Failed: ${esc(d.failures.join(", "))}</div>` : ""}`;
 }

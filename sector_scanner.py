@@ -90,6 +90,7 @@ def fetch_row(name: str, ticker: str):
         "52-Weeks": (current - low_52w) / low_52w * 100.0,
         "% Daily Chg": (current - prev) / prev * 100.0,
         "Last Bar": closes.index[-1].strftime("%Y-%m-%d"),
+        "Spark": [round(float(c), 2) for c in closes.iloc[-30:]],
     }
 
 
