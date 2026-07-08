@@ -1,0 +1,54 @@
+name: Daily Market Scan
+
+on:
+  schedule:
+    # 10:15 UTC ≈ 3:45pm IST — just after the NSE close (India dashboard)
+    - cron: "15 10 * * 1-5"
+    # 21:15 UTC ≈ 4:15pm ET — just after the US close (sector table)
+    - cron: "15 21 * * 1-5"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: scan
+  cancel-in-progress: false
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: claude/sector-performance-table-8s8dqg
+          # Prefer the fine-grained PAT (repo secret SCANNER_TOKEN); fall back
+          # to the built-in token so the workflow still runs without it.
+          token: ${{ secrets.SCANNER_TOKEN || github.token }}
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install yfinance pandas requests
+
+      - name: Run India scanner
+        continue-on-error: true
+        run: python india_scanner.py
+
+      - name: Run US sector scanner
+        continue-on-error: true
+        run: python sector_scanner.py
+
+      - name: Commit and push refreshed data
+        run: |
+          git config user.name "scanner-bot"
+          git config user.email "scanner-bot@users.noreply.github.com"
+          git add india_dashboard.md india_dashboard.json sector_table.md sector_table.json
+          if git diff --cached --quiet; then
+            echo "No data changes to publish."
+          else
+            git commit -m "Refresh dashboard data ($(date -u '+%Y-%m-%d %H:%M UTC'))"
+            git push
+          fi
