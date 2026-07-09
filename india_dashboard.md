@@ -1,52 +1,43 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Wednesday, July 08, 2026 12:44 PM IST  
-**Market status:** market OPEN — intraday scan, 56% of session elapsed (RVOL is pace-adjusted)  
+**Run time:** Thursday, July 09, 2026 01:46 PM IST  
+**Market status:** market OPEN — intraday scan, 72% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (9)
+## 🚀 High RVOL + Breakout (10)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| NAUKRI | 1,195.0 | 🟢 +3.07% | **5.8x** | 20D High | 32% |
-| LODHA | 1,144.9 | 🟢 +4.48% | **3.4x** | 20D High | 76% |
-| JUBLFOOD | 445.0 | 🟢 +1.54% | **3.4x** | 20D High | 9% |
-| ZYDUSLIFE | 1,168.9 | 🟢 +1.38% | **2.1x** | 52W High | 40% |
-| ADANIENSOL | 1,690.8 | 🟢 +2.41% | **2.0x** | 52W High | 127% |
-| SUNPHARMA | 1,894.2 | 🔴 -0.48% | **1.9x** | 52W High | 23% |
-| TORNTPHARM | 4,926.0 | 🟢 +2.14% | **1.8x** | 52W High | 51% |
-| EXIDEIND | 422.3 | 🟢 +1.88% | **1.8x** | 20D High | 48% |
-| HAVELLS | 1,221.4 | 🔴 -0.29% | **1.7x** | 20D High | 9% |
+| KALYANKJIL | 446.2 | 🟢 +19.26% | **13.6x** | 20D High | 36% |
+| SWIGGY | 277.5 | 🟢 +6.17% | **3.9x** | 20D High | 18% |
+| LENSKART | 545.0 | 🟢 +1.57% | **3.1x** | 52W High | 53% |
+| SUNPHARMA | 1,936.0 | 🟢 +1.71% | **2.5x** | 52W High | 26% |
+| TITAN | 4,612.1 | 🟢 +0.17% | **2.2x** | 52W High | 40% |
+| ETERNAL | 292.1 | 🟢 +1.88% | **1.7x** | 20D High | 37% |
+| BHARTIARTL | 1,931.4 | 🟢 +0.29% | **1.7x** | 20D High | 11% |
+| LODHA | 1,138.7 | 🟢 +3.28% | **1.7x** | 20D High | 75% |
+| EXIDEIND | 421.9 | 🟢 +0.13% | **1.6x** | 20D High | 48% |
+| DIXON | 13,556.0 | 🟢 +2.37% | **1.5x** | 20D High | 41% |
 
-## 📈 Other Breakouts (13)
+## 📈 Other Breakouts (3)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| LUPIN | 2,492.3 | 🟢 +0.08% | **1.0x** | 52W High | 36% |
-| NYKAA | 323.6 | 🟢 +2.68% | **0.9x** | 52W High | 62% |
-| TITAN | 4,597.5 | 🟢 +2.52% | **0.8x** | 52W High | 39% |
-| ETERNAL | 294.5 | 🟢 +1.74% | **1.5x** | 20D High | 38% |
-| GODREJPROP | 2,052.5 | 🟢 +0.46% | **1.2x** | 20D High | 43% |
-| SBILIFE | 1,822.8 | 🔴 -0.52% | **1.1x** | 20D High | 7% |
-| PAYTM | 1,247.5 | 🟢 +0.12% | **0.9x** | 20D High | 39% |
-| DABUR | 444.0 | 🔴 -1.28% | **0.8x** | 20D High | 10% |
-| HCLTECH | 1,160.0 | 🔴 -0.70% | **0.7x** | 20D High | 13% |
-| MRF | 135,680.0 | 🟢 +0.03% | **0.7x** | 20D High | 11% |
-| GLENMARK | 2,269.7 | 🔴 -0.05% | **0.5x** | 20D High | 27% |
-| BRITANNIA | 5,388.0 | 🔴 -1.22% | **0.4x** | 20D High | 7% |
-| COROMANDEL | 2,042.1 | 🔴 -0.65% | **0.3x** | 20D High | 20% |
+| TORNTPHARM | 4,902.2 | 🟢 +0.94% | **0.9x** | 52W High | 50% |
+| NYKAA | 324.0 | 🟢 +2.79% | **0.6x** | 52W High | 62% |
+| PAYTM | 1,267.6 | 🟢 +3.61% | **0.7x** | 20D High | 41% |
 
 ## 🔊 High RVOL (≥2x), No Breakout Yet (9)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| KALYANKJIL | 378.9 | 🟢 +6.79% | **7.1x** | — | 16% |
-| COCHINSHIP | 1,424.1 | 🔴 -1.49% | **4.7x** | — | 20% |
-| SWIGGY | 267.8 | 🟢 +0.58% | **2.8x** | — | 14% |
-| INDUSTOWER | 394.4 | 🟢 +3.02% | **2.7x** | — | 26% |
-| HINDPETRO | 391.6 | 🔴 -3.52% | **2.6x** | — | 24% |
-| PAGEIND | 41,950.0 | 🔴 -1.32% | **2.5x** | — | 41% |
-| PREMIERENE | 1,058.1 | 🟢 +3.28% | **2.4x** | — | 59% |
-| IOC | 139.6 | 🔴 -1.45% | **2.4x** | — | 7% |
-| UNITDSPR | 1,415.6 | 🔴 -0.90% | **2.0x** | — | 18% |
+| DRREDDY | 1,270.6 | 🔴 -6.20% | **5.5x** | — | 11% |
+| HDFCLIFE | 553.3 | 🔴 -3.34% | **3.5x** | — | 2% |
+| HAVELLS | 1,188.0 | 🔴 -3.02% | **3.4x** | — | 6% |
+| LT | 3,908.8 | 🟢 +0.43% | **2.6x** | — | 20% |
+| SOLARINDS | 17,340.0 | 🔴 -3.51% | **2.2x** | — | 49% |
+| MAZDOCK | 2,386.0 | 🔴 -2.64% | **2.2x** | — | 16% |
+| TATAINVEST | 687.3 | 🟢 +2.92% | **2.2x** | — | 28% |
+| APOLLOHOSP | 8,872.0 | 🟢 +0.40% | **2.1x** | — | 33% |
+| PREMIERENE | 1,084.4 | 🟢 +5.85% | **2.0x** | — | 63% |
