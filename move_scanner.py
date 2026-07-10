@@ -183,6 +183,7 @@ def feature_frame(hist: pd.DataFrame) -> pd.DataFrame:
     f["dist_52w_high"] = (h.shift(1).expanding().max() - c) / c * 100
     f["prior_20d_high"] = prior_20d_high
 
+    f["up_day"] = c > prev_c
     up = (c > prev_c).astype(float)
     f["updown_vol"] = (v * up).rolling(20).sum() / (v * (1 - up)).rolling(20).sum().clip(lower=1)
     f["vol_dryup"] = v.rolling(5).mean() / v.rolling(20).mean()
@@ -216,8 +217,19 @@ def validate(features_by_symbol) -> dict:
       coil          — the setup alone (waiting under the 20-day high)
       coil+breakout — setup AND price clears the prior 20-day high that day
                       (the actual entry trigger the report recommends)"""
-    setup_days = setup_hits = 0
-    conf_days = conf_hits = 0
+    variants = {
+        "coil": core_setup_mask,
+        "coil+breakout": lambda f: core_setup_mask(f) & (f["close"] > f["prior_20d_high"]),
+        "rvol>=2.5 up day": lambda f: (f["rvol"] >= 2.5) & f["up_day"],
+        "rvol>=2.5 up + uptrend": lambda f: (f["rvol"] >= 2.5) & f["up_day"] & f["uptrend"],
+        "rvol>=2 breakout": lambda f: (f["rvol"] >= 2.0) & (f["close"] > f["prior_20d_high"]),
+        "near 52w-high + rvol>=2": lambda f: (f["dist_52w_high"] <= 5) & (f["rvol"] >= 2.0),
+        "accumulation>=1.6": lambda f: f["updown_vol"] >= 1.6,
+        "squeeze p<=10 alone": lambda f: f["bbw_rank"] <= 0.10,
+        "high-ATR name (>=3%)": lambda f: f["atr_typ"] >= 3.0,
+        "hi-ATR + rvol>=2.5 up": lambda f: (f["atr_typ"] >= 3.0) & (f["rvol"] >= 2.5) & f["up_day"],
+    }
+    counts = {k: [0, 0] for k in variants}
     base_days = base_hits = 0
     for f in features_by_symbol.values():
         fwd_high = f["high"][::-1].rolling(FWD_WINDOW).max()[::-1].shift(-1)
@@ -229,28 +241,39 @@ def validate(features_by_symbol) -> dict:
             & (f["atr_typ"] >= MIN_ATR_PCT)
         )
         hit = fwd_ret >= TARGET_MOVE
-        setup = core_setup_mask(f) & valid
-        confirmed = setup & (f["close"] > f["prior_20d_high"])
-        setup_days += int(setup.sum())
-        setup_hits += int((setup & hit).sum())
-        conf_days += int(confirmed.sum())
-        conf_hits += int((confirmed & hit).sum())
         base_days += int(valid.sum())
         base_hits += int((valid & hit).sum())
-    setup_rate = setup_hits / setup_days if setup_days else 0.0
-    conf_rate = conf_hits / conf_days if conf_days else 0.0
+        for name, mask_fn in variants.items():
+            m = mask_fn(f) & valid
+            counts[name][0] += int(m.sum())
+            counts[name][1] += int((m & hit).sum())
     base_rate = base_hits / base_days if base_days else 0.0
+
+    def stats(days, hits):
+        rate = hits / days if days else 0.0
+        return {
+            "days": days,
+            "hits": hits,
+            "hit_rate": round(rate, 4),
+            "lift": round(rate / base_rate, 2) if base_rate else None,
+        }
+
+    variant_stats = [{"name": k, **stats(d, h)} for k, (d, h) in counts.items()]
+    coil = stats(*counts["coil"])
+    conf = stats(*counts["coil+breakout"])
     return {
-        "setup_days": setup_days,
-        "setup_hits": setup_hits,
-        "setup_hit_rate": round(setup_rate, 4),
-        "confirm_days": conf_days,
-        "confirm_hits": conf_hits,
-        "confirm_hit_rate": round(conf_rate, 4),
+        # kept flat for the dashboard
+        "setup_days": coil["days"],
+        "setup_hits": coil["hits"],
+        "setup_hit_rate": coil["hit_rate"],
+        "confirm_days": conf["days"],
+        "confirm_hits": conf["hits"],
+        "confirm_hit_rate": conf["hit_rate"],
         "base_days": base_days,
         "base_hit_rate": round(base_rate, 4),
-        "lift": round(setup_rate / base_rate, 2) if base_rate else None,
-        "confirm_lift": round(conf_rate / base_rate, 2) if base_rate else None,
+        "lift": coil["lift"],
+        "confirm_lift": conf["lift"],
+        "variants": variant_stats,
         "definition": (
             f"hit = high reaches +{TARGET_MOVE:.0%} above the signal close "
             f"within the next {FWD_WINDOW} sessions (past 1y; base rate is "
@@ -425,6 +448,19 @@ def render(df, validation, universe_note, now_ist, elapsed_frac, scanned):
         f"**{v['confirm_lift']}x lift**).",
         "> Entry idea: buy the break of the Trigger (prior 20-day high) with volume;",
         "> stop ≈ −4%; target +10%. Not investment advice.",
+        "",
+        "<details><summary>Signal research: hit rate of each candidate signal "
+        f"(past 1y, +10% within {FWD_WINDOW} sessions, matched base "
+        f"{v['base_hit_rate']:.1%})</summary>",
+        "",
+        "| Signal | Days | Hits | Hit rate | Lift |",
+        "|---|---:|---:|---:|---:|",
+        *[
+            f"| {x['name']} | {x['days']} | {x['hits']} | {x['hit_rate']:.1%} | {x['lift']}x |"
+            for x in v.get("variants", [])
+        ],
+        "",
+        "</details>",
         "",
     ]
     for tier, emoji, blurb in (
