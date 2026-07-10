@@ -1,12 +1,12 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Friday, July 10, 2026 07:16 AM IST  
+**Run time:** Friday, July 10, 2026 07:22 AM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 500 (NSE constituents file) · 500 stocks with usable data  
 
 > **Strategy:** volatility squeeze + tight base coiled under the 20-day high
 > + volume accumulation + uptrend, on names volatile enough to travel 10%.
-> **Self-check (past 1y, this universe):** this setup resolved into a ≥10% gain within 10 sessions **14%** of the time (342/2513 signals) vs a base rate of 16% for any random day — **0.87x lift**.
+> **Self-check (past 1y, this universe, matched base rate 16%):** coil alone hit +10% within 10 sessions 14% of the time (342/2513, 0.86x); waiting for the **breakout trigger** raised it to **10%** (17/163, **0.66x lift**).
 > Entry idea: buy the break of the Trigger (prior 20-day high) with volume;
 > stop ≈ −4%; target +10%. Not investment advice.
 

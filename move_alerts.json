@@ -1,5 +1,5 @@
 {
- "run_time_ist": "2026-07-10 07:16 AM IST",
+ "run_time_ist": "2026-07-10 07:22 AM IST",
  "elapsed_frac": 1.0,
  "market_open": false,
  "universe": "Nifty 500 (NSE constituents file)",
@@ -13,10 +13,14 @@
   "setup_days": 2513,
   "setup_hits": 342,
   "setup_hit_rate": 0.1361,
-  "base_days": 107471,
-  "base_hit_rate": 0.1566,
-  "lift": 0.87,
-  "definition": "hit = high reaches +10% above the signal close within the next 10 sessions (past 1y, whole universe)"
+  "confirm_days": 163,
+  "confirm_hits": 17,
+  "confirm_hit_rate": 0.1043,
+  "base_days": 96021,
+  "base_hit_rate": 0.1581,
+  "lift": 0.86,
+  "confirm_lift": 0.66,
+  "definition": "hit = high reaches +10% above the signal close within the next 10 sessions (past 1y; base rate is matched to the same price/ATR gates)"
  },
  "rows": [
   {
