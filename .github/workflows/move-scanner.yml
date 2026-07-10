@@ -1,0 +1,48 @@
+name: Move Alert Scanner
+
+on:
+  push:
+    paths:
+      - move_scanner.py
+      - .github/workflows/move-scanner.yml
+  workflow_dispatch:
+  schedule:
+    # Weekdays 04:45 UTC = 10:15 AM IST — one hour into the NSE session,
+    # early enough to catch volume surges with the day still ahead.
+    - cron: "45 4 * * 1-5"
+    # Weekdays 10:15 UTC = 3:45 PM IST — just after the close, so the
+    # evening watchlist is built from full-day volume.
+    - cron: "15 10 * * 1-5"
+
+permissions:
+  contents: write
+
+jobs:
+  scan:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install dependencies
+        run: pip install yfinance pandas numpy requests
+
+      - name: Run move alert scanner
+        run: python move_scanner.py
+
+      - name: Publish alerts to job summary
+        run: cat move_alerts.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit updated alerts
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add move_alerts.md move_alerts.json
+          if ! git diff --cached --quiet; then
+            git commit -m "Update Nifty 500 move alerts"
+            git pull --rebase
+            git push
+          fi

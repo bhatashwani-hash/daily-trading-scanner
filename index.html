@@ -83,15 +83,18 @@
   </header>
   <nav>
     <button id="tab-in" class="active" onclick="show('in')">🇮🇳 India — RVOL &amp; Breakouts</button>
+    <button id="tab-mv" onclick="show('mv')">⚡ Nifty 500 — 10% Move Alerts</button>
     <button id="tab-us" onclick="show('us')">🇺🇸 US — Equal-Weight Sectors</button>
   </nav>
 
   <section id="pane-in"><div class="empty">Loading India dashboard…</div></section>
+  <section id="pane-mv" style="display:none"><div class="empty">Loading move alerts…</div></section>
   <section id="pane-us" style="display:none"><div class="empty">Loading US sector table…</div></section>
 
   <footer>
     Data: Yahoo Finance via yfinance, refreshed by GitHub Actions —
-    🇮🇳 weekdays 2:45&nbsp;PM AEST (intraday) · 🇺🇸 weekdays after the US close.
+    🇮🇳 weekdays 2:45&nbsp;PM AEST (intraday) · ⚡ move alerts 10:15&nbsp;AM &amp; 3:45&nbsp;PM IST ·
+    🇺🇸 weekdays after the US close.
     Chart = last 30 daily closes ending at the latest price.
     Page re-fetches the latest data every 5 minutes.
   </footer>
@@ -119,7 +122,7 @@ function spark(prices, chg) {
 }
 
 function show(which) {
-  for (const k of ["in", "us"]) {
+  for (const k of ["in", "mv", "us"]) {
     document.getElementById("pane-" + k).style.display = k === which ? "" : "none";
     document.getElementById("tab-" + k).classList.toggle("active", k === which);
   }
@@ -192,6 +195,61 @@ function renderIndia(d) {
     ${d.failures.length ? `<div class="meta">No data: ${esc(d.failures.join(", "))}</div>` : ""}`;
 }
 
+const MOVE_TIERS = [
+  ["READY", "🔥 Ready", "setup complete — watch the trigger"],
+  ["SETUP", "🌱 Setup forming", "base building — needs confirmation"],
+  ["WATCH", "👀 Watchlist", "early — on the radar"],
+];
+
+function moveRows(rows) {
+  return rows.map(r => `
+    <tr>
+      <td class="name">${esc(r.Stock)}</td>
+      <td class="sub">${esc(r.Sector || "—")}</td>
+      <td class="sub">${r.Price.toLocaleString("en-IN", {maximumFractionDigits: 1})}</td>
+      <td>${pct(r["% Chg"])}</td>
+      <td class="barcell"><div class="fill" style="width:${Math.min(80, r.Score / 100 * 80)}px"></div>
+          <span><b>${r.Score}</b></span></td>
+      <td>${r.RVOL.toFixed(1)}x</td>
+      <td class="sub">p${r["Squeeze %ile"]}</td>
+      <td>${pct(r["To 20D High %"], 1)}</td>
+      <td class="sub">${r.Trigger ? r.Trigger.toLocaleString("en-IN") : "—"}</td>
+      <td class="sub">${r["Target (+10%)"].toLocaleString("en-IN")}</td>
+      <td class="sub">${r["Stop (-4%)"].toLocaleString("en-IN")}</td>
+      <td style="text-align:left; white-space:normal; min-width:260px">
+        ${(r.Reasons || []).map(x => `<span class="chip">${esc(x)}</span>`).join(" ")}</td>
+      <td>${spark(r.Spark, r["% Chg"])}</td>
+    </tr>`).join("");
+}
+
+function renderMoves(d) {
+  const v = d.validation || {};
+  const header = `<tr><th>Stock</th><th>Sector</th><th>Price ₹</th><th>% Chg</th>
+    <th>Score</th><th>RVOL</th><th>Squeeze</th><th>To 20D Hi</th>
+    <th>Trigger ₹</th><th>Target ₹</th><th>Stop ₹</th><th>Why</th><th>30D Chart</th></tr>`;
+  const sections = MOVE_TIERS.map(([tier, title, blurb]) => {
+    const rows = d.rows.filter(r => r.Tier === tier);
+    return `<h2>${title} <span class="count">(${rows.length}) — ${esc(blurb)}</span></h2>
+      ${rows.length
+        ? `<div class="card"><table>${header}${moveRows(rows)}</table></div>`
+        : '<div class="empty">None right now.</div>'}`;
+  }).join("");
+  document.getElementById("pane-mv").innerHTML = `
+    <div class="meta"><b>${esc(d.run_time_ist)}</b> ·
+      ${d.market_open
+        ? `market OPEN — ${Math.round(d.elapsed_frac * 100)}% of session elapsed, RVOL is pace-adjusted`
+        : "market CLOSED — full-day data from the last session"} ·
+      ${esc(d.universe)} · ${d.scanned} scanned</div>
+    <div class="meta">Strategy: volatility squeeze + tight base under the 20-day high +
+      volume accumulation + uptrend, on names volatile enough to travel 10%.
+      Self-check over the past year: this setup reached <b>+10% within ${d.params.fwd_window_sessions}
+      sessions ${v.setup_hit_rate != null ? Math.round(v.setup_hit_rate * 100) : "?"}%</b> of the time
+      (${v.setup_hits}/${v.setup_days} signals) vs a ${v.base_hit_rate != null ? Math.round(v.base_hit_rate * 100) : "?"}%
+      base rate — <b>${v.lift ?? "?"}x lift</b>. Entry idea: break of Trigger with volume,
+      stop −4%, target +10%. Not investment advice.</div>
+    ${sections}`;
+}
+
 function renderUS(d) {
   const max = Math.max(...d.rows.map(r => r["52-Weeks"]));
   const tr = d.rows.map((r, i) => `
@@ -219,6 +277,8 @@ async function loadAll() {
   const jobs = [
     getJSON("india_dashboard.json").then(renderIndia)
       .catch(e => document.getElementById("pane-in").innerHTML = `<div class="err">India data unavailable: ${esc(e.message)}</div>`),
+    getJSON("move_alerts.json").then(renderMoves)
+      .catch(e => document.getElementById("pane-mv").innerHTML = `<div class="err">Move alerts unavailable (first run may still be pending): ${esc(e.message)}</div>`),
     getJSON("sector_table.json").then(renderUS)
       .catch(e => document.getElementById("pane-us").innerHTML = `<div class="err">US data unavailable: ${esc(e.message)}</div>`),
   ];
