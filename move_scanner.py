@@ -1,33 +1,34 @@
 """
 Nifty 500 — 10%+ Move Alert Scanner (NSE)
 =========================================
-Scans the Nifty 500 universe for stocks that look primed for a 10%+ upside
-move, using the classic "coiled spring" evidence stack:
+Scans the Nifty 500 universe for stocks primed for a 10%+ upside move within
+the next ~10 sessions. The scoring is CALIBRATED, not assumed: every candidate
+signal was replayed over the past year across the whole universe and measured
+against the matched base rate of a +10% touch in 10 sessions (~16%). What the
+data said (see the signal-research table in every report):
 
-  LEVELS     * price coiled within a few % of its prior 20-day high
-             * within striking distance of the 52-week high (no overhead supply)
-  VOLATILITY * Bollinger-Band-width squeeze — today's 20-day band width sits in
-               the bottom quartile of its own 1-year range (energy stored)
-             * tight 5-day closing range (hands have stopped changing)
-  VOLUME     * accumulation — up-day volume outweighs down-day volume over 20d
-             * volume dry-up in the base and/or an RVOL surge today
-               (pace-adjusted for how much of the 09:15–15:30 session is done)
-  TREND      * price above a rising 50-DMA, 50-DMA above 200-DMA
-  FEASIBILITY* ATR% high enough that a 10% move within ~10 sessions is
-               realistic for this name (a 0.8%-a-day mega cap can't do it)
+  WORKS      * high-energy names — typical ATR >= 3%/day        (~24%, 1.5x)
+             * volume-surge ignition — RVOL >= 2.5x on an up day (~18%, 1.2x)
+             * both together                                     (~25%, 1.6x)
+             * up-day surge inside an uptrend                    (~20%, 1.25x)
+             * high-volume break of the 20-day high              (~18%, 1.15x)
+  DOESN'T    * the classic "coiled spring" (BB squeeze + tight base under the
+               20-day high) UNDERPERFORMED the base rate for this horizon
+               (0.66–0.86x) — quiet, orderly names simply don't travel 10%
+               in two weeks; it is kept in the research grid, not the score.
 
-Each stock gets a MOVE-READINESS SCORE (0–100) plus the list of reasons that
-fired. Tiers:
+So the score rewards ENERGY (typical ATR), IGNITION (pace-adjusted RVOL surge
+on an up day), TREND, LEVELS (breaking / sitting at the 20-day high, near the
+52-week high), and ACCUMULATION (up-day volume dominance over 20 days).
 
-  🔥 READY   score >= 70  — setup complete, trigger = break of the 20-day high
-  🌱 SETUP   score 55–69  — base forming, needs a squeeze/volume confirmation
+Tiers:
+  🔥 READY   score >= 70  — energy + ignition firing now
+  🌱 SETUP   score 55–69  — most of the stack in place
   👀 WATCH   score 45–54  — early, keep on the radar
 
-The scanner also self-validates: it replays the same core setup over the past
-year across the whole universe and reports how often it actually resolved into
-a >= 10% gain within the next 10 sessions, versus the base rate of any random
-day doing so. That hit-rate is printed in the report header so the "high
-probability" claim is measured, not asserted.
+Every report re-runs the validation grid on fresh data, so if the market
+regime changes and a signal stops working, the numbers in the header will
+say so.
 
 Output: move_alerts.md (Markdown) and move_alerts.json (for the dashboard).
 
@@ -218,6 +219,12 @@ def validate(features_by_symbol) -> dict:
       coil+breakout — setup AND price clears the prior 20-day high that day
                       (the actual entry trigger the report recommends)"""
     variants = {
+        "ignition (hi-ATR + rvol>=2.5 up)": lambda f: (
+            (f["atr_typ"] >= 3.0) & (f["rvol"] >= 2.5) & f["up_day"]
+        ),
+        "ignition + uptrend": lambda f: (
+            (f["atr_typ"] >= 3.0) & (f["rvol"] >= 2.5) & f["up_day"] & f["uptrend"]
+        ),
         "coil": core_setup_mask,
         "coil+breakout": lambda f: core_setup_mask(f) & (f["close"] > f["prior_20d_high"]),
         "rvol>=2.5 up day": lambda f: (f["rvol"] >= 2.5) & f["up_day"],
@@ -227,7 +234,6 @@ def validate(features_by_symbol) -> dict:
         "accumulation>=1.6": lambda f: f["updown_vol"] >= 1.6,
         "squeeze p<=10 alone": lambda f: f["bbw_rank"] <= 0.10,
         "high-ATR name (>=3%)": lambda f: f["atr_typ"] >= 3.0,
-        "hi-ATR + rvol>=2.5 up": lambda f: (f["atr_typ"] >= 3.0) & (f["rvol"] >= 2.5) & f["up_day"],
     }
     counts = {k: [0, 0] for k in variants}
     base_days = base_hits = 0
@@ -259,20 +265,20 @@ def validate(features_by_symbol) -> dict:
         }
 
     variant_stats = [{"name": k, **stats(d, h)} for k, (d, h) in counts.items()]
-    coil = stats(*counts["coil"])
-    conf = stats(*counts["coil+breakout"])
+    ign = stats(*counts["ignition (hi-ATR + rvol>=2.5 up)"])
+    ign_tr = stats(*counts["ignition + uptrend"])
     return {
-        # kept flat for the dashboard
-        "setup_days": coil["days"],
-        "setup_hits": coil["hits"],
-        "setup_hit_rate": coil["hit_rate"],
-        "confirm_days": conf["days"],
-        "confirm_hits": conf["hits"],
-        "confirm_hit_rate": conf["hit_rate"],
+        # flat keys consumed by the dashboard: headline = the ignition setup
+        "setup_days": ign["days"],
+        "setup_hits": ign["hits"],
+        "setup_hit_rate": ign["hit_rate"],
+        "confirm_days": ign_tr["days"],
+        "confirm_hits": ign_tr["hits"],
+        "confirm_hit_rate": ign_tr["hit_rate"],
         "base_days": base_days,
         "base_hit_rate": round(base_rate, 4),
-        "lift": coil["lift"],
-        "confirm_lift": conf["lift"],
+        "lift": ign["lift"],
+        "confirm_lift": ign_tr["lift"],
         "variants": variant_stats,
         "definition": (
             f"hit = high reaches +{TARGET_MOVE:.0%} above the signal close "
@@ -296,53 +302,55 @@ def score_today(f: pd.DataFrame, elapsed_frac: float):
 
     score, reasons = 0.0, []
 
-    if r["bbw_rank"] <= 0.10:
-        score += 20; reasons.append("extreme volatility squeeze (bottom 10% of 1y)")
-    elif r["bbw_rank"] <= 0.25:
-        score += 14; reasons.append("volatility squeeze (bottom 25% of 1y)")
-    elif r["bbw_rank"] <= 0.40:
-        score += 7
+    # ENERGY — the single strongest predictor (1.5x lift on its own)
+    if r["atr_typ"] >= 4.0:
+        score += 30; reasons.append(f"very high-energy name (typical ATR {r['atr_typ']:.1f}%/day)")
+    elif r["atr_typ"] >= 3.0:
+        score += 24; reasons.append(f"high-energy name (typical ATR {r['atr_typ']:.1f}%/day)")
+    elif r["atr_typ"] >= 2.5:
+        score += 16; reasons.append(f"energetic name (typical ATR {r['atr_typ']:.1f}%/day)")
+    elif r["atr_typ"] >= 2.0:
+        score += 10
+    elif r["atr_typ"] >= 1.6:
+        score += 5
 
-    if r["tight5"] <= 3.0:
-        score += 10; reasons.append(f"very tight 5-day range ({r['tight5']:.1f}%)")
-    elif r["tight5"] <= 5.0:
-        score += 6
+    # IGNITION — volume surge on an UP day (surging down-volume is a red flag)
+    up_day = bool(r["up_day"])
+    if up_day and rvol >= 4.0:
+        score += 28; reasons.append(f"ignition: volume {rvol:.1f}x average on an up day")
+    elif up_day and rvol >= 2.5:
+        score += 24; reasons.append(f"ignition: volume {rvol:.1f}x average on an up day")
+    elif up_day and rvol >= 2.0:
+        score += 16; reasons.append(f"volume {rvol:.1f}x average on an up day")
+    elif up_day and rvol >= 1.5:
+        score += 8
 
+    # TREND
+    if r["strong_trend"]:
+        score += 12; reasons.append("uptrend: price > rising 50-DMA > 200-DMA")
+    elif r["uptrend"]:
+        score += 8; reasons.append("price above a rising 50-DMA")
+
+    # LEVELS — through or at the 20-day high; near the 52-week high
     d20 = r["dist_20d_high"]
     if d20 <= 0:
-        score += 15; reasons.append("breaking the 20-day high NOW")
+        score += 12; reasons.append("breaking the 20-day high NOW")
     elif d20 <= 2.0:
-        score += 12; reasons.append(f"coiled {d20:.1f}% under the 20-day high")
+        score += 7; reasons.append(f"{d20:.1f}% under the 20-day high")
     elif d20 <= 4.0:
-        score += 8; reasons.append(f"{d20:.1f}% below the 20-day high")
+        score += 4
 
     d52 = r["dist_52w_high"]
     if d52 <= 5.0:
-        score += 10; reasons.append("within 5% of 52-week high (no overhead supply)")
+        score += 6; reasons.append("within 5% of 52-week high (no overhead supply)")
     elif d52 <= 12.0:
-        score += 6
+        score += 3
 
-    if rvol >= 3.0:
-        score += 15; reasons.append(f"volume surge {rvol:.1f}x average")
-    elif rvol >= 2.0:
-        score += 11; reasons.append(f"volume {rvol:.1f}x average")
-    elif rvol >= 1.5:
-        score += 6
-    elif r["vol_dryup"] <= 0.65:
-        score += 5; reasons.append("volume dry-up in the base (supply exhausted)")
-
+    # ACCUMULATION
     if r["updown_vol"] >= 1.6:
-        score += 12; reasons.append(f"heavy accumulation (up/down volume {r['updown_vol']:.1f})")
+        score += 6; reasons.append(f"accumulation (up/down volume {r['updown_vol']:.1f})")
     elif r["updown_vol"] >= 1.2:
-        score += 7; reasons.append("up-day volume outweighs down-day volume")
-
-    if r["strong_trend"]:
-        score += 11; reasons.append("uptrend: price > rising 50-DMA > 200-DMA")
-    elif r["uptrend"]:
-        score += 6
-
-    if r["atr_typ"] >= 2.5:
-        score += 5; reasons.append(f"high-energy name (typical ATR {r['atr_typ']:.1f}%/day)")
+        score += 3
 
     stats = {
         "rvol": rvol,
@@ -439,14 +447,14 @@ def render(df, validation, universe_note, now_ist, elapsed_frac, scanned):
         f"**Market status:** {status}  ",
         f"**Universe:** {universe_note} · {scanned} stocks with usable data  ",
         "",
-        "> **Strategy:** volatility squeeze + tight base coiled under the 20-day high",
-        "> + volume accumulation + uptrend, on names volatile enough to travel 10%.",
-        f"> **Self-check (past 1y, this universe, matched base rate {v['base_hit_rate']:.0%}):** "
-        f"coil alone hit +10% within {FWD_WINDOW} sessions {v['setup_hit_rate']:.0%} of the time "
-        f"({v['setup_hits']}/{v['setup_days']}, {v['lift']}x); waiting for the **breakout trigger** "
-        f"raised it to **{v['confirm_hit_rate']:.0%}** ({v['confirm_hits']}/{v['confirm_days']}, "
-        f"**{v['confirm_lift']}x lift**).",
-        "> Entry idea: buy the break of the Trigger (prior 20-day high) with volume;",
+        "> **Strategy (calibrated on this universe):** high-energy names (typical ATR ≥3%/day)",
+        "> showing volume-surge ignition (RVOL ≥2.5x on an up day), plus trend, levels",
+        "> (20-day-high break, 52-week-high proximity) and accumulation.",
+        f"> **Self-check (past 1y, matched base rate {v['base_hit_rate']:.0%}):** ignition days hit "
+        f"+10% within {FWD_WINDOW} sessions **{v['setup_hit_rate']:.0%}** of the time "
+        f"({v['setup_hits']}/{v['setup_days']}, **{v['lift']}x lift**); inside an uptrend "
+        f"{v['confirm_hit_rate']:.0%} ({v['confirm_hits']}/{v['confirm_days']}, {v['confirm_lift']}x).",
+        "> Entry idea: buy strength through the Trigger (prior 20-day high) with volume;",
         "> stop ≈ −4%; target +10%. Not investment advice.",
         "",
         "<details><summary>Signal research: hit rate of each candidate signal "

@@ -240,15 +240,16 @@ function renderMoves(d) {
         ? `market OPEN — ${Math.round(d.elapsed_frac * 100)}% of session elapsed, RVOL is pace-adjusted`
         : "market CLOSED — full-day data from the last session"} ·
       ${esc(d.universe)} · ${d.scanned} scanned</div>
-    <div class="meta">Strategy: volatility squeeze + tight base under the 20-day high +
-      volume accumulation + uptrend, on names volatile enough to travel 10%.
+    <div class="meta">Strategy (calibrated on this universe): high-energy names (typical ATR ≥3%/day)
+      showing <b>volume-surge ignition</b> (RVOL ≥2.5x on an up day) + trend, levels and accumulation.
       Self-check over the past year (base rate matched to the same price/ATR gates:
-      ${v.base_hit_rate != null ? Math.round(v.base_hit_rate * 100) : "?"}%): coil alone reached +10% within
-      ${d.params.fwd_window_sessions} sessions ${v.setup_hit_rate != null ? Math.round(v.setup_hit_rate * 100) : "?"}%
-      of the time (${v.setup_hits}/${v.setup_days}, ${v.lift ?? "?"}x); waiting for the <b>breakout trigger</b>
-      raised it to <b>${v.confirm_hit_rate != null ? Math.round(v.confirm_hit_rate * 100) : "?"}%</b>
-      (${v.confirm_hits}/${v.confirm_days}, <b>${v.confirm_lift ?? "?"}x lift</b>).
-      Entry idea: break of Trigger with volume, stop −4%, target +10%. Not investment advice.</div>
+      ${v.base_hit_rate != null ? Math.round(v.base_hit_rate * 100) : "?"}%): ignition days reached
+      <b>+10% within ${d.params.fwd_window_sessions} sessions
+      ${v.setup_hit_rate != null ? Math.round(v.setup_hit_rate * 100) : "?"}%</b> of the time
+      (${v.setup_hits}/${v.setup_days}, <b>${v.lift ?? "?"}x lift</b>); inside an uptrend
+      ${v.confirm_hit_rate != null ? Math.round(v.confirm_hit_rate * 100) : "?"}%
+      (${v.confirm_hits}/${v.confirm_days}, ${v.confirm_lift ?? "?"}x).
+      Entry idea: strength through the Trigger with volume, stop −4%, target +10%. Not investment advice.</div>
     ${sections}`;
 }
 
