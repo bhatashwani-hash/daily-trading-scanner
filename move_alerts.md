@@ -1,6 +1,6 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Friday, July 10, 2026 07:22 AM IST  
+**Run time:** Friday, July 10, 2026 07:26 AM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 500 (NSE constituents file) · 500 stocks with usable data  
 
@@ -9,6 +9,23 @@
 > **Self-check (past 1y, this universe, matched base rate 16%):** coil alone hit +10% within 10 sessions 14% of the time (342/2513, 0.86x); waiting for the **breakout trigger** raised it to **10%** (17/163, **0.66x lift**).
 > Entry idea: buy the break of the Trigger (prior 20-day high) with volume;
 > stop ≈ −4%; target +10%. Not investment advice.
+
+<details><summary>Signal research: hit rate of each candidate signal (past 1y, +10% within 10 sessions, matched base 15.8%)</summary>
+
+| Signal | Days | Hits | Hit rate | Lift |
+|---|---:|---:|---:|---:|
+| coil | 2513 | 342 | 13.6% | 0.86x |
+| coil+breakout | 163 | 17 | 10.4% | 0.66x |
+| rvol>=2.5 up day | 3736 | 685 | 18.3% | 1.16x |
+| rvol>=2.5 up + uptrend | 1634 | 324 | 19.8% | 1.25x |
+| rvol>=2 breakout | 1935 | 352 | 18.2% | 1.15x |
+| near 52w-high + rvol>=2 | 1875 | 303 | 16.2% | 1.02x |
+| accumulation>=1.6 | 31927 | 5146 | 16.1% | 1.02x |
+| squeeze p<=10 alone | 9542 | 1124 | 11.8% | 0.74x |
+| high-ATR name (>=3%) | 33053 | 7896 | 23.9% | 1.51x |
+| hi-ATR + rvol>=2.5 up | 1612 | 407 | 25.2% | 1.6x |
+
+</details>
 
 ## 🔥 READY (1) — setup complete — watch the trigger
 

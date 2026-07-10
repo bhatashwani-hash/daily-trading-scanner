@@ -1,5 +1,5 @@
 {
- "run_time_ist": "2026-07-10 07:22 AM IST",
+ "run_time_ist": "2026-07-10 07:26 AM IST",
  "elapsed_frac": 1.0,
  "market_open": false,
  "universe": "Nifty 500 (NSE constituents file)",
@@ -20,6 +20,78 @@
   "base_hit_rate": 0.1581,
   "lift": 0.86,
   "confirm_lift": 0.66,
+  "variants": [
+   {
+    "name": "coil",
+    "days": 2513,
+    "hits": 342,
+    "hit_rate": 0.1361,
+    "lift": 0.86
+   },
+   {
+    "name": "coil+breakout",
+    "days": 163,
+    "hits": 17,
+    "hit_rate": 0.1043,
+    "lift": 0.66
+   },
+   {
+    "name": "rvol>=2.5 up day",
+    "days": 3736,
+    "hits": 685,
+    "hit_rate": 0.1834,
+    "lift": 1.16
+   },
+   {
+    "name": "rvol>=2.5 up + uptrend",
+    "days": 1634,
+    "hits": 324,
+    "hit_rate": 0.1983,
+    "lift": 1.25
+   },
+   {
+    "name": "rvol>=2 breakout",
+    "days": 1935,
+    "hits": 352,
+    "hit_rate": 0.1819,
+    "lift": 1.15
+   },
+   {
+    "name": "near 52w-high + rvol>=2",
+    "days": 1875,
+    "hits": 303,
+    "hit_rate": 0.1616,
+    "lift": 1.02
+   },
+   {
+    "name": "accumulation>=1.6",
+    "days": 31927,
+    "hits": 5146,
+    "hit_rate": 0.1612,
+    "lift": 1.02
+   },
+   {
+    "name": "squeeze p<=10 alone",
+    "days": 9542,
+    "hits": 1124,
+    "hit_rate": 0.1178,
+    "lift": 0.74
+   },
+   {
+    "name": "high-ATR name (>=3%)",
+    "days": 33053,
+    "hits": 7896,
+    "hit_rate": 0.2389,
+    "lift": 1.51
+   },
+   {
+    "name": "hi-ATR + rvol>=2.5 up",
+    "days": 1612,
+    "hits": 407,
+    "hit_rate": 0.2525,
+    "lift": 1.6
+   }
+  ],
   "definition": "hit = high reaches +10% above the signal close within the next 10 sessions (past 1y; base rate is matched to the same price/ATR gates)"
  },
  "rows": [
