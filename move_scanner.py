@@ -208,31 +208,53 @@ def core_setup_mask(f: pd.DataFrame) -> pd.Series:
 
 
 def validate(features_by_symbol) -> dict:
-    """Replay the core setup over the past year: how often did a >=10% gain
-    follow within FWD_WINDOW sessions, vs any random day (base rate)?"""
-    setup_days = setup_hits = all_days = all_hits = 0
+    """Replay the setup over the past year: how often did a >=10% gain follow
+    within FWD_WINDOW sessions? The base rate is MATCHED to the same
+    feasibility gates (price, typical ATR), so the comparison is apples to
+    apples — an unmatched base would be dominated by wild small-cap days the
+    scanner never trades. Two variants are measured:
+      coil          — the setup alone (waiting under the 20-day high)
+      coil+breakout — setup AND price clears the prior 20-day high that day
+                      (the actual entry trigger the report recommends)"""
+    setup_days = setup_hits = 0
+    conf_days = conf_hits = 0
+    base_days = base_hits = 0
     for f in features_by_symbol.values():
         fwd_high = f["high"][::-1].rolling(FWD_WINDOW).max()[::-1].shift(-1)
         fwd_ret = fwd_high / f["close"] - 1
-        valid = fwd_ret.notna() & f["bbw_rank"].notna() & (f["close"] >= MIN_PRICE)
+        valid = (
+            fwd_ret.notna()
+            & f["bbw_rank"].notna()
+            & (f["close"] >= MIN_PRICE)
+            & (f["atr_typ"] >= MIN_ATR_PCT)
+        )
         hit = fwd_ret >= TARGET_MOVE
         setup = core_setup_mask(f) & valid
+        confirmed = setup & (f["close"] > f["prior_20d_high"])
         setup_days += int(setup.sum())
         setup_hits += int((setup & hit).sum())
-        all_days += int(valid.sum())
-        all_hits += int((valid & hit).sum())
+        conf_days += int(confirmed.sum())
+        conf_hits += int((confirmed & hit).sum())
+        base_days += int(valid.sum())
+        base_hits += int((valid & hit).sum())
     setup_rate = setup_hits / setup_days if setup_days else 0.0
-    base_rate = all_hits / all_days if all_days else 0.0
+    conf_rate = conf_hits / conf_days if conf_days else 0.0
+    base_rate = base_hits / base_days if base_days else 0.0
     return {
         "setup_days": setup_days,
         "setup_hits": setup_hits,
         "setup_hit_rate": round(setup_rate, 4),
-        "base_days": all_days,
+        "confirm_days": conf_days,
+        "confirm_hits": conf_hits,
+        "confirm_hit_rate": round(conf_rate, 4),
+        "base_days": base_days,
         "base_hit_rate": round(base_rate, 4),
         "lift": round(setup_rate / base_rate, 2) if base_rate else None,
+        "confirm_lift": round(conf_rate / base_rate, 2) if base_rate else None,
         "definition": (
             f"hit = high reaches +{TARGET_MOVE:.0%} above the signal close "
-            f"within the next {FWD_WINDOW} sessions (past 1y, whole universe)"
+            f"within the next {FWD_WINDOW} sessions (past 1y; base rate is "
+            f"matched to the same price/ATR gates)"
         ),
     }
 
@@ -396,10 +418,11 @@ def render(df, validation, universe_note, now_ist, elapsed_frac, scanned):
         "",
         "> **Strategy:** volatility squeeze + tight base coiled under the 20-day high",
         "> + volume accumulation + uptrend, on names volatile enough to travel 10%.",
-        f"> **Self-check (past 1y, this universe):** this setup resolved into a "
-        f"≥10% gain within {FWD_WINDOW} sessions **{v['setup_hit_rate']:.0%}** of the time "
-        f"({v['setup_hits']}/{v['setup_days']} signals) vs a base rate of "
-        f"{v['base_hit_rate']:.0%} for any random day — **{v['lift']}x lift**.",
+        f"> **Self-check (past 1y, this universe, matched base rate {v['base_hit_rate']:.0%}):** "
+        f"coil alone hit +10% within {FWD_WINDOW} sessions {v['setup_hit_rate']:.0%} of the time "
+        f"({v['setup_hits']}/{v['setup_days']}, {v['lift']}x); waiting for the **breakout trigger** "
+        f"raised it to **{v['confirm_hit_rate']:.0%}** ({v['confirm_hits']}/{v['confirm_days']}, "
+        f"**{v['confirm_lift']}x lift**).",
         "> Entry idea: buy the break of the Trigger (prior 20-day high) with volume;",
         "> stop ≈ −4%; target +10%. Not investment advice.",
         "",

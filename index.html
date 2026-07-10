@@ -242,11 +242,13 @@ function renderMoves(d) {
       ${esc(d.universe)} · ${d.scanned} scanned</div>
     <div class="meta">Strategy: volatility squeeze + tight base under the 20-day high +
       volume accumulation + uptrend, on names volatile enough to travel 10%.
-      Self-check over the past year: this setup reached <b>+10% within ${d.params.fwd_window_sessions}
-      sessions ${v.setup_hit_rate != null ? Math.round(v.setup_hit_rate * 100) : "?"}%</b> of the time
-      (${v.setup_hits}/${v.setup_days} signals) vs a ${v.base_hit_rate != null ? Math.round(v.base_hit_rate * 100) : "?"}%
-      base rate — <b>${v.lift ?? "?"}x lift</b>. Entry idea: break of Trigger with volume,
-      stop −4%, target +10%. Not investment advice.</div>
+      Self-check over the past year (base rate matched to the same price/ATR gates:
+      ${v.base_hit_rate != null ? Math.round(v.base_hit_rate * 100) : "?"}%): coil alone reached +10% within
+      ${d.params.fwd_window_sessions} sessions ${v.setup_hit_rate != null ? Math.round(v.setup_hit_rate * 100) : "?"}%
+      of the time (${v.setup_hits}/${v.setup_days}, ${v.lift ?? "?"}x); waiting for the <b>breakout trigger</b>
+      raised it to <b>${v.confirm_hit_rate != null ? Math.round(v.confirm_hit_rate * 100) : "?"}%</b>
+      (${v.confirm_hits}/${v.confirm_days}, <b>${v.confirm_lift ?? "?"}x lift</b>).
+      Entry idea: break of Trigger with volume, stop −4%, target +10%. Not investment advice.</div>
     ${sections}`;
 }
 
