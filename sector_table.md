@@ -1,41 +1,41 @@
 # Equal-Weight Sector / Industry Group Performance
 
-**Report date:** Friday, July 10, 2026  
+**Report date:** Monday, July 13, 2026  
 **Market status:** market session in progress — intraday prices  
 **52-Weeks** = % the current price sits above its 52-week low (strength from the low)
 
 | # | Equal Weight Industry Group | Ticker | 52-Weeks | % Daily Chg |
 |---:|---|---|---:|---:|
-| 1 | Semiconductor | XSD | 122% | 🔴 -1.06% |
-| 2 | Telecom | XTL | 95% | 🔴 -0.09% |
-| 3 | Biotech | XBI | 89% | 🔴 -3.20% |
-| 4 | Oil & Gas Equipment & Services | XES | 80% | 🟢 +1.64% |
-| 5 | Pharmaceuticals | XPH | 69% | 🔴 -2.30% |
-| 6 | Technology | RSPT | 56% | 🔴 -0.36% |
-| 7 | Health Care Services | XHS | 54% | 🔴 -0.98% |
-| 8 | Transportation | XTN | 46% | 🔴 -1.00% |
-| 9 | Metal & Minings | XME | 46% | 🟢 +0.44% |
-| 10 | IWM (Russell 2000) | IWM | 41% | 🔴 -0.42% |
-| 11 | Energy | RSPG | 41% | 🟢 +0.21% |
-| 12 | Oil & Gas Exploration & Production | XOP | 34% | 🔴 -0.56% |
-| 13 | Regional Banks | KRE | 33% | 🟢 +0.50% |
-| 14 | QQQ | QQQ | 32% | 🟢 +0.31% |
-| 15 | Software & Services | XSW | 31% | 🔴 -1.31% |
-| 16 | Aerospace & Defence | XAR | 30% | 🔴 -0.89% |
-| 17 | Natural Resources | GNR | 30% | 🟢 +1.08% |
-| 18 | US Banks | KBE | 29% | 🟢 +0.63% |
-| 19 | Materials | RSPM | 26% | 🟢 +1.31% |
-| 20 | Healthcare | RSPH | 25% | 🔴 -0.41% |
-| 21 | S&P 500 | RSP | 21% | 🟢 +0.37% |
-| 22 | Insurance | KIE | 19% | 🟢 +0.05% |
-| 23 | Industrial | RSPN | 19% | 🟢 +0.45% |
-| 24 | Financial | RSPF | 19% | 🟢 +0.39% |
-| 25 | Utilities | RSPU | 17% | 🟢 +0.55% |
-| 26 | Homebuilders | XHB | 16% | 🟢 +0.93% |
-| 27 | Healthcare Equipments | XHE | 16% | 🟢 +0.17% |
-| 28 | Retail | XRT | 16% | 🟢 +1.33% |
-| 29 | Real Estate | RSPR | 14% | 🟢 +0.79% |
-| 30 | Consumer Staples | RSPS | 11% | 🟢 +1.33% |
-| 31 | Consumer Discretionary | RSPD | 10% | 🟢 +0.85% |
-| 32 | China | GXC | 4% | 🔴 -0.15% |
-| 33 | Communication | RSPC | 3% | 🟢 +0.33% |
+| 1 | Semiconductor | XSD | 111% | 🔴 -4.62% |
+| 2 | Telecom | XTL | 91% | 🔴 -1.93% |
+| 3 | Biotech | XBI | 85% | 🔴 -2.32% |
+| 4 | Oil & Gas Equipment & Services | XES | 82% | 🟢 +0.99% |
+| 5 | Pharmaceuticals | XPH | 65% | 🔴 -2.37% |
+| 6 | Health Care Services | XHS | 54% | 🟢 +0.07% |
+| 7 | Technology | RSPT | 54% | 🔴 -1.80% |
+| 8 | Transportation | XTN | 46% | 🔴 -0.48% |
+| 9 | Energy | RSPG | 44% | 🟢 +2.64% |
+| 10 | Metal & Minings | XME | 44% | 🔴 -1.54% |
+| 11 | IWM (Russell 2000) | IWM | 40% | 🔴 -0.85% |
+| 12 | Oil & Gas Exploration & Production | XOP | 39% | 🟢 +4.17% |
+| 13 | Regional Banks | KRE | 33% | 🟢 +0.13% |
+| 14 | Software & Services | XSW | 32% | 🟢 +0.88% |
+| 15 | Natural Resources | GNR | 31% | 🟢 +0.64% |
+| 16 | QQQ | QQQ | 30% | 🔴 -1.90% |
+| 17 | US Banks | KBE | 30% | 🟢 +0.10% |
+| 18 | Aerospace & Defence | XAR | 27% | 🔴 -2.68% |
+| 19 | Healthcare | RSPH | 26% | 🟢 +0.35% |
+| 20 | Materials | RSPM | 26% | 🔴 -0.44% |
+| 21 | Insurance | KIE | 21% | 🟢 +1.58% |
+| 22 | S&P 500 | RSP | 21% | 🔴 -0.03% |
+| 23 | Financial | RSPF | 19% | 🟢 +0.67% |
+| 24 | Industrial | RSPN | 18% | 🔴 -0.49% |
+| 25 | Utilities | RSPU | 18% | 🟢 +0.60% |
+| 26 | Healthcare Equipments | XHE | 17% | 🟢 +0.46% |
+| 27 | Retail | XRT | 15% | 🔴 -0.69% |
+| 28 | Homebuilders | XHB | 15% | 🔴 -1.42% |
+| 29 | Real Estate | RSPR | 14% | 🟢 +0.17% |
+| 30 | Consumer Staples | RSPS | 11% | 🟢 +0.56% |
+| 31 | Consumer Discretionary | RSPD | 9% | 🔴 -0.95% |
+| 32 | Communication | RSPC | 4% | 🟢 +0.55% |
+| 33 | China | GXC | 3% | 🔴 -1.39% |
