@@ -1,50 +1,44 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Tuesday, July 14, 2026 12:27 PM IST  
-**Market status:** market OPEN — intraday scan, 51% of session elapsed (RVOL is pace-adjusted)  
+**Run time:** Wednesday, July 15, 2026 12:29 PM IST  
+**Market status:** market OPEN — intraday scan, 52% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (10)
+## 🚀 High RVOL + Breakout (9)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| BIOCON | 440.1 | 🟢 +7.09% | **16.2x** | 52W High | 33% |
-| CONCOR | 489.0 | 🟢 +5.41% | **8.6x** | 20D High | 16% |
-| KALYANKJIL | 529.5 | 🟢 +3.68% | **5.3x** | 20D High | 62% |
-| DIVISLAB | 7,140.5 | 🟢 +4.45% | **4.0x** | 52W High | 27% |
-| ADANIGREEN | 1,606.3 | 🟢 +3.87% | **3.0x** | 52W High | 110% |
-| OIL | 438.9 | 🟢 +1.81% | **2.2x** | 20D High | 17% |
-| BLUESTARCO | 1,733.4 | 🟢 +1.01% | **1.9x** | 20D High | 20% |
-| GLENMARK | 2,310.3 | 🟢 +0.39% | **1.8x** | 20D High | 29% |
-| GODREJPROP | 2,108.5 | 🔴 -1.15% | **1.7x** | 20D High | 47% |
-| PHOENIXLTD | 2,129.7 | 🔴 -0.43% | **1.5x** | 52W High | 52% |
+| GROWW | 211.9 | 🟢 +4.00% | **6.7x** | 20D High | 89% |
+| HYUNDAI | 2,025.8 | 🟢 +3.37% | **5.5x** | 20D High | 22% |
+| MANKIND | 2,602.3 | 🟢 +2.81% | **4.1x** | 20D High | 36% |
+| UNIONBANK | 172.8 | 🟢 +1.26% | **3.5x** | 20D High | 43% |
+| SBICARD | 651.0 | 🟢 +5.22% | **2.8x** | 20D High | 15% |
+| KALYANKJIL | 542.4 | 🟢 +2.39% | **2.7x** | 20D High | 66% |
+| DIVISLAB | 7,311.0 | 🟢 +1.70% | **2.2x** | 52W High | 30% |
+| APOLLOHOSP | 8,975.5 | 🟢 +0.84% | **1.9x** | 52W High | 34% |
+| ULTRACEMCO | 11,781.0 | 🟢 +1.81% | **1.7x** | 20D High | 14% |
 
-## 📈 Other Breakouts (10)
-
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| TORNTPHARM | 4,996.7 | 🟢 +1.94% | **1.5x** | 52W High | 52% |
-| ADANIENSOL | 1,703.0 | 🟢 +3.55% | **1.1x** | 52W High | 129% |
-| LAURUSLABS | 1,566.1 | 🟢 +1.84% | **0.5x** | 52W High | 99% |
-| GROWW | 206.7 | 🔴 -0.72% | **1.2x** | 20D High | 85% |
-| COFORGE | 1,543.4 | 🟢 +0.16% | **1.1x** | 20D High | 53% |
-| MOTILALOFS | 970.8 | 🔴 -0.88% | **1.1x** | 20D High | 58% |
-| ONGC | 247.7 | 🔴 -0.31% | **1.1x** | 20D High | 13% |
-| TECHM | 1,496.7 | 🟢 +2.88% | **0.9x** | 20D High | 18% |
-| MPHASIS | 2,385.6 | 🔴 -0.20% | **0.7x** | 20D High | 22% |
-| PERSISTENT | 5,158.9 | 🔴 -0.65% | **0.7x** | 20D High | 22% |
-
-## 🔊 High RVOL (≥2x), No Breakout Yet (9)
+## 📈 Other Breakouts (9)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| SBICARD | 623.8 | 🟢 +0.82% | **6.1x** | — | 10% |
-| ALKEM | 5,640.5 | 🔴 -0.51% | **5.9x** | — | 20% |
-| BAJAJ-AUTO | 10,188.5 | 🔴 -1.85% | **3.2x** | — | 31% |
-| ADANIPOWER | 226.1 | 🟢 +4.93% | **2.7x** | — | 105% |
-| HCLTECH | 1,181.2 | 🔴 -3.28% | **2.7x** | — | 15% |
-| ICICIAMC | 3,165.5 | 🔴 -1.25% | **2.3x** | — | 26% |
-| TCS | 2,186.0 | 🟢 +0.21% | **2.1x** | — | 11% |
-| LTF | 312.8 | 🔴 -3.66% | **2.1x** | — | 63% |
-| HINDPETRO | 384.0 | 🔴 -2.86% | **2.0x** | — | 21% |
+| SUNPHARMA | 1,958.9 | 🟢 +0.84% | **1.3x** | 52W High | 28% |
+| TORNTPHARM | 4,986.9 | 🟢 +0.72% | **1.3x** | 52W High | 49% |
+| PAYTM | 1,358.8 | 🔴 -2.00% | **1.0x** | 52W High | 46% |
+| LAURUSLABS | 1,558.7 | 🔴 -0.13% | **0.7x** | 52W High | 93% |
+| CONCOR | 491.1 | 🔴 -0.41% | **1.0x** | 20D High | 17% |
+| SBILIFE | 1,860.0 | 🟢 +0.22% | **0.9x** | 20D High | 9% |
+| BLUESTARCO | 1,753.1 | 🟢 +0.40% | **0.7x** | 20D High | 21% |
+| SHREECEM | 26,800.0 | 🟢 +1.44% | **0.5x** | 20D High | 19% |
+| COROMANDEL | 2,071.8 | 🟢 +0.57% | **0.4x** | 20D High | 21% |
+
+## 🔊 High RVOL (≥2x), No Breakout Yet (5)
+
+| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
+|---|---:|---:|---:|---|---:|
+| PATANJALI | 341.4 | 🔴 -16.23% | **43.7x** | — | 4% |
+| TATAELXSI | 3,515.4 | 🔴 -8.06% | **6.0x** | — | 1% |
+| ABB | 7,200.0 | 🟢 +4.47% | **2.8x** | — | 56% |
+| AXISBANK | 1,321.2 | 🟢 +0.27% | **2.1x** | — | 27% |
+| PIDILITIND | 1,582.1 | 🟢 +0.09% | **2.0x** | — | 26% |
