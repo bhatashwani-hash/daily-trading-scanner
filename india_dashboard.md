@@ -1,44 +1,47 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Wednesday, July 15, 2026 12:29 PM IST  
-**Market status:** market OPEN — intraday scan, 52% of session elapsed (RVOL is pace-adjusted)  
+**Run time:** Thursday, July 16, 2026 12:39 PM IST  
+**Market status:** market OPEN — intraday scan, 55% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (9)
+## 🚀 High RVOL + Breakout (10)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| GROWW | 211.9 | 🟢 +4.00% | **6.7x** | 20D High | 89% |
-| HYUNDAI | 2,025.8 | 🟢 +3.37% | **5.5x** | 20D High | 22% |
-| MANKIND | 2,602.3 | 🟢 +2.81% | **4.1x** | 20D High | 36% |
-| UNIONBANK | 172.8 | 🟢 +1.26% | **3.5x** | 20D High | 43% |
-| SBICARD | 651.0 | 🟢 +5.22% | **2.8x** | 20D High | 15% |
-| KALYANKJIL | 542.4 | 🟢 +2.39% | **2.7x** | 20D High | 66% |
-| DIVISLAB | 7,311.0 | 🟢 +1.70% | **2.2x** | 52W High | 30% |
-| APOLLOHOSP | 8,975.5 | 🟢 +0.84% | **1.9x** | 52W High | 34% |
-| ULTRACEMCO | 11,781.0 | 🟢 +1.81% | **1.7x** | 20D High | 14% |
+| ABB | 7,789.0 | 🟢 +13.02% | **14.0x** | 52W High | 69% |
+| SIEMENS | 3,708.8 | 🟢 +5.65% | **6.1x** | 20D High | 31% |
+| SRF | 2,879.0 | 🟢 +4.89% | **5.4x** | 20D High | 22% |
+| DIXON | 14,523.0 | 🟢 +8.66% | **5.0x** | 20D High | 51% |
+| GROWW | 211.4 | 🟢 +3.73% | **2.9x** | 20D High | 89% |
+| DIVISLAB | 7,371.5 | 🟢 +2.55% | **2.0x** | 52W High | 31% |
+| KALYANKJIL | 543.8 | 🔴 -0.79% | **1.8x** | 20D High | 66% |
+| HYUNDAI | 2,048.0 | 🟢 +2.25% | **1.7x** | 20D High | 24% |
+| UPL | 622.0 | 🟢 +4.14% | **1.6x** | 20D High | 10% |
+| BIOCON | 443.1 | 🟢 +1.96% | **1.5x** | 52W High | 34% |
 
-## 📈 Other Breakouts (9)
-
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| SUNPHARMA | 1,958.9 | 🟢 +0.84% | **1.3x** | 52W High | 28% |
-| TORNTPHARM | 4,986.9 | 🟢 +0.72% | **1.3x** | 52W High | 49% |
-| PAYTM | 1,358.8 | 🔴 -2.00% | **1.0x** | 52W High | 46% |
-| LAURUSLABS | 1,558.7 | 🔴 -0.13% | **0.7x** | 52W High | 93% |
-| CONCOR | 491.1 | 🔴 -0.41% | **1.0x** | 20D High | 17% |
-| SBILIFE | 1,860.0 | 🟢 +0.22% | **0.9x** | 20D High | 9% |
-| BLUESTARCO | 1,753.1 | 🟢 +0.40% | **0.7x** | 20D High | 21% |
-| SHREECEM | 26,800.0 | 🟢 +1.44% | **0.5x** | 20D High | 19% |
-| COROMANDEL | 2,071.8 | 🟢 +0.57% | **0.4x** | 20D High | 21% |
-
-## 🔊 High RVOL (≥2x), No Breakout Yet (5)
+## 📈 Other Breakouts (10)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| PATANJALI | 341.4 | 🔴 -16.23% | **43.7x** | — | 4% |
-| TATAELXSI | 3,515.4 | 🔴 -8.06% | **6.0x** | — | 1% |
-| ABB | 7,200.0 | 🟢 +4.47% | **2.8x** | — | 56% |
-| AXISBANK | 1,321.2 | 🟢 +0.27% | **2.1x** | — | 27% |
-| PIDILITIND | 1,582.1 | 🟢 +0.09% | **2.0x** | — | 26% |
+| ADANIENSOL | 1,719.2 | 🟢 +1.71% | **1.5x** | 52W High | 131% |
+| BHEL | 418.6 | 🟢 +3.64% | **1.3x** | 52W High | 104% |
+| TORNTPHARM | 4,986.9 | 🔴 -0.62% | **0.9x** | 52W High | 47% |
+| LUPIN | 2,508.5 | 🟢 +1.59% | **0.7x** | 52W High | 37% |
+| TECHM | 1,518.9 | 🟢 +2.33% | **1.4x** | 20D High | 19% |
+| TCS | 2,225.5 | 🟢 +1.66% | **1.1x** | 20D High | 13% |
+| ULTRACEMCO | 11,867.0 | 🟢 +0.47% | **1.1x** | 20D High | 15% |
+| SBILIFE | 1,827.6 | 🔴 -0.69% | **1.0x** | 20D High | 7% |
+| SHREECEM | 27,070.0 | 🟢 +3.01% | **0.6x** | 20D High | 20% |
+| BLUESTARCO | 1,739.1 | 🔴 -0.41% | **0.5x** | 20D High | 20% |
+
+## 🔊 High RVOL (≥2x), No Breakout Yet (6)
+
+| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
+|---|---:|---:|---:|---|---:|
+| ICICIGI | 1,603.0 | 🔴 -10.35% | **26.3x** | — | 4% |
+| HDFCAMC | 2,601.5 | 🔴 -4.68% | **4.5x** | — | 21% |
+| HDFCLIFE | 567.2 | 🔴 -0.27% | **2.8x** | — | 5% |
+| SWIGGY | 278.4 | 🟢 +3.09% | **2.7x** | — | 18% |
+| PATANJALI | 346.5 | 🔴 -0.42% | **2.7x** | — | 6% |
+| INDHOTEL | 738.3 | 🟢 +0.69% | **2.1x** | — | 31% |
