@@ -1,40 +1,44 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Friday, July 17, 2026 12:33 PM IST  
-**Market status:** market OPEN — intraday scan, 53% of session elapsed (RVOL is pace-adjusted)  
-**Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
+**Run time:** Monday, July 20, 2026 01:15 PM IST  
+**Market status:** market OPEN — intraday scan, 64% of session elapsed (RVOL is pace-adjusted)  
+**Universe:** embedded liquid-stock list (160 names) · 157 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (7)
+## 🚀 High RVOL + Breakout (3)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| JIOFIN | 243.9 | 🟢 +3.52% | **11.3x** | 20D High | 9% |
-| TECHM | 1,558.5 | 🟢 +3.99% | **5.2x** | 20D High | 23% |
-| EXIDEIND | 430.6 | 🟢 +2.22% | **4.3x** | 52W High | 51% |
-| BHEL | 428.2 | 🔴 -1.34% | **3.9x** | 52W High | 109% |
-| BAJFINANCE | 1,052.2 | 🟢 +1.41% | **1.8x** | 20D High | 34% |
-| ADANIENSOL | 1,739.9 | 🟢 +3.69% | **1.7x** | 52W High | 134% |
-| KALYANKJIL | 560.3 | 🟢 +2.51% | **1.5x** | 20D High | 71% |
+| PNB | 111.0 | 🟢 +4.96% | **8.8x** | 20D High | 16% |
+| COLPAL | 2,118.2 | 🟢 +3.71% | **2.8x** | 20D High | 20% |
+| ICICIBANK | 1,453.6 | 🟢 +0.64% | **2.1x** | 20D High | 22% |
 
-## 📈 Other Breakouts (5)
+## 📈 Other Breakouts (12)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| BAJAJ-AUTO | 10,409.5 | 🟢 +0.84% | **1.2x** | 20D High | 34% |
-| TCS | 2,260.9 | 🟢 +2.72% | **1.0x** | 20D High | 15% |
-| INFY | 1,102.2 | 🟢 +1.83% | **0.9x** | 20D High | 12% |
-| UPL | 614.1 | 🔴 -0.93% | **0.7x** | 20D High | 10% |
-| ICICIBANK | 1,439.4 | 🟢 +1.49% | **0.7x** | 20D High | 21% |
+| RADICO | 4,150.0 | 🟢 +1.27% | **1.4x** | 52W High | 66% |
+| EXIDEIND | 438.5 | 🟢 +0.76% | **1.2x** | 52W High | 54% |
+| OFSS | 11,634.0 | 🔴 -1.16% | **0.9x** | 52W High | 92% |
+| DIVISLAB | 7,408.5 | 🟢 +2.22% | **0.9x** | 52W High | 31% |
+| IDFCFIRSTB | 81.9 | 🟢 +1.93% | **1.3x** | 20D High | 41% |
+| RELIANCE | 1,331.2 | 🟢 +0.30% | **1.3x** | 20D High | 6% |
+| MPHASIS | 2,426.9 | 🟢 +1.37% | **1.3x** | 20D High | 24% |
+| BAJFINANCE | 1,058.6 | 🟢 +0.22% | **1.2x** | 20D High | 35% |
+| TECHM | 1,584.3 | 🟢 +0.72% | **0.9x** | 20D High | 25% |
+| ONGC | 251.0 | 🟢 +1.50% | **0.8x** | 20D High | 14% |
+| BAJAJ-AUTO | 10,453.0 | 🟢 +0.10% | **0.8x** | 20D High | 35% |
+| TCS | 2,257.6 | 🔴 -0.50% | **0.4x** | 20D High | 15% |
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (7)
+## 🔊 High RVOL (≥2x), No Breakout Yet (6)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| 360ONE | 1,105.7 | 🟢 +2.26% | **5.1x** | — | 23% |
-| ICICIGI | 1,597.5 | 🔴 -1.62% | **3.4x** | — | 3% |
-| PFC | 401.8 | 🔴 -0.96% | **3.0x** | — | 24% |
-| DLF | 667.8 | 🟢 +3.04% | **2.9x** | — | 36% |
-| ADANIGREEN | 1,527.7 | 🔴 -1.04% | **2.8x** | — | 100% |
-| POLYCAB | 8,861.0 | 🔴 -3.84% | **2.3x** | — | 34% |
-| HDFCAMC | 2,651.9 | 🟢 +1.91% | **2.0x** | — | 23% |
+| AXISBANK | 1,254.7 | 🔴 -5.56% | **5.0x** | — | 20% |
+| BATAINDIA | 704.0 | 🟢 +1.53% | **3.2x** | — | 16% |
+| JSWENERGY | 563.6 | 🟢 +4.14% | **2.3x** | — | 32% |
+| GLENMARK | 2,244.4 | 🟢 +0.40% | **2.2x** | — | 25% |
+| JSWSTEEL | 1,259.6 | 🟢 +1.80% | **2.1x** | — | 25% |
+| HDFCBANK | 780.5 | 🔴 -4.77% | **2.0x** | — | 9% |
+
+**No data (3):** ITC, LTIM, TATAMOTORS
