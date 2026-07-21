@@ -1,44 +1,50 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Monday, July 20, 2026 01:15 PM IST  
-**Market status:** market OPEN — intraday scan, 64% of session elapsed (RVOL is pace-adjusted)  
-**Universe:** embedded liquid-stock list (160 names) · 157 scanned  
+**Run time:** Tuesday, July 21, 2026 12:49 PM IST  
+**Market status:** market OPEN — intraday scan, 57% of session elapsed (RVOL is pace-adjusted)  
+**Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (3)
+## 🚀 High RVOL + Breakout (7)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| PNB | 111.0 | 🟢 +4.96% | **8.8x** | 20D High | 16% |
-| COLPAL | 2,118.2 | 🟢 +3.71% | **2.8x** | 20D High | 20% |
-| ICICIBANK | 1,453.6 | 🟢 +0.64% | **2.1x** | 20D High | 22% |
+| ULTRACEMCO | 12,022.0 | 🟢 +1.00% | **4.1x** | 20D High | 16% |
+| UNIONBANK | 176.5 | 🟢 +0.35% | **2.3x** | 20D High | 46% |
+| INDUSINDBK | 1,057.0 | 🟢 +2.90% | **2.2x** | 52W High | 49% |
+| EXIDEIND | 445.4 | 🟢 +1.99% | **1.9x** | 52W High | 56% |
+| NHPC | 81.1 | 🟢 +0.17% | **1.7x** | 20D High | 13% |
+| PNB | 112.0 | 🟢 +0.24% | **1.6x** | 20D High | 17% |
+| BANKINDIA | 146.6 | 🔴 -0.27% | **1.5x** | 20D High | 39% |
 
-## 📈 Other Breakouts (12)
-
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| RADICO | 4,150.0 | 🟢 +1.27% | **1.4x** | 52W High | 66% |
-| EXIDEIND | 438.5 | 🟢 +0.76% | **1.2x** | 52W High | 54% |
-| OFSS | 11,634.0 | 🔴 -1.16% | **0.9x** | 52W High | 92% |
-| DIVISLAB | 7,408.5 | 🟢 +2.22% | **0.9x** | 52W High | 31% |
-| IDFCFIRSTB | 81.9 | 🟢 +1.93% | **1.3x** | 20D High | 41% |
-| RELIANCE | 1,331.2 | 🟢 +0.30% | **1.3x** | 20D High | 6% |
-| MPHASIS | 2,426.9 | 🟢 +1.37% | **1.3x** | 20D High | 24% |
-| BAJFINANCE | 1,058.6 | 🟢 +0.22% | **1.2x** | 20D High | 35% |
-| TECHM | 1,584.3 | 🟢 +0.72% | **0.9x** | 20D High | 25% |
-| ONGC | 251.0 | 🟢 +1.50% | **0.8x** | 20D High | 14% |
-| BAJAJ-AUTO | 10,453.0 | 🟢 +0.10% | **0.8x** | 20D High | 35% |
-| TCS | 2,257.6 | 🔴 -0.50% | **0.4x** | 20D High | 15% |
-
-## 🔊 High RVOL (≥2x), No Breakout Yet (6)
+## 📈 Other Breakouts (19)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| AXISBANK | 1,254.7 | 🔴 -5.56% | **5.0x** | — | 20% |
-| BATAINDIA | 704.0 | 🟢 +1.53% | **3.2x** | — | 16% |
-| JSWENERGY | 563.6 | 🟢 +4.14% | **2.3x** | — | 32% |
-| GLENMARK | 2,244.4 | 🟢 +0.40% | **2.2x** | — | 25% |
-| JSWSTEEL | 1,259.6 | 🟢 +1.80% | **2.1x** | — | 25% |
-| HDFCBANK | 780.5 | 🔴 -4.77% | **2.0x** | — | 9% |
+| LUPIN | 2,514.0 | 🟢 +2.90% | **0.9x** | 52W High | 38% |
+| FEDERALBNK | 353.8 | 🟢 +0.87% | **0.8x** | 52W High | 92% |
+| SOLARINDS | 18,923.0 | 🟢 +2.47% | **0.7x** | 52W High | 62% |
+| LAURUSLABS | 1,590.0 | 🟢 +1.99% | **0.7x** | 52W High | 97% |
+| SUNPHARMA | 1,964.3 | 🟢 +1.64% | **0.6x** | 52W High | 28% |
+| TITAN | 4,673.1 | 🟢 +0.75% | **0.5x** | 52W High | 42% |
+| COLPAL | 2,094.9 | 🟢 +2.57% | **1.2x** | 20D High | 19% |
+| TECHM | 1,581.1 | 🟢 +0.52% | **1.2x** | 20D High | 24% |
+| SRF | 2,959.0 | 🟢 +3.04% | **1.1x** | 20D High | 26% |
+| AMBUJACEM | 441.6 | 🟢 +0.71% | **1.0x** | 20D High | 13% |
+| BAJAJ-AUTO | 10,517.5 | 🔴 -0.05% | **1.0x** | 20D High | 36% |
+| SBIN | 1,050.6 | 🔴 -0.89% | **0.9x** | 20D High | 36% |
+| HCLTECH | 1,234.4 | 🟢 +1.07% | **0.9x** | 20D High | 21% |
+| BAJFINANCE | 1,066.1 | 🟢 +0.93% | **0.8x** | 20D High | 36% |
+| BPCL | 318.9 | 🟢 +0.39% | **0.8x** | 20D High | 20% |
+| IDFCFIRSTB | 82.0 | 🟢 +0.23% | **0.8x** | 20D High | 41% |
+| SHREECEM | 26,950.0 | 🟢 +1.64% | **0.5x** | 20D High | 20% |
+| PERSISTENT | 5,194.5 | 🟢 +0.20% | **0.5x** | 20D High | 22% |
+| BRITANNIA | 5,448.5 | 🟢 +0.67% | **0.3x** | 20D High | 8% |
 
-**No data (3):** ITC, LTIM, TATAMOTORS
+## 🔊 High RVOL (≥2x), No Breakout Yet (3)
+
+| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
+|---|---:|---:|---:|---|---:|
+| PAYTM | 1,317.1 | 🔴 -2.29% | **4.4x** | — | 42% |
+| AXISBANK | 1,253.1 | 🔴 -0.23% | **2.4x** | — | 20% |
+| BAJAJHLDNG | 10,419.0 | 🟢 +0.20% | **2.1x** | — | 23% |
