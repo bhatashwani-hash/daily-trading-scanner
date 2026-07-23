@@ -1,45 +1,47 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Wednesday, July 22, 2026 12:50 PM IST  
-**Market status:** market OPEN — intraday scan, 58% of session elapsed (RVOL is pace-adjusted)  
+**Run time:** Thursday, July 23, 2026 12:48 PM IST  
+**Market status:** market OPEN — intraday scan, 57% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (7)
+## 🚀 High RVOL + Breakout (5)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| M&MFIN | 376.2 | 🟢 +7.53% | **13.2x** | 20D High | 56% |
-| BAJAJ-AUTO | 10,908.0 | 🟢 +4.85% | **4.6x** | 52W High | 41% |
-| NESTLEIND | 1,484.5 | 🟢 +2.64% | **4.5x** | 52W High | 38% |
-| TVSMOTOR | 3,928.1 | 🟢 +3.59% | **4.2x** | 52W High | 44% |
-| JSWSTEEL | 1,267.8 | 🟢 +0.86% | **3.6x** | 20D High | 25% |
-| HAL | 4,611.2 | 🟢 +0.64% | **1.8x** | 20D High | 33% |
-| INDUSINDBK | 1,068.2 | 🟢 +0.45% | **1.6x** | 52W High | 51% |
+| HEROMOTOCO | 5,175.0 | 🟢 +3.77% | **2.7x** | 20D High | 26% |
+| UNITDSPR | 1,412.8 | 🟢 +0.61% | **2.5x** | 20D High | 18% |
+| BAJAJ-AUTO | 11,280.0 | 🟢 +2.56% | **2.5x** | 52W High | 46% |
+| JSWSTEEL | 1,246.7 | 🔴 -1.63% | **2.1x** | 20D High | 23% |
+| OIL | 457.4 | 🟢 +1.39% | **1.5x** | 20D High | 22% |
 
-## 📈 Other Breakouts (15)
+## 📈 Other Breakouts (11)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| TITAN | 4,713.4 | 🟢 +0.53% | **1.3x** | 52W High | 43% |
-| ABCAPITAL | 405.4 | 🔴 -0.90% | **1.2x** | 52W High | 67% |
-| NYKAA | 326.5 | 🔴 -0.44% | **1.0x** | 52W High | 63% |
-| SOLARINDS | 18,957.0 | 🔴 -0.37% | **0.6x** | 52W High | 63% |
-| LAURUSLABS | 1,580.4 | 🟢 +1.38% | **0.6x** | 52W High | 95% |
-| FEDERALBNK | 354.6 | 🔴 -0.41% | **0.4x** | 52W High | 93% |
-| HEROMOTOCO | 5,015.4 | 🔴 -0.37% | **1.5x** | 20D High | 22% |
-| ULTRACEMCO | 11,996.0 | 🟢 +0.78% | **1.1x** | 20D High | 16% |
-| KALYANKJIL | 596.0 | 🟢 +3.28% | **1.0x** | 20D High | 82% |
-| BPCL | 318.1 | 🟢 +0.17% | **0.9x** | 20D High | 19% |
-| M&M | 3,195.1 | 🔴 -0.21% | **0.8x** | 20D High | 11% |
-| ONGC | 251.7 | 🟢 +0.72% | **0.7x** | 20D High | 15% |
-| BRITANNIA | 5,486.5 | 🟢 +0.08% | **0.6x** | 20D High | 9% |
-| HCLTECH | 1,236.1 | 🔴 -0.27% | **0.5x** | 20D High | 21% |
-| SHREECEM | 26,750.0 | 🔴 -0.37% | **0.4x** | 20D High | 19% |
+| TVSMOTOR | 3,928.7 | 🟢 +0.54% | **1.4x** | 52W High | 44% |
+| BOSCHLTD | 42,225.0 | 🟢 +3.32% | **1.2x** | 52W High | 48% |
+| EXIDEIND | 446.2 | 🟢 +0.63% | **0.5x** | 52W High | 56% |
+| M&M | 3,237.2 | 🟢 +1.11% | **1.0x** | 20D High | 13% |
+| HAL | 4,559.6 | 🔴 -0.48% | **0.9x** | 20D High | 31% |
+| BRITANNIA | 5,451.0 | 🔴 -0.57% | **0.9x** | 20D High | 8% |
+| APLAPOLLO | 1,840.3 | 🟢 +0.95% | **0.7x** | 20D High | 24% |
+| EICHERMOT | 7,725.0 | 🟢 +0.46% | **0.7x** | 20D High | 46% |
+| ONGC | 253.4 | 🟢 +0.58% | **0.5x** | 20D High | 15% |
+| KALYANKJIL | 587.6 | 🔴 -1.43% | **0.5x** | 20D High | 80% |
+| HCLTECH | 1,240.3 | 🟢 +0.24% | **0.4x** | 20D High | 22% |
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (2)
+## 🔊 High RVOL (≥2x), No Breakout Yet (10)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| YESBANK | 23.4 | 🟢 +1.17% | **2.4x** | — | 36% |
-| GLENMARK | 2,206.8 | 🔴 -1.46% | **2.1x** | — | 23% |
+| OFSS | 10,620.0 | 🔴 -2.13% | **13.7x** | — | 75% |
+| SRF | 2,669.5 | 🔴 -6.90% | **5.5x** | — | 13% |
+| INDUSINDBK | 1,002.0 | 🔴 -6.29% | **3.9x** | — | 41% |
+| NHPC | 80.3 | 🟢 +0.01% | **3.8x** | — | 12% |
+| CIPLA | 1,385.4 | 🔴 -3.29% | **3.6x** | — | 20% |
+| DRREDDY | 1,156.0 | 🔴 -2.27% | **3.2x** | — | 5% |
+| ADANIGREEN | 1,399.8 | 🔴 -4.92% | **3.1x** | — | 83% |
+| HINDPETRO | 379.2 | 🔴 -4.05% | **2.8x** | — | 20% |
+| VMM | 107.5 | 🔴 -4.04% | **2.6x** | — | 9% |
+| ETERNAL | 289.1 | 🟢 +1.67% | **2.5x** | — | 36% |
