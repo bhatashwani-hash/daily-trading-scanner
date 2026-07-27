@@ -1,35 +1,44 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Friday, July 24, 2026 12:47 PM IST  
-**Market status:** market OPEN — intraday scan, 57% of session elapsed (RVOL is pace-adjusted)  
+**Run time:** Monday, July 27, 2026 01:36 PM IST  
+**Market status:** market OPEN — intraday scan, 70% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (1)
+## 🚀 High RVOL + Breakout (5)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| UNITDSPR | 1,477.2 | 🟢 +5.20% | **6.1x** | 52W High | 23% |
+| IDFCFIRSTB | 85.0 | 🟢 +5.25% | **11.6x** | 52W High | 46% |
+| GODFRYPHLP | 2,204.8 | 🟢 +3.53% | **8.3x** | 20D High | 20% |
+| CONCOR | 510.7 | 🟢 +6.94% | **6.5x** | 20D High | 21% |
+| LAURUSLABS | 1,708.0 | 🟢 +6.67% | **2.9x** | 52W High | 111% |
+| SUNPHARMA | 1,969.7 | 🟢 +1.47% | **2.9x** | 52W High | 28% |
 
-## 📈 Other Breakouts (3)
-
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| PIIND | 2,766.6 | 🟢 +0.88% | **1.1x** | 20D High | 9% |
-| HCLTECH | 1,259.1 | 🟢 +1.16% | **0.9x** | 20D High | 23% |
-| OIL | 453.0 | 🔴 -1.26% | **0.9x** | 20D High | 21% |
-
-## 🔊 High RVOL (≥2x), No Breakout Yet (10)
+## 📈 Other Breakouts (15)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| MOTILALOFS | 865.8 | 🔴 -8.20% | **28.3x** | — | 41% |
-| MPHASIS | 2,250.8 | 🔴 -1.01% | **4.5x** | — | 15% |
-| INDIGO | 4,967.5 | 🔴 -1.11% | **3.6x** | — | 28% |
-| CIPLA | 1,418.3 | 🟢 +0.23% | **3.3x** | — | 23% |
-| BAJFINANCE | 1,011.3 | 🔴 -2.74% | **2.9x** | — | 29% |
-| INFY | 1,029.4 | 🔴 -1.72% | **2.8x** | — | 5% |
-| SWIGGY | 248.8 | 🔴 -4.89% | **2.5x** | — | 6% |
-| ITC | 284.4 | 🟢 +1.10% | **2.4x** | — | 3% |
-| SRF | 2,696.0 | 🟢 +2.79% | **2.4x** | — | 14% |
-| DRREDDY | 1,151.5 | 🔴 -1.27% | **2.1x** | — | 5% |
+| DIVISLAB | 7,432.5 | 🟢 +2.54% | **1.4x** | 52W High | 32% |
+| RADICO | 4,136.5 | 🟢 +1.10% | **1.4x** | 52W High | 66% |
+| UNITDSPR | 1,492.9 | 🟢 +1.75% | **1.2x** | 52W High | 24% |
+| PIDILITIND | 1,607.6 | 🟢 +2.34% | **1.2x** | 52W High | 29% |
+| FEDERALBNK | 355.4 | 🟢 +0.30% | **0.7x** | 52W High | 93% |
+| LENSKART | 569.4 | 🟢 +2.43% | **0.7x** | 52W High | 60% |
+| HAL | 4,626.9 | 🟢 +1.17% | **1.1x** | 20D High | 33% |
+| COLPAL | 2,134.3 | 🟢 +2.31% | **1.1x** | 20D High | 21% |
+| TCS | 2,295.4 | 🟢 +1.82% | **0.9x** | 20D High | 17% |
+| HCLTECH | 1,295.6 | 🟢 +1.94% | **0.9x** | 20D High | 27% |
+| HAVELLS | 1,231.1 | 🟢 +0.34% | **0.6x** | 20D High | 10% |
+| PERSISTENT | 5,267.8 | 🟢 +1.65% | **0.6x** | 20D High | 25% |
+| APLAPOLLO | 1,850.0 | 🟢 +1.49% | **0.5x** | 20D High | 24% |
+| EICHERMOT | 7,780.0 | 🟢 +1.99% | **0.5x** | 20D High | 47% |
+| ASTRAL | 1,462.7 | 🔴 -0.37% | **0.4x** | 20D High | 16% |
+
+## 🔊 High RVOL (≥2x), No Breakout Yet (3)
+
+| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
+|---|---:|---:|---:|---|---:|
+| AUBANK | 1,050.5 | 🟢 +4.63% | **3.0x** | — | 54% |
+| BANKINDIA | 137.2 | 🔴 -3.81% | **2.6x** | — | 30% |
+| JINDALSTEL | 1,063.2 | 🟢 +2.65% | **2.6x** | — | 13% |
