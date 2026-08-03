@@ -1,111 +1,113 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Friday, July 31, 2026 05:45 PM IST  
-**Market status:** market CLOSED — full-day data from the last session  
+**Run time:** Monday, August 03, 2026 01:33 PM IST  
+**Market status:** market OPEN — 69% of session elapsed (RVOL pace-adjusted)  
 **Universe:** Nifty 500 (NSE constituents file) · 500 stocks with usable data  
 
 > **Strategy (calibrated on this universe):** high-energy names (typical ATR ≥3%/day)
 > showing volume-surge ignition (RVOL ≥2.5x on an up day), plus trend, levels
 > (20-day-high break, 52-week-high proximity) and accumulation.
-> **Self-check (past 1y, matched base rate 16%):** ignition days hit +10% within 10 sessions **27%** of the time (407/1531, **1.66x lift**); inside an uptrend 28% (207/743, 1.74x).
+> **Self-check (past 1y, matched base rate 16%):** ignition days hit +10% within 10 sessions **27%** of the time (401/1511, **1.65x lift**); inside an uptrend 27% (202/736, 1.71x).
 > Entry idea: buy strength through the Trigger (prior 20-day high) with volume;
 > stop ≈ −4%; target +10%. Not investment advice.
 
-<details><summary>Signal research: hit rate of each candidate signal (past 1y, +10% within 10 sessions, matched base 16.0%)</summary>
+<details><summary>Signal research: hit rate of each candidate signal (past 1y, +10% within 10 sessions, matched base 16.1%)</summary>
 
 | Signal | Days | Hits | Hit rate | Lift |
 |---|---:|---:|---:|---:|
-| ignition (hi-ATR + rvol>=2.5 up) | 1531 | 407 | 26.6% | 1.66x |
-| ignition + uptrend | 743 | 207 | 27.9% | 1.74x |
-| coil | 2395 | 322 | 13.4% | 0.84x |
-| coil+breakout | 162 | 19 | 11.7% | 0.73x |
-| rvol>=2.5 up day | 3674 | 693 | 18.9% | 1.18x |
-| rvol>=2.5 up + uptrend | 1712 | 327 | 19.1% | 1.19x |
-| rvol>=2 breakout | 1912 | 354 | 18.5% | 1.15x |
-| near 52w-high + rvol>=2 | 1957 | 311 | 15.9% | 0.99x |
-| accumulation>=1.6 | 32491 | 5278 | 16.2% | 1.01x |
-| squeeze p<=10 alone | 8969 | 1086 | 12.1% | 0.75x |
-| high-ATR name (>=3%) | 32495 | 7821 | 24.1% | 1.5x |
+| ignition (hi-ATR + rvol>=2.5 up) | 1511 | 401 | 26.5% | 1.65x |
+| ignition + uptrend | 736 | 202 | 27.5% | 1.71x |
+| coil | 2375 | 317 | 13.4% | 0.83x |
+| coil+breakout | 163 | 19 | 11.7% | 0.72x |
+| rvol>=2.5 up day | 3643 | 691 | 19.0% | 1.18x |
+| rvol>=2.5 up + uptrend | 1689 | 321 | 19.0% | 1.18x |
+| rvol>=2 breakout | 1899 | 353 | 18.6% | 1.16x |
+| near 52w-high + rvol>=2 | 1965 | 312 | 15.9% | 0.99x |
+| accumulation>=1.6 | 32226 | 5265 | 16.3% | 1.02x |
+| squeeze p<=10 alone | 8781 | 1062 | 12.1% | 0.75x |
+| high-ATR name (>=3%) | 32159 | 7778 | 24.2% | 1.5x |
 
 </details>
 
-## 🔥 READY (11) — setup complete — watch the trigger
+## 🔥 READY (13) — setup complete — watch the trigger
 
 | Stock | Price ₹ | Score | RVOL | Squeeze | To 20D Hi | Trigger ₹ | Why |
 |---|---:|---:|---:|---:|---:|---:|---|
-| **ZEEL** | 114.6 | **81** | 3.1x | p52 | -0.7% | 113.7 | high-energy name (typical ATR 3.5%/day); ignition: volume 3.1x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **THELEELA** | 494.6 | **80** | 7.1x | p33 | +3.0% | 509.4 | high-energy name (typical ATR 3.4%/day); ignition: volume 7.1x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **NETWEB** | 4,524.0 | **77** | 5.6x | p3 | +0.4% | 4,544.0 | very high-energy name (typical ATR 5.0%/day); ignition: volume 5.6x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **CONCORDBIO** | 1,420.8 | **76** | 5.8x | p54 | -4.0% | 1,363.6 | high-energy name (typical ATR 3.5%/day); ignition: volume 5.8x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **BAJFINANCE** | 1,141.2 | **74** | 4.9x | p60 | -5.8% | 1,074.4 | ignition: volume 4.9x average on an up day; uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
-| **BALKRISIND** | 2,473.5 | **73** | 9.1x | p92 | -5.6% | 2,336.0 | energetic name (typical ATR 2.8%/day); ignition: volume 9.1x average on an up day; price above a rising 50-DMA |
-| **REDINGTON** | 321.6 | **73** | 4.7x | p75 | +5.2% | 338.5 | high-energy name (typical ATR 3.6%/day); ignition: volume 4.7x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **NIVABUPA** | 87.0 | **72** | 11.7x | p7 | +3.0% | 89.7 | energetic name (typical ATR 2.6%/day); ignition: volume 11.7x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **GAIL** | 181.4 | **71** | 5.5x | p29 | -2.5% | 177.0 | ignition: volume 5.5x average on an up day; uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
-| **BLUEJET** | 626.2 | **71** | 2.2x | p22 | +0.6% | 630.0 | very high-energy name (typical ATR 4.2%/day); volume 2.2x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **HYUNDAI** | 2,180.7 | **70** | 8.5x | p61 | -5.3% | 2,064.8 | energetic name (typical ATR 2.8%/day); ignition: volume 8.5x average on an up day; price above a rising 50-DMA |
+| **REDINGTON** | 350.9 | **88** | 8.7x | p88 | -3.5% | 338.5 | high-energy name (typical ATR 3.6%/day); ignition: volume 8.7x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **THELEELA** | 507.9 | **83** | 6.4x | p35 | +0.3% | 509.4 | high-energy name (typical ATR 3.4%/day); ignition: volume 6.4x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **NETWEB** | 4,645.0 | **81** | 2.8x | p14 | -1.0% | 4,598.0 | very high-energy name (typical ATR 4.9%/day); ignition: volume 2.8x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **BALRAMCHIN** | 630.0 | **79** | 3.9x | p67 | +1.9% | 642.0 | high-energy name (typical ATR 3.1%/day); ignition: volume 3.8x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **URBANCO** | 145.3 | **78** | 62.4x | p21 | -3.5% | 140.2 | high-energy name (typical ATR 3.9%/day); ignition: volume 62.4x average on an up day; price above a rising 50-DMA |
+| **MINDACORP** | 731.4 | **78** | 3.2x | p41 | -2.7% | 711.5 | high-energy name (typical ATR 3.2%/day); ignition: volume 3.2x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **INDGN** | 543.2 | **77** | 10.0x | p61 | -1.2% | 536.5 | energetic name (typical ATR 2.7%/day); ignition: volume 10.0x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **TBOTEK** | 1,616.5 | **75** | 6.9x | p33 | -3.8% | 1,555.0 | high-energy name (typical ATR 3.8%/day); ignition: volume 6.9x average on an up day; price above a rising 50-DMA |
+| **APARINDS** | 14,820.0 | **75** | 2.6x | p13 | -0.0% | 14,815.0 | high-energy name (typical ATR 3.9%/day); ignition: volume 2.6x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **ABCAPITAL** | 423.3 | **74** | 4.9x | p32 | -2.8% | 411.4 | energetic name (typical ATR 2.8%/day); ignition: volume 4.9x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **TMCV** | 450.9 | **74** | 2.9x | p15 | -2.3% | 440.6 | high-energy name (typical ATR 3.7%/day); ignition: volume 2.9x average on an up day; price above a rising 50-DMA |
+| **LTM** | 4,708.4 | **70** | 4.0x | p90 | -4.0% | 4,518.7 | energetic name (typical ATR 2.9%/day); ignition: volume 4.0x average on an up day; price above a rising 50-DMA |
+| **DIVISLAB** | 8,454.0 | **70** | 3.8x | p100 | -4.3% | 8,090.0 | ignition: volume 3.8x average on an up day; uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
 
-## 🌱 SETUP (26) — base forming — needs confirmation
-
-| Stock | Price ₹ | Score | RVOL | Squeeze | To 20D Hi | Trigger ₹ | Why |
-|---|---:|---:|---:|---:|---:|---:|---|
-| **ESCORTS** | 3,086.0 | **66** | 3.4x | p7 | -1.5% | 3,039.9 | energetic name (typical ATR 2.8%/day); ignition: volume 3.4x average on an up day; price above a rising 50-DMA |
-| **LTFOODS** | 410.4 | **66** | 3.1x | p29 | -1.7% | 403.4 | high-energy name (typical ATR 3.0%/day); ignition: volume 3.1x average on an up day; breaking the 20-day high NOW |
-| **SCHNEIDER** | 1,355.3 | **66** | 2.9x | p52 | +14.2% | 1,548.0 | very high-energy name (typical ATR 4.4%/day); ignition: volume 2.9x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **KAYNES** | 3,804.6 | **66** | 2.4x | p58 | -1.9% | 3,732.9 | high-energy name (typical ATR 3.7%/day); volume 2.4x average on an up day; price above a rising 50-DMA |
-| **AARTIIND** | 489.1 | **65** | 14.6x | p33 | +4.5% | 510.9 | energetic name (typical ATR 2.9%/day); ignition: volume 14.6x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **ABCAPITAL** | 404.3 | **65** | 3.2x | p6 | +1.8% | 411.4 | energetic name (typical ATR 2.8%/day); ignition: volume 3.2x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **EMCURE** | 1,960.1 | **65** | 1.9x | p60 | -0.0% | 1,960.0 | high-energy name (typical ATR 3.4%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
-| **TMCV** | 436.8 | **63** | 3.2x | p2 | +2.3% | 446.8 | high-energy name (typical ATR 3.7%/day); ignition: volume 3.2x average on an up day; price above a rising 50-DMA |
-| **DEEPAKFERT** | 1,552.8 | **63** | 3.1x | p9 | +8.2% | 1,680.0 | high-energy name (typical ATR 3.3%/day); ignition: volume 3.1x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **TBOTEK** | 1,531.2 | **63** | 3.1x | p14 | +1.6% | 1,555.0 | high-energy name (typical ATR 3.8%/day); ignition: volume 3.1x average on an up day; price above a rising 50-DMA |
-| **RAINBOW** | 1,525.4 | **63** | 2.3x | p33 | +0.6% | 1,535.0 | energetic name (typical ATR 2.5%/day); volume 2.3x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **LLOYDSME** | 2,047.0 | **63** | 1.5x | p84 | +0.9% | 2,066.0 | high-energy name (typical ATR 3.2%/day); uptrend: price > rising 50-DMA > 200-DMA; 0.9% under the 20-day high |
-| **INDGN** | 515.2 | **62** | 5.7x | p37 | +4.1% | 536.1 | energetic name (typical ATR 2.7%/day); ignition: volume 5.7x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **KAJARIACER** | 1,198.3 | **61** | 3.6x | p4 | +6.1% | 1,271.5 | energetic name (typical ATR 2.7%/day); ignition: volume 3.6x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **IFCI** | 76.5 | **60** | 2.6x | p21 | +4.0% | 79.6 | high-energy name (typical ATR 3.8%/day); ignition: volume 2.6x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **NIACL** | 173.6 | **60** | 2.5x | p61 | +9.0% | 189.2 | high-energy name (typical ATR 3.1%/day); ignition: volume 2.5x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
-| **M&M** | 3,398.5 | **60** | 2.5x | p56 | -2.1% | 3,327.0 | ignition: volume 2.5x average on an up day; price above a rising 50-DMA; breaking the 20-day high NOW |
-| **BELRISE** | 236.7 | **60** | 1.9x | p3 | +1.6% | 240.4 | high-energy name (typical ATR 3.6%/day); uptrend: price > rising 50-DMA > 200-DMA; 1.6% under the 20-day high |
-| **RKFORGE** | 651.2 | **60** | 1.0x | p84 | -0.9% | 645.0 | high-energy name (typical ATR 3.2%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
-| **THERMAX** | 4,306.0 | **58** | 19.0x | p67 | +14.9% | 4,948.5 | high-energy name (typical ATR 3.3%/day); ignition: volume 19.0x average on an up day; accumulation (up/down volume 3.0) |
-| **ASHOKLEY** | 166.2 | **58** | 3.3x | p29 | +0.8% | 167.6 | energetic name (typical ATR 2.9%/day); ignition: volume 3.3x average on an up day; price above a rising 50-DMA |
-| **TVSMOTOR** | 4,313.1 | **58** | 2.4x | p100 | -2.2% | 4,219.0 | volume 2.4x average on an up day; price above a rising 50-DMA; breaking the 20-day high NOW |
-| **PERSISTENT** | 5,549.0 | **58** | 2.0x | p68 | +2.7% | 5,698.0 | high-energy name (typical ATR 3.1%/day); volume 2.0x average on an up day; price above a rising 50-DMA |
-| **FSL** | 302.1 | **58** | 1.5x | p85 | -0.0% | 302.0 | high-energy name (typical ATR 3.4%/day); price above a rising 50-DMA; breaking the 20-day high NOW |
-| **BAJAJFINSV** | 2,029.1 | **55** | 3.0x | p52 | -4.1% | 1,945.0 | ignition: volume 3.0x average on an up day; price above a rising 50-DMA; breaking the 20-day high NOW |
-
-_...and 1 more not shown._
-
-## 👀 WATCH (59) — early — on the radar
+## 🌱 SETUP (36) — base forming — needs confirmation
 
 | Stock | Price ₹ | Score | RVOL | Squeeze | To 20D Hi | Trigger ₹ | Why |
 |---|---:|---:|---:|---:|---:|---:|---|
-| **GMDCLTD** | 564.2 | **54** | 3.5x | p10 | +10.1% | 621.4 | very high-energy name (typical ATR 4.5%/day); ignition: volume 3.5x average on an up day |
-| **DIVISLAB** | 8,056.0 | **54** | 1.6x | p96 | -1.5% | 7,938.0 | uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW; within 5% of 52-week high (no overhead supply) |
-| **MOTHERSON** | 150.8 | **54** | 1.5x | p16 | -0.8% | 149.5 | energetic name (typical ATR 2.9%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
-| **SCHAEFFLER** | 4,079.2 | **53** | 2.9x | p7 | +3.4% | 4,219.0 | energetic name (typical ATR 2.7%/day); ignition: volume 2.9x average on an up day; accumulation (up/down volume 2.8) |
-| **NAVINFLUOR** | 7,567.5 | **53** | 1.6x | p6 | +4.9% | 7,936.0 | high-energy name (typical ATR 3.0%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
-| **BLUEDART** | 5,160.3 | **52** | 3.6x | p44 | +2.3% | 5,277.0 | ignition: volume 3.6x average on an up day; price above a rising 50-DMA; accumulation (up/down volume 1.6) |
-| **JIOFIN** | 256.5 | **52** | 2.1x | p69 | -1.0% | 253.9 | volume 2.1x average on an up day; price above a rising 50-DMA; breaking the 20-day high NOW |
-| **ABREL** | 1,418.1 | **52** | 2.0x | p6 | +3.5% | 1,467.4 | high-energy name (typical ATR 3.6%/day); volume 2.0x average on an up day; price above a rising 50-DMA |
-| **AJANTPHARM** | 3,465.2 | **52** | 1.9x | p25 | +3.9% | 3,598.8 | energetic name (typical ATR 2.7%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
-| **CHOLAFIN** | 1,849.9 | **52** | 1.9x | p24 | +1.3% | 1,874.3 | energetic name (typical ATR 2.7%/day); uptrend: price > rising 50-DMA > 200-DMA; 1.3% under the 20-day high |
-| **SIEMENS** | 3,760.0 | **52** | 1.6x | p48 | +2.0% | 3,836.2 | energetic name (typical ATR 2.6%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
-| **CRAFTSMAN** | 9,873.5 | **52** | 1.5x | p58 | +3.1% | 10,181.0 | high-energy name (typical ATR 3.3%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
-| **LAURUSLABS** | 1,816.2 | **52** | 1.1x | p96 | -0.9% | 1,798.9 | energetic name (typical ATR 2.6%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
-| **IIFL** | 608.7 | **52** | 1.0x | p77 | +1.8% | 619.5 | high-energy name (typical ATR 3.4%/day); uptrend: price > rising 50-DMA > 200-DMA; 1.8% under the 20-day high |
-| **SONACOMS** | 769.4 | **52** | 1.0x | p81 | -0.2% | 768.0 | energetic name (typical ATR 2.8%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
-| **ACE** | 1,070.3 | **52** | 0.4x | p60 | +1.6% | 1,087.5 | high-energy name (typical ATR 3.1%/day); uptrend: price > rising 50-DMA > 200-DMA; 1.6% under the 20-day high |
-| **SAREGAMA** | 522.8 | **52** | 0.4x | p79 | +2.5% | 535.9 | high-energy name (typical ATR 3.7%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
-| **HEG** | 657.2 | **52** | 0.4x | p97 | +3.9% | 683.0 | high-energy name (typical ATR 3.9%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
-| **WELCORP** | 1,650.6 | **52** | 0.3x | p41 | +3.0% | 1,700.0 | high-energy name (typical ATR 3.2%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
-| **INTELLECT** | 719.9 | **51** | 3.9x | p16 | +9.8% | 790.6 | high-energy name (typical ATR 3.8%/day); ignition: volume 3.9x average on an up day |
-| **ABFRL** | 60.2 | **51** | 3.2x | p35 | +5.4% | 63.5 | high-energy name (typical ATR 3.5%/day); ignition: volume 3.2x average on an up day |
-| **ANTHEM** | 809.2 | **51** | 1.2x | p27 | -0.2% | 807.2 | high-energy name (typical ATR 3.1%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
-| **SYRMA** | 1,366.8 | **51** | 1.1x | p22 | +7.4% | 1,468.0 | very high-energy name (typical ATR 4.1%/day); uptrend: price > rising 50-DMA > 200-DMA; accumulation (up/down volume 2.8) |
-| **ATHERENERG** | 1,260.3 | **51** | 0.7x | p26 | +6.7% | 1,345.0 | very high-energy name (typical ATR 4.8%/day); uptrend: price > rising 50-DMA > 200-DMA; accumulation (up/down volume 1.8) |
-| **SONATSOFTW** | 322.5 | **51** | 0.7x | p68 | +1.6% | 327.4 | very high-energy name (typical ATR 4.0%/day); price above a rising 50-DMA; 1.6% under the 20-day high |
+| **RAINBOW** | 1,570.8 | **68** | 2.4x | p43 | -2.3% | 1,535.0 | energetic name (typical ATR 2.5%/day); volume 2.4x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **WOCKPHARMA** | 2,003.4 | **67** | 2.1x | p18 | -1.9% | 1,966.0 | high-energy name (typical ATR 3.9%/day); volume 2.1x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **PAYTM** | 1,424.2 | **66** | 2.0x | p64 | -1.2% | 1,407.0 | high-energy name (typical ATR 3.1%/day); volume 2.0x average on an up day; price above a rising 50-DMA |
+| **BLUEDART** | 5,491.0 | **64** | 67.4x | p59 | -3.9% | 5,277.0 | ignition: volume 67.4x average on an up day; price above a rising 50-DMA; breaking the 20-day high NOW |
+| **SONATSOFTW** | 341.8 | **64** | 1.9x | p76 | -4.2% | 327.4 | very high-energy name (typical ATR 4.0%/day); price above a rising 50-DMA; breaking the 20-day high NOW |
+| **ASHOKLEY** | 173.9 | **63** | 3.3x | p42 | -3.8% | 167.3 | energetic name (typical ATR 2.9%/day); ignition: volume 3.3x average on an up day; price above a rising 50-DMA |
+| **TITAGARH** | 859.6 | **63** | 3.0x | p20 | +4.0% | 894.0 | high-energy name (typical ATR 3.2%/day); ignition: volume 3.0x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **TRAVELFOOD** | 1,336.8 | **62** | 2.4x | p11 | +1.7% | 1,360.0 | high-energy name (typical ATR 3.5%/day); volume 2.4x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **ABB** | 7,501.5 | **61** | 3.2x | p72 | +5.6% | 7,924.5 | energetic name (typical ATR 2.6%/day); ignition: volume 3.2x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **CHENNPETRO** | 1,327.6 | **61** | 1.4x | p78 | +2.0% | 1,354.0 | very high-energy name (typical ATR 4.2%/day); uptrend: price > rising 50-DMA > 200-DMA; 2.0% under the 20-day high |
+| **GABRIEL** | 1,510.6 | **61** | 1.0x | p78 | +0.6% | 1,519.9 | very high-energy name (typical ATR 4.3%/day); uptrend: price > rising 50-DMA > 200-DMA; 0.6% under the 20-day high |
+| **MEDANTA** | 1,461.4 | **60** | 1.9x | p55 | -1.6% | 1,438.0 | energetic name (typical ATR 2.9%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
+| **SIEMENS** | 3,877.3 | **60** | 1.8x | p70 | -1.1% | 3,836.2 | energetic name (typical ATR 2.6%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
+| **PFOCUS** | 303.0 | **60** | 1.6x | p67 | +2.6% | 311.0 | very high-energy name (typical ATR 5.6%/day); uptrend: price > rising 50-DMA > 200-DMA; accumulation (up/down volume 2.7) |
+| **CRAFTSMAN** | 10,227.5 | **60** | 1.3x | p69 | -0.5% | 10,181.0 | high-energy name (typical ATR 3.3%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
+| **RKFORGE** | 670.0 | **60** | 1.2x | p94 | -2.3% | 654.6 | high-energy name (typical ATR 3.2%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
+| **WELCORP** | 1,707.5 | **60** | 0.4x | p40 | -0.4% | 1,700.0 | high-energy name (typical ATR 3.2%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
+| **CLEAN** | 765.9 | **58** | 21.1x | p58 | +5.6% | 809.0 | high-energy name (typical ATR 3.1%/day); ignition: volume 21.1x average on an up day; accumulation (up/down volume 2.1) |
+| **JAINREC** | 348.7 | **58** | 5.6x | p1 | +4.5% | 364.3 | very high-energy name (typical ATR 4.6%/day); ignition: volume 5.6x average on an up day |
+| **GODFRYPHLP** | 2,232.3 | **58** | 3.8x | p17 | +0.7% | 2,248.2 | high-energy name (typical ATR 3.7%/day); ignition: volume 3.8x average on an up day; 0.7% under the 20-day high |
+| **ESCORTS** | 3,136.6 | **58** | 2.4x | p16 | -1.2% | 3,099.0 | energetic name (typical ATR 2.8%/day); volume 2.4x average on an up day; price above a rising 50-DMA |
+| **PERSISTENT** | 5,515.0 | **58** | 2.1x | p66 | +3.3% | 5,698.0 | high-energy name (typical ATR 3.1%/day); volume 2.1x average on an up day; price above a rising 50-DMA |
+| **BATAINDIA** | 708.6 | **58** | 2.0x | p10 | -0.1% | 708.3 | energetic name (typical ATR 2.6%/day); volume 2.0x average on an up day; price above a rising 50-DMA |
+| **HYUNDAI** | 2,217.0 | **58** | 2.0x | p75 | -0.4% | 2,208.0 | energetic name (typical ATR 2.8%/day); volume 2.0x average on an up day; price above a rising 50-DMA |
+| **AEGISVOPAK** | 304.0 | **58** | 0.5x | p36 | +2.5% | 311.5 | very high-energy name (typical ATR 4.3%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
 
-_...and 34 more not shown._
+_...and 11 more not shown._
+
+## 👀 WATCH (57) — early — on the radar
+
+| Stock | Price ₹ | Score | RVOL | Squeeze | To 20D Hi | Trigger ₹ | Why |
+|---|---:|---:|---:|---:|---:|---:|---|
+| **BBTC** | 1,543.7 | **54** | 4.8x | p5 | +1.1% | 1,561.2 | energetic name (typical ATR 2.8%/day); ignition: volume 4.8x average on an up day; 1.1% under the 20-day high |
+| **EICHERMOT** | 8,019.5 | **54** | 1.8x | p66 | -1.5% | 7,899.0 | uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW; within 5% of 52-week high (no overhead supply) |
+| **KAJARIACER** | 1,210.5 | **53** | 2.5x | p3 | +5.0% | 1,271.5 | energetic name (typical ATR 2.7%/day); volume 2.5x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
+| **TEGA** | 1,563.0 | **52** | 11.2x | p79 | +10.2% | 1,721.6 | high-energy name (typical ATR 3.1%/day); ignition: volume 11.2x average on an up day |
+| **ARE&M** | 927.5 | **52** | 2.1x | p53 | -0.3% | 924.3 | volume 2.1x average on an up day; price above a rising 50-DMA; breaking the 20-day high NOW |
+| **IIFL** | 612.7 | **52** | 1.2x | p80 | +1.7% | 623.0 | high-energy name (typical ATR 3.4%/day); uptrend: price > rising 50-DMA > 200-DMA; 1.7% under the 20-day high |
+| **USHAMART** | 510.5 | **52** | 1.1x | p1 | +3.2% | 527.0 | high-energy name (typical ATR 3.5%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
+| **NYKAA** | 340.0 | **52** | 1.1x | p13 | -1.5% | 335.0 | energetic name (typical ATR 2.7%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
+| **LLOYDSME** | 2,056.7 | **52** | 1.0x | p85 | +2.1% | 2,100.0 | high-energy name (typical ATR 3.2%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
+| **SONACOMS** | 777.5 | **52** | 0.8x | p84 | -0.6% | 773.2 | energetic name (typical ATR 2.8%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
+| **SAREGAMA** | 520.2 | **52** | 0.6x | p78 | +3.0% | 535.9 | high-energy name (typical ATR 3.7%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
+| **KARURVYSYA** | 346.9 | **52** | 0.5x | p93 | -0.0% | 346.8 | energetic name (typical ATR 3.0%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
+| **HEG** | 663.8 | **52** | 0.2x | p97 | +2.9% | 683.0 | high-energy name (typical ATR 3.9%/day); uptrend: price > rising 50-DMA > 200-DMA; within 5% of 52-week high (no overhead supply) |
+| **IRCON** | 130.4 | **51** | 3.0x | p4 | +4.2% | 135.8 | high-energy name (typical ATR 3.0%/day); ignition: volume 3.0x average on an up day |
+| **ANTHEM** | 820.5 | **51** | 1.0x | p31 | -1.6% | 807.2 | high-energy name (typical ATR 3.1%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
+| **SYRMA** | 1,366.7 | **51** | 0.8x | p20 | +7.4% | 1,468.0 | very high-energy name (typical ATR 4.1%/day); uptrend: price > rising 50-DMA > 200-DMA; accumulation (up/down volume 2.4) |
+| **ATHERENERG** | 1,253.6 | **51** | 0.6x | p19 | +7.3% | 1,345.0 | very high-energy name (typical ATR 4.7%/day); uptrend: price > rising 50-DMA > 200-DMA; accumulation (up/down volume 1.8) |
+| **LENSKART** | 564.8 | **51** | 0.6x | p19 | +1.9% | 575.7 | high-energy name (typical ATR 3.7%/day); price above a rising 50-DMA; 1.9% under the 20-day high |
+| **JUBLFOOD** | 464.2 | **50** | 2.1x | p57 | -1.8% | 456.1 | energetic name (typical ATR 2.6%/day); volume 2.1x average on an up day; breaking the 20-day high NOW |
+| **FSL** | 323.7 | **50** | 1.5x | p91 | -6.0% | 304.1 | high-energy name (typical ATR 3.4%/day); price above a rising 50-DMA; breaking the 20-day high NOW |
+| **BRIGADE** | 581.8 | **50** | 0.3x | p48 | -0.6% | 578.0 | high-energy name (typical ATR 3.1%/day); price above a rising 50-DMA; breaking the 20-day high NOW |
+| **NEULANDLAB** | 19,820.0 | **49** | 1.4x | p10 | +1.2% | 20,051.9 | high-energy name (typical ATR 3.8%/day); uptrend: price > rising 50-DMA > 200-DMA; 1.2% under the 20-day high |
+| **ENDURANCE** | 2,802.0 | **49** | 1.0x | p18 | +1.2% | 2,835.0 | high-energy name (typical ATR 3.3%/day); uptrend: price > rising 50-DMA > 200-DMA; 1.2% under the 20-day high |
+| **ANANTRAJ** | 624.0 | **49** | 0.9x | p34 | +1.4% | 632.4 | high-energy name (typical ATR 4.0%/day); uptrend: price > rising 50-DMA > 200-DMA; 1.3% under the 20-day high |
+| **MOTHERSON** | 153.6 | **49** | 0.8x | p27 | -0.8% | 152.4 | energetic name (typical ATR 2.9%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
+
+_...and 32 more not shown._
 
