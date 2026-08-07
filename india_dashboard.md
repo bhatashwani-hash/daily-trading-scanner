@@ -1,57 +1,53 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Thursday, August 06, 2026 12:54 PM IST  
-**Market status:** market OPEN — intraday scan, 59% of session elapsed (RVOL is pace-adjusted)  
+**Run time:** Friday, August 07, 2026 11:30 AM IST  
+**Market status:** market OPEN — intraday scan, 36% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (18)
+## 🚀 High RVOL + Breakout (11)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| HAL | 4,933.5 | 🟢 +6.21% | **9.9x** | 52W High | 42% |
-| MAZDOCK | 2,533.0 | 🟢 +6.41% | **6.5x** | 20D High | 23% |
-| COCHINSHIP | 1,486.8 | 🟢 +4.34% | **4.1x** | 20D High | 25% |
-| POLICYBZR | 1,632.5 | 🟢 +0.77% | **3.7x** | 20D High | 20% |
-| MOTHERSON | 153.6 | 🔴 -0.49% | **3.5x** | 52W High | 72% |
-| SHRIRAMFIN | 1,145.4 | 🟢 +2.05% | **2.8x** | 52W High | 105% |
-| TATACAP | 383.6 | 🟢 +3.15% | **2.6x** | 52W High | 30% |
-| SWIGGY | 291.2 | 🟢 +0.45% | **2.6x** | 20D High | 24% |
-| HINDZINC | 593.5 | 🔴 -0.59% | **2.3x** | 20D High | 46% |
-| AUBANK | 1,088.0 | 🟢 +2.74% | **2.1x** | 52W High | 60% |
-| NMDC | 86.3 | 🟢 +0.54% | **1.9x** | 20D High | 30% |
-| VEDL | 275.0 | 🔴 -0.74% | **1.8x** | 20D High | 10% |
-| APLAPOLLO | 1,968.4 | 🟢 +1.02% | **1.7x** | 20D High | 28% |
-| AUROPHARMA | 1,595.1 | 🔴 -1.13% | **1.6x** | 20D High | 57% |
-| CHOLAFIN | 1,945.8 | 🟢 +3.50% | **1.6x** | 52W High | 50% |
-| PIDILITIND | 1,677.7 | 🟢 +0.76% | **1.6x** | 52W High | 34% |
-| SAIL | 176.9 | 🟢 +0.79% | **1.6x** | 20D High | 52% |
-| IRCTC | 519.8 | 🟢 +1.86% | **1.6x** | 20D High | 7% |
+| TATAINVEST | 695.8 | 🟢 +4.29% | **32.7x** | 20D High | 30% |
+| ENRIN | 3,636.9 | 🟢 +11.83% | **31.5x** | 20D High | 72% |
+| MOTHERSON | 167.6 | 🟢 +8.14% | **11.1x** | 52W High | 88% |
+| BRITANNIA | 5,591.0 | 🟢 +2.78% | **9.7x** | 20D High | 13% |
+| HEROMOTOCO | 5,694.0 | 🟢 +2.59% | **4.9x** | 20D High | 33% |
+| COCHINSHIP | 1,510.5 | 🟢 +1.38% | **2.7x** | 20D High | 27% |
+| HAL | 4,911.2 | 🔴 -0.18% | **2.1x** | 52W High | 41% |
+| AUROPHARMA | 1,632.1 | 🟢 +2.72% | **2.0x** | 52W High | 61% |
+| SBIN | 1,092.9 | 🟢 +0.73% | **1.6x** | 20D High | 41% |
+| INDIANB | 890.2 | 🟢 +1.40% | **1.6x** | 20D High | 44% |
+| MPHASIS | 2,464.4 | 🟢 +1.75% | **1.6x** | 20D High | 26% |
 
-## 📈 Other Breakouts (13)
+## 📈 Other Breakouts (11)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| TITAN | 4,978.5 | 🟢 +1.35% | **1.4x** | 52W High | 51% |
-| BOSCHLTD | 42,225.0 | 🟢 +2.49% | **1.4x** | 52W High | 49% |
-| JSWSTEEL | 1,315.3 | 🔴 -1.11% | **1.1x** | 52W High | 29% |
-| EXIDEIND | 472.5 | 🟢 +1.19% | **0.9x** | 52W High | 65% |
-| PAYTM | 1,446.9 | 🟢 +1.25% | **0.8x** | 52W High | 55% |
-| HINDALCO | 1,018.5 | 🔴 -2.06% | **1.5x** | 20D High | 56% |
-| NATIONALUM | 376.9 | 🔴 -1.08% | **1.1x** | 20D High | 114% |
-| ETERNAL | 314.7 | 🟢 +1.40% | **0.9x** | 20D High | 48% |
-| KEI | 5,520.0 | 🟢 +0.36% | **0.9x** | 20D High | 49% |
-| HEROMOTOCO | 5,616.0 | 🔴 -1.30% | **0.7x** | 20D High | 31% |
-| TATASTEEL | 190.4 | 🔴 -1.35% | **0.7x** | 20D High | 27% |
-| COFORGE | 1,777.6 | 🟢 +1.58% | **0.5x** | 20D High | 77% |
-| 360ONE | 1,186.9 | 🔴 -0.43% | **0.4x** | 20D High | 32% |
+| EXIDEIND | 487.8 | 🟢 +4.45% | **1.5x** | 52W High | 71% |
+| BHARATFORG | 2,231.3 | 🟢 +0.96% | **1.3x** | 52W High | 104% |
+| TITAN | 4,982.4 | 🟢 +1.42% | **1.0x** | 52W High | 51% |
+| CHOLAFIN | 1,898.8 | 🟢 +1.00% | **0.8x** | 52W High | 46% |
+| NESTLEIND | 1,550.5 | 🟢 +1.01% | **0.7x** | 52W High | 44% |
+| TVSMOTOR | 4,422.6 | 🟢 +1.09% | **0.7x** | 52W High | 51% |
+| SHRIRAMFIN | 1,119.5 | 🔴 -0.26% | **0.7x** | 52W High | 100% |
+| CANBK | 132.0 | 🟢 +0.25% | **1.5x** | 20D High | 32% |
+| UNIONBANK | 182.7 | 🟢 +0.10% | **1.3x** | 20D High | 51% |
+| EICHERMOT | 7,998.0 | 🟢 +0.14% | **0.8x** | 20D High | 45% |
+| KEI | 5,607.4 | 🟢 +0.22% | **0.7x** | 20D High | 51% |
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (5)
+## 🔊 High RVOL (≥2x), No Breakout Yet (10)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| CUMMINSIND | 5,370.5 | 🔴 -1.28% | **6.2x** | — | 52% |
-| BDL | 1,297.6 | 🟢 +4.65% | **4.8x** | — | 19% |
-| GVT&D | 4,285.2 | 🔴 -2.83% | **2.9x** | — | 70% |
-| POWERGRID | 271.7 | 🔴 -3.57% | **2.3x** | — | 10% |
-| AMBUJACEM | 438.2 | 🔴 -1.52% | **2.1x** | — | 12% |
+| BLUESTARCO | 1,516.5 | 🔴 -3.47% | **7.3x** | — | 5% |
+| FORTIS | 932.4 | 🟢 +1.35% | **5.1x** | — | 22% |
+| PREMIERENE | 1,050.6 | 🟢 +0.85% | **4.3x** | — | 58% |
+| TECHM | 1,646.9 | 🔴 -0.19% | **3.3x** | — | 30% |
+| LUPIN | 2,397.8 | 🟢 +0.54% | **3.2x** | — | 30% |
+| TRENT | 3,036.4 | 🔴 -2.28% | **2.7x** | — | 39% |
+| TATACAP | 369.6 | 🔴 -3.42% | **2.6x** | — | 25% |
+| BSE | 3,452.0 | 🟢 +0.49% | **2.3x** | — | 71% |
+| BAJFINANCE | 1,094.1 | 🔴 -4.43% | **2.2x** | — | 40% |
+| GODREJCP | 1,079.5 | 🟢 +0.20% | **2.2x** | — | 12% |
