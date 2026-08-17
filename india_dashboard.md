@@ -1,50 +1,46 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Friday, August 14, 2026 11:34 AM IST  
-**Market status:** market OPEN — intraday scan, 37% of session elapsed (RVOL is pace-adjusted)  
+**Run time:** Monday, August 17, 2026 10:50 AM IST  
+**Market status:** market OPEN — intraday scan, 25% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (9)
+## 🚀 High RVOL + Breakout (5)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| LGEINDIA | 1,701.0 | 🟢 +7.77% | **62.0x** | 20D High | 30% |
-| JUBLFOOD | 506.7 | 🟢 +3.08% | **7.3x** | 20D High | 24% |
-| IDEA | 14.1 | 🟢 +4.22% | **3.7x** | 20D High | 130% |
-| BDL | 1,360.1 | 🔴 -1.12% | **3.3x** | 20D High | 25% |
-| TATAPOWER | 389.0 | 🟢 +1.62% | **2.6x** | 20D High | 14% |
-| CONCOR | 532.2 | 🔴 -0.26% | **1.9x** | 20D High | 27% |
-| GLENMARK | 2,323.9 | 🟢 +0.17% | **1.8x** | 20D High | 30% |
-| MAZDOCK | 2,574.8 | 🟢 +0.15% | **1.8x** | 20D High | 25% |
-| ETERNAL | 319.0 | 🟢 +0.30% | **1.6x** | 20D High | 50% |
+| LGEINDIA | 1,677.0 | 🔴 -3.05% | **7.3x** | 52W High | 29% |
+| BDL | 1,392.7 | 🔴 -0.38% | **6.1x** | 20D High | 28% |
+| SUPREMEIND | 3,628.0 | 🟢 +1.94% | **4.6x** | 20D High | 16% |
+| HAL | 5,103.6 | 🟢 +1.47% | **3.4x** | 52W High | 47% |
+| MAZDOCK | 2,576.3 | 🔴 -0.14% | **1.5x** | 20D High | 25% |
 
-## 📈 Other Breakouts (8)
+## 📈 Other Breakouts (7)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| PAYTM | 1,617.8 | 🔴 -1.92% | **0.9x** | 52W High | 74% |
-| BOSCHLTD | 46,575.0 | 🟢 +0.20% | **0.5x** | 52W High | 64% |
-| TMCV | 480.8 | 🟢 +1.25% | **1.5x** | 20D High | 59% |
-| UNIONBANK | 187.3 | 🟢 +0.41% | **1.1x** | 20D High | 55% |
-| COFORGE | 1,812.9 | 🔴 -0.88% | **0.7x** | 20D High | 81% |
-| INDIANB | 887.7 | 🔴 -1.04% | **0.6x** | 20D High | 41% |
-| EICHERMOT | 8,108.5 | 🟢 +0.74% | **0.5x** | 20D High | 43% |
-| MPHASIS | 2,511.2 | 🔴 -1.04% | **0.4x** | 20D High | 28% |
+| BOSCHLTD | 47,380.0 | 🟢 +0.59% | **1.2x** | 52W High | 67% |
+| EICHERMOT | 8,075.5 | 🟢 +0.11% | **0.6x** | 52W High | 40% |
+| POLYCAB | 9,356.5 | 🟢 +1.26% | **1.3x** | 20D High | 41% |
+| APLAPOLLO | 2,081.5 | 🔴 -0.09% | **1.2x** | 20D High | 32% |
+| POLICYBZR | 1,751.8 | 🟢 +0.62% | **1.0x** | 20D High | 28% |
+| BEL | 412.2 | 🟢 +0.35% | **1.0x** | 20D High | 15% |
+| HAVELLS | 1,297.3 | 🔴 -0.05% | **0.7x** | 20D High | 15% |
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (12)
+## 🔊 High RVOL (≥2x), No Breakout Yet (13)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| PAGEIND | 37,115.0 | 🔴 -3.08% | **9.6x** | — | 25% |
-| MFSL | 1,539.5 | 🟢 +1.79% | **9.2x** | — | 7% |
-| SOLARINDS | 20,150.0 | 🔴 -0.86% | **7.9x** | — | 73% |
-| TMPV | 332.8 | 🔴 -4.81% | **6.3x** | — | 14% |
-| APOLLOHOSP | 8,886.5 | 🟢 +3.45% | **6.2x** | — | 33% |
-| ADANIENSOL | 1,601.0 | 🟢 +1.14% | **5.5x** | — | 115% |
-| VOLTAS | 1,316.3 | 🟢 +2.08% | **4.2x** | — | 11% |
-| NATIONALUM | 379.1 | 🔴 -5.33% | **3.4x** | — | 116% |
-| SAIL | 167.6 | 🔴 -0.63% | **3.1x** | — | 44% |
-| SHREECEM | 24,665.0 | 🔴 -2.30% | **2.9x** | — | 10% |
-| MAXHEALTH | 1,005.0 | 🔴 -0.82% | **2.2x** | — | 11% |
-| LENSKART | 609.3 | 🟢 +2.08% | **2.1x** | — | 71% |
+| LENSKART | 609.0 | 🔴 -0.46% | **12.5x** | — | 71% |
+| VOLTAS | 1,284.8 | 🔴 -2.70% | **12.4x** | — | 9% |
+| BAJAJHLDNG | 11,426.0 | 🔴 -0.43% | **6.2x** | — | 35% |
+| MOTILALOFS | 922.8 | 🟢 +2.12% | **5.1x** | — | 50% |
+| COCHINSHIP | 1,470.9 | 🔴 -1.71% | **4.7x** | — | 24% |
+| BSE | 3,293.1 | 🔴 -4.46% | **4.2x** | — | 63% |
+| NMDC | 81.5 | 🔴 -3.47% | **3.3x** | — | 23% |
+| PATANJALI | 352.4 | 🟢 +0.10% | **3.1x** | — | 7% |
+| ALKEM | 5,432.0 | 🟢 +1.19% | **2.6x** | — | 7% |
+| SOLARINDS | 20,200.0 | 🟢 +1.16% | **2.2x** | — | 74% |
+| ONGC | 237.6 | 🟢 +0.53% | **2.2x** | — | 8% |
+| ASHOKLEY | 175.1 | 🟢 +1.99% | **2.1x** | — | 43% |
+| BLUESTARCO | 1,505.8 | 🔴 -0.15% | **2.1x** | — | 4% |
