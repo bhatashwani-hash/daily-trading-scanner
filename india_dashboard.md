@@ -1,7 +1,7 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Monday, August 17, 2026 10:50 AM IST  
-**Market status:** market OPEN — intraday scan, 25% of session elapsed (RVOL is pace-adjusted)  
+**Run time:** Tuesday, August 18, 2026 10:42 AM IST  
+**Market status:** market OPEN — intraday scan, 23% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
@@ -9,38 +9,38 @@
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| LGEINDIA | 1,677.0 | 🔴 -3.05% | **7.3x** | 52W High | 29% |
-| BDL | 1,392.7 | 🔴 -0.38% | **6.1x** | 20D High | 28% |
-| SUPREMEIND | 3,628.0 | 🟢 +1.94% | **4.6x** | 20D High | 16% |
-| HAL | 5,103.6 | 🟢 +1.47% | **3.4x** | 52W High | 47% |
-| MAZDOCK | 2,576.3 | 🔴 -0.14% | **1.5x** | 20D High | 25% |
+| OBEROIRLTY | 1,914.6 | 🔴 -0.85% | **10.2x** | 20D High | 38% |
+| SOLARINDS | 20,140.0 | 🟢 +0.86% | **2.7x** | 52W High | 73% |
+| OIL | 485.5 | 🟢 +2.30% | **2.3x** | 20D High | 30% |
+| BOSCHLTD | 47,760.0 | 🟢 +1.40% | **2.0x** | 52W High | 68% |
+| MAZDOCK | 2,584.8 | 🟢 +0.19% | **1.7x** | 20D High | 26% |
 
-## 📈 Other Breakouts (7)
-
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| BOSCHLTD | 47,380.0 | 🟢 +0.59% | **1.2x** | 52W High | 67% |
-| EICHERMOT | 8,075.5 | 🟢 +0.11% | **0.6x** | 52W High | 40% |
-| POLYCAB | 9,356.5 | 🟢 +1.26% | **1.3x** | 20D High | 41% |
-| APLAPOLLO | 2,081.5 | 🔴 -0.09% | **1.2x** | 20D High | 32% |
-| POLICYBZR | 1,751.8 | 🟢 +0.62% | **1.0x** | 20D High | 28% |
-| BEL | 412.2 | 🟢 +0.35% | **1.0x** | 20D High | 15% |
-| HAVELLS | 1,297.3 | 🔴 -0.05% | **0.7x** | 20D High | 15% |
-
-## 🔊 High RVOL (≥2x), No Breakout Yet (13)
+## 📈 Other Breakouts (5)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| LENSKART | 609.0 | 🔴 -0.46% | **12.5x** | — | 71% |
-| VOLTAS | 1,284.8 | 🔴 -2.70% | **12.4x** | — | 9% |
-| BAJAJHLDNG | 11,426.0 | 🔴 -0.43% | **6.2x** | — | 35% |
-| MOTILALOFS | 922.8 | 🟢 +2.12% | **5.1x** | — | 50% |
-| COCHINSHIP | 1,470.9 | 🔴 -1.71% | **4.7x** | — | 24% |
-| BSE | 3,293.1 | 🔴 -4.46% | **4.2x** | — | 63% |
-| NMDC | 81.5 | 🔴 -3.47% | **3.3x** | — | 23% |
-| PATANJALI | 352.4 | 🟢 +0.10% | **3.1x** | — | 7% |
-| ALKEM | 5,432.0 | 🟢 +1.19% | **2.6x** | — | 7% |
-| SOLARINDS | 20,200.0 | 🟢 +1.16% | **2.2x** | — | 74% |
-| ONGC | 237.6 | 🟢 +0.53% | **2.2x** | — | 8% |
-| ASHOKLEY | 175.1 | 🟢 +1.99% | **2.1x** | — | 43% |
-| BLUESTARCO | 1,505.8 | 🔴 -0.15% | **2.1x** | — | 4% |
+| RADICO | 4,658.3 | 🔴 -0.75% | **1.1x** | 52W High | 87% |
+| KEI | 5,834.9 | 🟢 +2.37% | **0.7x** | 52W High | 57% |
+| UNITDSPR | 1,532.8 | 🔴 -0.79% | **0.3x** | 52W High | 28% |
+| BEL | 411.9 | 🔴 -0.15% | **0.8x** | 20D High | 15% |
+| UNIONBANK | 187.2 | 🟢 +0.40% | **0.5x** | 20D High | 55% |
+
+## 🔊 High RVOL (≥2x), No Breakout Yet (18)
+
+| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
+|---|---:|---:|---:|---|---:|
+| TIINDIA | 2,919.0 | 🟢 +6.79% | **20.3x** | — | 35% |
+| GROWW | 193.1 | 🔴 -2.82% | **7.1x** | — | 72% |
+| COLPAL | 1,918.4 | 🔴 -3.16% | **5.1x** | — | 9% |
+| PIIND | 2,477.0 | 🔴 -0.53% | **5.0x** | — | 1% |
+| IDEA | 13.8 | 🟢 +0.36% | **3.6x** | — | 123% |
+| BSE | 3,268.5 | 🔴 -1.91% | **3.3x** | — | 62% |
+| MAXHEALTH | 1,004.8 | 🟢 +0.11% | **2.6x** | — | 11% |
+| BDL | 1,372.7 | 🔴 -0.53% | **2.5x** | — | 26% |
+| ALKEM | 5,500.0 | 🟢 +2.46% | **2.5x** | — | 9% |
+| LENSKART | 624.6 | 🟢 +2.80% | **2.3x** | — | 75% |
+| DIXON | 14,205.0 | 🟢 +1.28% | **2.3x** | — | 48% |
+| SBICARD | 625.5 | 🔴 -1.18% | **2.3x** | — | 11% |
+| COCHINSHIP | 1,487.7 | 🟢 +2.05% | **2.2x** | — | 25% |
+| HAL | 5,107.3 | 🟢 +0.95% | **2.1x** | — | 47% |
+| VOLTAS | 1,254.0 | 🔴 -1.03% | **2.1x** | — | 6% |
