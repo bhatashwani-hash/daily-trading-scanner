@@ -1,47 +1,46 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Thursday, August 20, 2026 10:44 AM IST  
+**Run time:** Friday, August 21, 2026 10:45 AM IST  
 **Market status:** market OPEN — intraday scan, 24% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (8)
+## 🚀 High RVOL + Breakout (5)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| 360ONE | 1,212.6 | 🟢 +4.21% | **4.8x** | 20D High | 35% |
-| DIXON | 14,717.0 | 🟢 +1.76% | **3.0x** | 20D High | 53% |
-| ICICIAMC | 3,264.1 | 🟢 +0.10% | **2.5x** | 20D High | 30% |
-| ETERNAL | 327.8 | 🟢 +2.44% | **2.4x** | 20D High | 54% |
-| MOTILALOFS | 977.5 | 🟢 +3.76% | **2.2x** | 20D High | 59% |
-| MCX | 3,039.5 | 🟢 +2.24% | **1.9x** | 20D High | 108% |
-| COFORGE | 1,872.1 | 🟢 +3.25% | **1.8x** | 20D High | 87% |
-| JINDALSTEL | 1,138.9 | 🟢 +2.14% | **1.7x** | 20D High | 21% |
+| PREMIERENE | 1,061.1 | 🟢 +2.03% | **6.2x** | 20D High | 59% |
+| MCX | 3,198.1 | 🟢 +2.31% | **2.8x** | 20D High | 119% |
+| MOTILALOFS | 999.0 | 🟢 +2.63% | **2.2x** | 20D High | 62% |
+| KOTAKBANK | 403.2 | 🟢 +1.48% | **1.8x** | 20D High | 17% |
+| ETERNAL | 326.4 | 🔴 -0.47% | **1.7x** | 20D High | 54% |
 
-## 📈 Other Breakouts (5)
+## 📈 Other Breakouts (6)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| LENSKART | 641.0 | 🟢 +2.01% | **1.2x** | 52W High | 80% |
-| RADICO | 4,696.0 | 🔴 -0.78% | **0.7x** | 52W High | 88% |
-| APLAPOLLO | 2,146.0 | 🟢 +1.14% | **1.1x** | 20D High | 36% |
-| POLICYBZR | 1,789.3 | 🟢 +0.40% | **1.0x** | 20D High | 31% |
-| SUPREMEIND | 3,653.7 | 🟢 +1.38% | **1.0x** | 20D High | 16% |
+| DLF | 681.8 | 🟢 +0.84% | **1.2x** | 20D High | 41% |
+| PERSISTENT | 5,636.0 | 🔴 -0.67% | **0.9x** | 20D High | 33% |
+| GLENMARK | 2,315.5 | 🔴 -0.75% | **0.8x** | 20D High | 29% |
+| COFORGE | 1,860.0 | 🔴 -1.17% | **0.6x** | 20D High | 85% |
+| LT | 4,068.9 | 🔴 -0.30% | **0.4x** | 20D High | 25% |
+| APLAPOLLO | 2,144.7 | 🟢 +1.08% | **0.3x** | 20D High | 36% |
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (13)
+## 🔊 High RVOL (≥2x), No Breakout Yet (14)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| SBICARD | 652.2 | 🟢 +4.58% | **7.1x** | — | 15% |
-| MUTHOOTFIN | 2,970.0 | 🟢 +3.88% | **4.4x** | — | 15% |
-| JSWSTEEL | 1,307.6 | 🟢 +1.70% | **4.1x** | — | 29% |
-| AUBANK | 1,089.0 | 🟢 +1.30% | **3.3x** | — | 60% |
-| ABCAPITAL | 407.1 | 🟢 +2.82% | **2.5x** | — | 49% |
-| LTM | 4,585.1 | 🟢 +0.45% | **2.3x** | — | 30% |
-| UNITDSPR | 1,532.1 | 🟢 +0.74% | **2.2x** | — | 28% |
-| BSE | 3,379.3 | 🟢 +0.81% | **2.2x** | — | 68% |
-| TATAELXSI | 3,719.6 | 🟢 +1.64% | **2.1x** | — | 11% |
-| PERSISTENT | 5,665.0 | 🟢 +4.09% | **2.1x** | — | 34% |
-| VMM | 102.9 | 🔴 -0.50% | **2.1x** | — | 4% |
-| HINDALCO | 1,030.8 | 🔴 -0.78% | **2.0x** | — | 49% |
-| SWIGGY | 280.9 | 🟢 +2.50% | **2.0x** | — | 19% |
+| HINDZINC | 590.8 | 🟢 +2.95% | **5.0x** | — | 44% |
+| VMM | 105.3 | 🟢 +2.68% | **4.1x** | — | 7% |
+| VEDL | 273.9 | 🟢 +2.20% | **3.7x** | — | 10% |
+| LICHSGFIN | 493.6 | 🔴 -0.89% | **3.5x** | — | 10% |
+| DIXON | 14,835.0 | 🔴 -0.10% | **3.1x** | — | 55% |
+| INDIGO | 5,112.5 | 🔴 -1.55% | **2.7x** | — | 31% |
+| BSE | 3,248.6 | 🔴 -1.29% | **2.7x** | — | 61% |
+| LTM | 4,450.4 | 🔴 -2.50% | **2.5x** | — | 26% |
+| MUTHOOTFIN | 3,053.0 | 🟢 +2.79% | **2.3x** | — | 18% |
+| BDL | 1,354.6 | 🟢 +2.85% | **2.3x** | — | 25% |
+| BRITANNIA | 5,365.0 | 🔴 -3.30% | **2.3x** | — | 8% |
+| GROWW | 196.2 | 🔴 -2.27% | **2.2x** | — | 75% |
+| PNB | 116.3 | 🔴 -1.46% | **2.2x** | — | 21% |
+| HDFCBANK | 732.5 | 🟢 +1.02% | **2.1x** | — | 2% |
