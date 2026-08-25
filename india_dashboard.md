@@ -1,40 +1,45 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Monday, August 24, 2026 10:54 AM IST  
-**Market status:** market OPEN — intraday scan, 27% of session elapsed (RVOL is pace-adjusted)  
+**Run time:** Tuesday, August 25, 2026 10:47 AM IST  
+**Market status:** market OPEN — intraday scan, 25% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (9)
+## 🚀 High RVOL + Breakout (8)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| VMM | 113.2 | 🟢 +9.40% | **40.2x** | 20D High | 15% |
-| SAIL | 180.8 | 🟢 +4.24% | **6.2x** | 20D High | 55% |
-| SIEMENS | 4,070.0 | 🟢 +3.83% | **5.2x** | 52W High | 45% |
-| MUTHOOTFIN | 3,167.3 | 🟢 +4.81% | **4.6x** | 20D High | 23% |
-| DIXON | 14,538.0 | 🔴 -2.10% | **4.5x** | 20D High | 51% |
-| MRF | 134,605.0 | 🟢 +1.46% | **2.9x** | 20D High | 11% |
-| MCX | 3,238.5 | 🟢 +1.68% | **1.9x** | 20D High | 122% |
-| LENSKART | 655.8 | 🔴 -0.84% | **1.8x** | 52W High | 84% |
-| MOTILALOFS | 1,009.2 | 🟢 +1.93% | **1.5x** | 20D High | 64% |
+| SAIL | 184.1 | 🟢 +2.47% | **6.8x** | 20D High | 58% |
+| AUBANK | 1,132.3 | 🟢 +1.64% | **5.7x** | 52W High | 66% |
+| IDEA | 14.7 | 🟢 +4.55% | **5.5x** | 20D High | 128% |
+| MOTILALOFS | 1,007.8 | 🟢 +1.79% | **4.1x** | 20D High | 64% |
+| GROWW | 203.7 | 🟢 +3.70% | **3.5x** | 20D High | 82% |
+| GLENMARK | 2,384.3 | 🔴 -0.27% | **2.3x** | 20D High | 33% |
+| MFSL | 1,592.0 | 🟢 +0.44% | **2.2x** | 20D High | 11% |
+| POLICYBZR | 1,805.0 | 🟢 +0.55% | **1.8x** | 20D High | 32% |
 
-## 📈 Other Breakouts (7)
-
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| AUBANK | 1,103.7 | 🔴 -0.41% | **0.8x** | 52W High | 62% |
-| GLENMARK | 2,354.2 | 🟢 +1.57% | **1.3x** | 20D High | 31% |
-| POLICYBZR | 1,793.9 | 🔴 -0.07% | **1.0x** | 20D High | 32% |
-| JINDALSTEL | 1,138.4 | 🟢 +0.94% | **0.9x** | 20D High | 21% |
-| LT | 4,090.6 | 🔴 -0.06% | **0.8x** | 20D High | 26% |
-| COFORGE | 1,888.4 | 🔴 -0.17% | **0.5x** | 20D High | 88% |
-| APLAPOLLO | 2,153.5 | 🟢 +0.68% | **0.4x** | 20D High | 36% |
-
-## 🔊 High RVOL (≥2x), No Breakout Yet (3)
+## 📈 Other Breakouts (3)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| VEDL | 274.6 | 🔴 -1.56% | **3.1x** | — | 10% |
-| CUMMINSIND | 5,126.5 | 🟢 +0.37% | **2.3x** | — | 37% |
-| TATASTEEL | 185.9 | 🟢 +1.61% | **2.2x** | — | 24% |
+| MCX | 3,264.0 | 🔴 -0.12% | **1.5x** | 20D High | 123% |
+| JINDALSTEL | 1,143.2 | 🔴 -0.50% | **1.1x** | 20D High | 21% |
+| MUTHOOTFIN | 3,191.4 | 🔴 -0.55% | **0.9x** | 20D High | 24% |
+
+## 🔊 High RVOL (≥2x), No Breakout Yet (13)
+
+| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
+|---|---:|---:|---:|---|---:|
+| COROMANDEL | 1,915.0 | 🔴 -0.60% | **5.7x** | — | 12% |
+| LICHSGFIN | 495.5 | 🟢 +0.83% | **3.0x** | — | 10% |
+| VMM | 111.4 | 🔴 -1.83% | **2.8x** | — | 13% |
+| DABUR | 393.2 | 🔴 -1.31% | **2.6x** | — | 0% |
+| RVNL | 219.8 | 🔴 -0.84% | **2.6x** | — | 0% |
+| BDL | 1,375.1 | 🟢 +0.52% | **2.5x** | — | 27% |
+| LAURUSLABS | 1,811.9 | 🟢 +0.55% | **2.3x** | — | 121% |
+| VBL | 430.1 | 🟢 +0.49% | **2.3x** | — | 13% |
+| HINDZINC | 590.2 | 🔴 -2.28% | **2.1x** | — | 44% |
+| ADANIENT | 3,010.9 | 🟢 +0.41% | **2.1x** | — | 72% |
+| UPL | 572.2 | 🟢 +0.56% | **2.1x** | — | 3% |
+| POLYCAB | 9,034.0 | 🔴 -0.22% | **2.1x** | — | 36% |
+| SWIGGY | 288.5 | 🟢 +1.50% | **2.0x** | — | 22% |
