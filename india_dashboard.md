@@ -1,48 +1,45 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Thursday, August 27, 2026 09:01 PM IST  
+**Run time:** Friday, August 28, 2026 10:25 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (9)
+## 🚀 High RVOL + Breakout (8)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| ADANIPOWER | 215.0 | 🟢 +3.76% | **4.8x** | 20D High | 84% |
-| KOTAKBANK | 424.2 | 🟢 +1.80% | **3.2x** | 20D High | 23% |
-| LICHSGFIN | 535.5 | 🟢 +2.12% | **3.1x** | 20D High | 19% |
-| BHEL | 434.0 | 🟢 +4.44% | **2.8x** | 20D High | 112% |
-| LAURUSLABS | 1,929.4 | 🟢 +2.25% | **2.3x** | 52W High | 135% |
-| JINDALSTEL | 1,170.0 | 🔴 -0.46% | **1.9x** | 20D High | 24% |
-| GVT&D | 4,407.8 | 🟢 +1.56% | **1.8x** | 20D High | 75% |
-| ADANIENT | 3,169.0 | 🟢 +1.83% | **1.6x** | 20D High | 81% |
-| JSWSTEEL | 1,337.5 | 🔴 -0.26% | **1.6x** | 52W High | 32% |
+| COFORGE | 2,014.6 | 🟢 +5.93% | **2.7x** | 52W High | 101% |
+| OFSS | 12,190.0 | 🟢 +2.83% | **2.2x** | 52W High | 101% |
+| SAIL | 200.0 | 🟢 +3.63% | **2.1x** | 20D High | 71% |
+| PERSISTENT | 5,875.0 | 🟢 +3.91% | **2.0x** | 20D High | 39% |
+| ADANIPORTS | 1,707.5 | 🔴 -0.38% | **1.8x** | 20D High | 33% |
+| GLENMARK | 2,515.0 | 🟢 +2.24% | **1.6x** | 52W High | 40% |
+| SUPREMEIND | 3,636.9 | 🟢 +1.45% | **1.6x** | 20D High | 16% |
+| DIVISLAB | 9,239.0 | 🟢 +1.98% | **1.6x** | 52W High | 65% |
 
-## 📈 Other Breakouts (11)
-
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| SOLARINDS | 20,580.0 | 🟢 +2.40% | **1.4x** | 52W High | 77% |
-| TITAN | 5,139.3 | 🟢 +0.77% | **1.3x** | 52W High | 56% |
-| DIVISLAB | 9,060.0 | 🟢 +0.39% | **1.0x** | 52W High | 61% |
-| GLENMARK | 2,460.0 | 🟢 +0.89% | **0.9x** | 52W High | 37% |
-| APLAPOLLO | 2,188.0 | 🟢 +1.34% | **1.4x** | 20D High | 39% |
-| COCHINSHIP | 1,543.0 | 🔴 -0.26% | **1.2x** | 20D High | 30% |
-| VEDL | 281.0 | 🔴 -1.92% | **1.0x** | 20D High | 13% |
-| HYUNDAI | 2,253.0 | 🟢 +0.13% | **1.0x** | 20D High | 37% |
-| NMDC | 85.7 | 🔴 -2.82% | **0.8x** | 20D High | 30% |
-| MUTHOOTFIN | 3,085.0 | 🔴 -3.80% | **0.7x** | 20D High | 19% |
-| MCX | 3,273.0 | 🔴 -2.30% | **0.7x** | 20D High | 124% |
-
-## 🔊 High RVOL (≥2x), No Breakout Yet (7)
+## 📈 Other Breakouts (6)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| ICICIAMC | 3,093.6 | 🔴 -4.01% | **16.0x** | — | 23% |
-| TATAPOWER | 352.0 | 🔴 -3.30% | **4.2x** | — | 3% |
-| HDFCAMC | 2,575.0 | 🔴 -3.48% | **2.8x** | — | 19% |
-| VBL | 418.8 | 🔴 -0.59% | **2.3x** | — | 10% |
-| CGPOWER | 897.9 | 🟢 +3.80% | **2.1x** | — | 71% |
-| ADANIENSOL | 1,617.0 | 🟢 +2.96% | **2.1x** | — | 117% |
-| GODREJPROP | 2,069.4 | 🟢 +1.69% | **2.0x** | — | 45% |
+| BAJAJ-AUTO | 11,910.0 | 🟢 +1.62% | **1.2x** | 52W High | 42% |
+| LAURUSLABS | 1,938.5 | 🟢 +0.47% | **1.1x** | 52W High | 136% |
+| SOLARINDS | 20,400.0 | 🔴 -0.87% | **0.9x** | 52W High | 75% |
+| APLAPOLLO | 2,265.6 | 🟢 +3.55% | **1.4x** | 20D High | 44% |
+| ADANIENT | 3,168.5 | 🔴 -0.02% | **0.5x** | 20D High | 81% |
+| MOTILALOFS | 1,038.3 | 🟢 +0.02% | **0.4x** | 20D High | 69% |
+
+## 🔊 High RVOL (≥2x), No Breakout Yet (10)
+
+| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
+|---|---:|---:|---:|---|---:|
+| COALINDIA | 401.0 | 🟢 +0.25% | **6.5x** | — | 15% |
+| KPITTECH | 609.4 | 🟢 +3.64% | **3.1x** | — | 13% |
+| CONCOR | 516.0 | 🟢 +4.65% | **2.9x** | — | 23% |
+| TVSMOTOR | 4,304.2 | 🔴 -2.39% | **2.9x** | — | 33% |
+| LTM | 4,675.0 | 🟢 +4.73% | **2.7x** | — | 33% |
+| GMRAIRPORT | 98.3 | 🔴 -0.37% | **2.5x** | — | 17% |
+| MPHASIS | 2,455.0 | 🟢 +1.72% | **2.4x** | — | 25% |
+| INDHOTEL | 706.4 | 🔴 -1.68% | **2.3x** | — | 26% |
+| PREMIERENE | 1,013.9 | 🟢 +1.39% | **2.2x** | — | 52% |
+| HAVELLS | 1,222.9 | 🔴 -1.46% | **2.2x** | — | 9% |
