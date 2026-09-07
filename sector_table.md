@@ -1,7 +1,7 @@
 # Equal-Weight Sector / Industry Group Performance
 
-**Report date:** Friday, September 04, 2026  
-**Market status:** market session in progress — intraday prices  
+**Report date:** Monday, September 07, 2026  
+**Market status:** market CLOSED — data as of last close (2026-09-04)  
 **52-Weeks** = % the current price sits above its 52-week low (strength from the low)
 
 | # | Equal Weight Industry Group | Ticker | 52-Weeks | % Daily Chg |
@@ -35,7 +35,7 @@
 | 27 | Consumer Staples | RSPS | 12% | 🔴 -0.74% |
 | 28 | Real Estate | RSPR | 11% | 🔴 -0.49% |
 | 29 | Homebuilders | XHB | 11% | 🟢 +0.96% |
-| 30 | Consumer Discretionary | RSPD | 9% | 🔴 -0.71% |
+| 30 | Consumer Discretionary | RSPD | 9% | 🔴 -0.70% |
 | 31 | Utilities | RSPU | 8% | 🟢 +0.14% |
-| 32 | Communication | RSPC | 7% | 🔴 -1.61% |
+| 32 | Communication | RSPC | 7% | 🔴 -1.59% |
 | 33 | China | GXC | 7% | 🟢 +0.90% |
