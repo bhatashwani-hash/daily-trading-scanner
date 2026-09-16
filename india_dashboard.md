@@ -1,33 +1,34 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Tuesday, September 15, 2026 03:06 PM IST  
-**Market status:** market OPEN — intraday scan, 94% of session elapsed (RVOL is pace-adjusted)  
-**Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
+**Run time:** Wednesday, September 16, 2026 03:01 PM IST  
+**Market status:** market OPEN — intraday scan, 92% of session elapsed (RVOL is pace-adjusted)  
+**Universe:** Nifty 200 (NSE constituents file) · 199 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (2)
+## 🚀 High RVOL + Breakout (3)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| TATAINVEST | 720.0 | 🟢 +10.62% | **42.9x** | 20D High | 34% |
-| SOLARINDS | 19,155.0 | 🔴 -14.06% | **9.1x** | 52W High | 65% |
+| PATANJALI | 363.0 | 🟢 +7.21% | **16.0x** | 20D High | 11% |
+| PAYTM | 1,790.9 | 🟢 +3.52% | **3.9x** | 52W High | 92% |
+| YESBANK | 23.4 | 🟢 +1.34% | **3.5x** | 20D High | 36% |
 
-## 📈 Other Breakouts (3)
+## 📈 Other Breakouts (0)
 
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| MAXHEALTH | 1,036.0 | 🔴 -0.16% | **1.3x** | 20D High | 15% |
-| TATACOMM | 1,744.6 | 🔴 -0.97% | **1.1x** | 20D High | 33% |
-| ADANIPORTS | 1,725.6 | 🔴 -2.21% | **0.6x** | 20D High | 34% |
+_None right now._
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (7)
+## 🔊 High RVOL (≥2x), No Breakout Yet (9)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| DABUR | 386.4 | 🟢 +2.75% | **5.8x** | — | 5% |
-| KPITTECH | 563.6 | 🟢 +1.78% | **3.1x** | — | 5% |
-| MPHASIS | 2,378.0 | 🟢 +3.62% | **2.9x** | — | 21% |
-| TATAELXSI | 3,423.0 | 🟢 +1.18% | **2.5x** | — | 2% |
-| TMPV | 303.7 | 🟢 +0.86% | **2.4x** | — | 4% |
-| TCS | 2,263.2 | 🟢 +2.84% | **2.2x** | — | 15% |
-| HCLTECH | 1,258.0 | 🟢 +4.30% | **2.1x** | — | 23% |
+| COLPAL | 1,874.2 | 🟢 +2.96% | **4.0x** | — | 6% |
+| PREMIERENE | 897.9 | 🔴 -4.98% | **3.7x** | — | 35% |
+| GROWW | 189.8 | 🔴 -3.96% | **3.3x** | — | 69% |
+| TATAINVEST | 681.5 | 🔴 -5.13% | **2.8x** | — | 27% |
+| SOLARINDS | 18,915.0 | 🔴 -1.74% | **2.7x** | — | 63% |
+| ALKEM | 5,171.0 | 🟢 +0.19% | **2.4x** | — | 2% |
+| TORNTPHARM | 4,809.5 | 🔴 -0.84% | **2.3x** | — | 39% |
+| MANKIND | 2,249.4 | 🔴 -1.36% | **2.3x** | — | 18% |
+| DIVISLAB | 9,122.0 | 🔴 -0.83% | **2.1x** | — | 63% |
+
+**No data (1):** BHARATFORG
