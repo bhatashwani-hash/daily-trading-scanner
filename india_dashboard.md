@@ -1,34 +1,30 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Wednesday, September 16, 2026 03:01 PM IST  
-**Market status:** market OPEN — intraday scan, 92% of session elapsed (RVOL is pace-adjusted)  
-**Universe:** Nifty 200 (NSE constituents file) · 199 scanned  
+**Run time:** Thursday, September 17, 2026 03:09 PM IST  
+**Market status:** market OPEN — intraday scan, 95% of session elapsed (RVOL is pace-adjusted)  
+**Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (3)
-
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| PATANJALI | 363.0 | 🟢 +7.21% | **16.0x** | 20D High | 11% |
-| PAYTM | 1,790.9 | 🟢 +3.52% | **3.9x** | 52W High | 92% |
-| YESBANK | 23.4 | 🟢 +1.34% | **3.5x** | 20D High | 36% |
-
-## 📈 Other Breakouts (0)
+## 🚀 High RVOL + Breakout (0)
 
 _None right now._
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (9)
+## 📈 Other Breakouts (2)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| COLPAL | 1,874.2 | 🟢 +2.96% | **4.0x** | — | 6% |
-| PREMIERENE | 897.9 | 🔴 -4.98% | **3.7x** | — | 35% |
-| GROWW | 189.8 | 🔴 -3.96% | **3.3x** | — | 69% |
-| TATAINVEST | 681.5 | 🔴 -5.13% | **2.8x** | — | 27% |
-| SOLARINDS | 18,915.0 | 🔴 -1.74% | **2.7x** | — | 63% |
-| ALKEM | 5,171.0 | 🟢 +0.19% | **2.4x** | — | 2% |
-| TORNTPHARM | 4,809.5 | 🔴 -0.84% | **2.3x** | — | 39% |
-| MANKIND | 2,249.4 | 🔴 -1.36% | **2.3x** | — | 18% |
-| DIVISLAB | 9,122.0 | 🔴 -0.83% | **2.1x** | — | 63% |
+| PNB | 116.7 | 🔴 -0.08% | **1.3x** | 20D High | 22% |
+| TATACOMM | 1,793.0 | 🔴 -0.35% | **1.2x** | 20D High | 37% |
 
-**No data (1):** BHARATFORG
+## 🔊 High RVOL (≥2x), No Breakout Yet (8)
+
+| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
+|---|---:|---:|---:|---|---:|
+| POLICYBZR | 1,765.5 | 🔴 -3.37% | **6.5x** | — | 29% |
+| SRF | 2,540.0 | 🟢 +2.42% | **4.0x** | — | 8% |
+| INDUSINDBK | 960.3 | 🟢 +1.46% | **3.0x** | — | 35% |
+| HDFCLIFE | 557.2 | 🟢 +5.10% | **3.0x** | — | 10% |
+| MAZDOCK | 2,186.0 | 🔴 -2.06% | **2.5x** | — | 6% |
+| DRREDDY | 1,174.3 | 🟢 +3.01% | **2.1x** | — | 7% |
+| MFSL | 1,554.0 | 🟢 +4.46% | **2.1x** | — | 9% |
+| SBILIFE | 1,765.1 | 🟢 +3.96% | **2.1x** | — | 7% |
