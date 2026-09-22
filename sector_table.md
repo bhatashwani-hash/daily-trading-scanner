@@ -1,7 +1,7 @@
 # Equal-Weight Sector / Industry Group Performance
 
-**Report date:** Friday, September 18, 2026  
-**Market status:** market session in progress — intraday prices  
+**Report date:** Tuesday, September 22, 2026  
+**Market status:** market CLOSED — data as of last close (2026-09-18)  
 **52-Weeks** = % the current price sits above its 52-week low (strength from the low)
 
 | # | Equal Weight Industry Group | Ticker | 52-Weeks | % Daily Chg |
@@ -22,7 +22,7 @@
 | 14 | Regional Banks | KRE | 29% | 🟢 +0.01% |
 | 15 | Transportation | XTN | 28% | 🔴 -0.22% |
 | 16 | Metal & Minings | XME | 27% | 🔴 -2.37% |
-| 17 | Materials | RSPM | 26% | 🔴 -1.80% |
+| 17 | Materials | RSPM | 26% | 🔴 -1.81% |
 | 18 | IWM (Russell 2000) | IWM | 25% | 🔴 -0.47% |
 | 19 | US Banks | KBE | 24% | 🔴 -0.09% |
 | 20 | Healthcare Equipments | XHE | 20% | 🟢 +0.22% |
@@ -34,8 +34,8 @@
 | 26 | Consumer Staples | RSPS | 8% | 🔴 -1.17% |
 | 27 | Real Estate | RSPR | 7% | 🔴 -1.11% |
 | 28 | Retail | XRT | 7% | 🔴 -0.95% |
-| 29 | Communication | RSPC | 4% | 🔴 -1.39% |
+| 29 | Communication | RSPC | 4% | 🔴 -1.40% |
 | 30 | China | GXC | 4% | 🟢 +1.00% |
 | 31 | Homebuilders | XHB | 3% | 🔴 -0.70% |
 | 32 | Consumer Discretionary | RSPD | 3% | 🔴 -1.02% |
-| 33 | Utilities | RSPU | 1% | 🔴 -1.35% |
+| 33 | Utilities | RSPU | 1% | 🔴 -1.34% |

@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-09-18 23:16 UTC",
+ "generated_utc": "2026-09-22 00:04 UTC",
  "last_bar": "2026-09-18",
  "rows": [
   {
@@ -86,7 +86,7 @@
    "Equal Weight Industry Group": "Biotech",
    "Ticker": "XBI",
    "Price": 156.72000122070312,
-   "52-Weeks": 65.08583195597562,
+   "52-Weeks": 65.0858449561017,
    "% Daily Chg": -0.9668238731733808,
    "Last Bar": "2026-09-18",
    "Spark": [
@@ -126,7 +126,7 @@
    "Equal Weight Industry Group": "Oil & Gas Exploration & Production",
    "Ticker": "XOP",
    "Price": 190.61000061035156,
-   "52-Weeks": 58.64222812178641,
+   "52-Weeks": 58.64223809891106,
    "% Daily Chg": -1.0280885638863857,
    "Last Bar": "2026-09-18",
    "Spark": [
@@ -166,7 +166,7 @@
    "Equal Weight Industry Group": "Telecom",
    "Ticker": "XTL",
    "Price": 205.47999572753906,
-   "52-Weeks": 57.83810449194191,
+   "52-Weeks": 57.83808656416066,
    "% Daily Chg": -0.27179070900864744,
    "Last Bar": "2026-09-18",
    "Spark": [
@@ -206,7 +206,7 @@
    "Equal Weight Industry Group": "Technology",
    "Ticker": "RSPT",
    "Price": 64.72000122070312,
-   "52-Weeks": 56.51057275836989,
+   "52-Weeks": 56.510558690254165,
    "% Daily Chg": 0.06184433416606342,
    "Last Bar": "2026-09-18",
    "Spark": [
@@ -645,9 +645,9 @@
   {
    "Equal Weight Industry Group": "Materials",
    "Ticker": "RSPM",
-   "Price": 38.464599609375,
-   "52-Weeks": 25.88566162406625,
-   "% Daily Chg": -1.8008644180370816,
+   "Price": 38.459999084472656,
+   "52-Weeks": 25.87060517925645,
+   "% Daily Chg": -1.8126094400370854,
    "Last Bar": "2026-09-18",
    "Spark": [
     40.58,
@@ -686,7 +686,7 @@
    "Equal Weight Industry Group": "IWM (Russell 2000)",
    "Ticker": "IWM",
    "Price": 284.1000061035156,
-   "52-Weeks": 25.37635554965349,
+   "52-Weeks": 25.376347114717046,
    "% Daily Chg": -0.4659589413843945,
    "Last Bar": "2026-09-18",
    "Spark": [
@@ -726,7 +726,7 @@
    "Equal Weight Industry Group": "US Banks",
    "Ticker": "KBE",
    "Price": 66.62000274658203,
-   "52-Weeks": 24.10684367298828,
+   "52-Weeks": 24.106834925471684,
    "% Daily Chg": -0.08997834181037476,
    "Last Bar": "2026-09-18",
    "Spark": [
@@ -765,9 +765,9 @@
   {
    "Equal Weight Industry Group": "Healthcare Equipments",
    "Ticker": "XHE",
-   "Price": 91.03949737548828,
-   "52-Weeks": 19.78881233616879,
-   "% Daily Chg": 0.2196180599298875,
+   "Price": 91.04000091552734,
+   "52-Weeks": 19.789474888851768,
+   "% Daily Chg": 0.22017237527484804,
    "Last Bar": "2026-09-18",
    "Spark": [
     92.89,
@@ -965,9 +965,9 @@
   {
    "Equal Weight Industry Group": "Industrial",
    "Ticker": "RSPN",
-   "Price": 59.07500076293945,
-   "52-Weeks": 11.148172088296947,
-   "% Daily Chg": 0.07623578616498518,
+   "Price": 59.08000183105469,
+   "52-Weeks": 11.157581475894384,
+   "% Daily Chg": 0.08470786513949527,
    "Last Bar": "2026-09-18",
    "Spark": [
     64.78,
@@ -1045,9 +1045,9 @@
   {
    "Equal Weight Industry Group": "Real Estate",
    "Ticker": "RSPR",
-   "Price": 34.52479934692383,
-   "52-Weeks": 7.375495666466519,
-   "% Daily Chg": -1.1147450924862463,
+   "Price": 34.525001525878906,
+   "52-Weeks": 7.376124462749931,
+   "% Daily Chg": -1.114166015478182,
    "Last Bar": "2026-09-18",
    "Spark": [
     36.85,
@@ -1079,14 +1079,14 @@
     35.06,
     34.76,
     34.91,
-    34.52
+    34.53
    ]
   },
   {
    "Equal Weight Industry Group": "Retail",
    "Ticker": "XRT",
    "Price": 82.02999877929688,
-   "52-Weeks": 6.9296512635504115,
+   "52-Weeks": 6.929661892463598,
    "% Daily Chg": -0.9538769843496079,
    "Last Bar": "2026-09-18",
    "Spark": [
@@ -1125,9 +1125,9 @@
   {
    "Equal Weight Industry Group": "Communication",
    "Ticker": "RSPC",
-   "Price": 35.89339828491211,
-   "52-Weeks": 4.0388356084408965,
-   "% Daily Chg": -1.3917670871706498,
+   "Price": 35.88999938964844,
+   "52-Weeks": 4.028983738111413,
+   "% Daily Chg": -1.4011047111299657,
    "Last Bar": "2026-09-18",
    "Spark": [
     36.4,
@@ -1285,9 +1285,9 @@
   {
    "Equal Weight Industry Group": "Utilities",
    "Ticker": "RSPU",
-   "Price": 72.88500213623047,
-   "52-Weeks": 1.2248597922131317,
-   "% Daily Chg": -1.3467720007819408,
+   "Price": 72.88999938964844,
+   "52-Weeks": 0.7933947008539101,
+   "% Daily Chg": -1.3400079866999863,
    "Last Bar": "2026-09-18",
    "Spark": [
     77.6,
