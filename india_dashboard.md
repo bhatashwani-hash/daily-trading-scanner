@@ -1,37 +1,36 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Monday, September 21, 2026 03:42 PM IST  
-**Market status:** market CLOSED — full-day data from the last session  
+**Run time:** Tuesday, September 22, 2026 02:59 PM IST  
+**Market status:** market OPEN — intraday scan, 92% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (3)
+## 🚀 High RVOL + Breakout (4)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| PATANJALI | 396.2 | 🟢 +7.96% | **7.2x** | 20D High | 22% |
-| MANKIND | 2,431.0 | 🟢 +5.66% | **4.3x** | 20D High | 27% |
-| INDHOTEL | 746.0 | 🟢 +1.81% | **1.8x** | 20D High | 33% |
+| PATANJALI | 403.8 | 🟢 +1.91% | **3.6x** | 20D High | 24% |
+| DRREDDY | 1,209.8 | 🟢 +0.96% | **2.6x** | 20D High | 10% |
+| PAGEIND | 37,145.0 | 🟢 +3.32% | **1.9x** | 20D High | 26% |
+| MANKIND | 2,488.2 | 🟢 +2.07% | **1.7x** | 20D High | 30% |
 
-## 📈 Other Breakouts (8)
-
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| AUROPHARMA | 1,718.0 | 🔴 -0.92% | **1.2x** | 52W High | 61% |
-| LAURUSLABS | 2,017.5 | 🟢 +3.25% | **0.6x** | 52W High | 146% |
-| DRREDDY | 1,202.0 | 🟢 +1.43% | **1.4x** | 20D High | 9% |
-| BLUESTARCO | 1,563.4 | 🟢 +2.06% | **1.2x** | 20D High | 9% |
-| HDFCBANK | 740.5 | 🟢 +1.30% | **1.2x** | 20D High | 9% |
-| HDFCLIFE | 560.0 | 🟢 +1.64% | **0.8x** | 20D High | 10% |
-| ETERNAL | 335.4 | 🟢 +2.62% | **0.6x** | 20D High | 58% |
-| MAXHEALTH | 1,068.0 | 🟢 +1.78% | **0.5x** | 20D High | 18% |
-
-## 🔊 High RVOL (≥2x), No Breakout Yet (5)
+## 📈 Other Breakouts (4)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| LENSKART | 683.2 | 🔴 -3.39% | **3.5x** | — | 92% |
-| OFSS | 10,937.0 | 🔴 -8.06% | **2.7x** | — | 80% |
-| OBEROIRLTY | 1,821.0 | 🟢 +2.02% | **2.4x** | — | 31% |
-| JUBLFOOD | 486.6 | 🔴 -2.68% | **2.1x** | — | 19% |
-| GMRAIRPORT | 98.3 | 🔴 -1.01% | **2.1x** | — | 17% |
+| LAURUSLABS | 2,005.4 | 🔴 -0.60% | **0.4x** | 52W High | 144% |
+| HDFCBANK | 743.0 | 🟢 +0.47% | **1.2x** | 20D High | 9% |
+| ETERNAL | 341.2 | 🟢 +1.58% | **0.7x** | 20D High | 60% |
+| HDFCLIFE | 560.1 | 🟢 +0.13% | **0.5x** | 20D High | 10% |
+
+## 🔊 High RVOL (≥2x), No Breakout Yet (7)
+
+| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
+|---|---:|---:|---:|---|---:|
+| PIIND | 2,396.0 | 🟢 +3.20% | **3.4x** | — | 9% |
+| TATAELXSI | 3,234.0 | 🔴 -1.61% | **2.9x** | — | 1% |
+| LTM | 4,159.9 | 🔴 -2.81% | **2.8x** | — | 18% |
+| CONCOR | 468.8 | 🔴 -3.76% | **2.5x** | — | 12% |
+| TITAN | 4,949.5 | 🟢 +1.53% | **2.3x** | — | 50% |
+| BPCL | 311.6 | 🔴 -0.35% | **2.3x** | — | 17% |
+| WAAREEENER | 2,486.4 | 🔴 -0.50% | **2.1x** | — | 4% |
