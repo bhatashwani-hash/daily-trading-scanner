@@ -1,6 +1,6 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Tuesday, September 29, 2026 04:24 PM IST  
+**Run time:** Tuesday, September 29, 2026 09:59 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 500 (NSE constituents file) · 500 stocks with usable data  
 
@@ -18,7 +18,7 @@
 | ignition (hi-ATR + rvol>=2.5 up) | 1916 | 491 | 25.6% | 1.55x |
 | ignition + uptrend | 1009 | 265 | 26.3% | 1.59x |
 | coil | 2226 | 319 | 14.3% | 0.87x |
-| coil+breakout | 147 | 20 | 13.6% | 0.82x |
+| coil+breakout | 146 | 20 | 13.7% | 0.83x |
 | rvol>=2.5 up day | 3667 | 713 | 19.4% | 1.18x |
 | rvol>=2.5 up + uptrend | 1782 | 345 | 19.4% | 1.17x |
 | rvol>=2 breakout | 1933 | 359 | 18.6% | 1.12x |
