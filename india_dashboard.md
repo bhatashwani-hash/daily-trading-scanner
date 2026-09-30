@@ -1,40 +1,36 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Tuesday, September 29, 2026 04:24 PM IST  
+**Run time:** Wednesday, September 30, 2026 04:14 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (3)
+## 🚀 High RVOL + Breakout (1)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| MANKIND | 2,545.0 | 🟢 +4.49% | **5.1x** | 20D High | 33% |
-| DRREDDY | 1,251.9 | 🟢 +2.53% | **3.8x** | 20D High | 14% |
-| ZYDUSLIFE | 1,200.5 | 🔴 -1.19% | **1.7x** | 52W High | 44% |
+| ICICIGI | 1,590.0 | 🟢 +4.95% | **2.5x** | 20D High | 12% |
 
-## 📈 Other Breakouts (1)
+## 📈 Other Breakouts (0)
 
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| LGEINDIA | 1,739.2 | 🟢 +0.49% | **1.2x** | 20D High | 33% |
+_None right now._
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (53)
+## 🔊 High RVOL (≥2x), No Breakout Yet (17)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| SHREECEM | 21,900.0 | 🔴 -1.22% | **25.9x** | — | 2% |
-| UNITDSPR | 1,363.0 | 🔴 -3.70% | **18.9x** | — | 13% |
-| WIPRO | 156.8 | 🔴 -2.95% | **16.4x** | — | 0% |
-| INDHOTEL | 714.3 | 🟢 +0.47% | **16.4x** | — | 27% |
-| RECLTD | 292.5 | 🔴 -3.56% | **9.0x** | — | 0% |
-| BSE | 3,200.0 | 🟢 +3.31% | **7.5x** | — | 58% |
-| LODHA | 1,106.6 | 🔴 -0.94% | **5.1x** | — | 71% |
-| POWERINDIA | 30,735.0 | 🟢 +1.57% | **4.4x** | — | 91% |
-| POLYCAB | 8,102.5 | 🔴 -1.08% | **4.3x** | — | 22% |
-| POLICYBZR | 1,081.0 | 🔴 -6.11% | **3.8x** | — | 0% |
-| SBIN | 964.7 | 🟢 +0.28% | **3.6x** | — | 15% |
-| COROMANDEL | 1,792.9 | 🔴 -5.59% | **3.4x** | — | 5% |
-| KOTAKBANK | 406.0 | 🟢 +1.11% | **3.2x** | — | 18% |
-| DABUR | 380.4 | 🔴 -1.39% | **3.0x** | — | 3% |
-| TATAPOWER | 359.0 | 🔴 -0.80% | **2.9x** | — | 5% |
+| MAXHEALTH | 929.8 | 🔴 -5.33% | **7.5x** | — | 3% |
+| APOLLOHOSP | 8,165.5 | 🔴 -5.70% | **6.9x** | — | 22% |
+| IRFC | 79.3 | 🔴 -1.22% | **5.2x** | — | 3% |
+| FORTIS | 770.0 | 🔴 -6.33% | **5.2x** | — | 2% |
+| PAGEIND | 36,385.0 | 🔴 -0.53% | **4.3x** | — | 23% |
+| RVNL | 201.8 | 🟢 +1.95% | **3.9x** | — | 3% |
+| TIINDIA | 2,375.0 | 🔴 -1.57% | **3.6x** | — | 10% |
+| KOTAKBANK | 417.0 | 🟢 +2.71% | **2.8x** | — | 21% |
+| AMBUJACEM | 374.0 | 🟢 +2.26% | **2.8x** | — | 2% |
+| MANKIND | 2,503.8 | 🔴 -1.62% | **2.8x** | — | 31% |
+| PRESTIGE | 1,481.9 | 🟢 +4.54% | **2.8x** | — | 36% |
+| GLENMARK | 2,334.7 | 🔴 -4.37% | **2.6x** | — | 30% |
+| DRREDDY | 1,233.0 | 🔴 -1.51% | **2.5x** | — | 12% |
+| JINDALSTEL | 1,134.9 | 🟢 +0.43% | **2.3x** | — | 16% |
+| UNIONBANK | 171.0 | 🟢 +3.01% | **2.2x** | — | 30% |
