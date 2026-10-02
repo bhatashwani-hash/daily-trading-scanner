@@ -1,6 +1,6 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Thursday, October 01, 2026 04:40 PM IST  
+**Run time:** Friday, October 02, 2026 04:14 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
