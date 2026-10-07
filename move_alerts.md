@@ -1,13 +1,13 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Wednesday, October 07, 2026 04:51 PM IST  
+**Run time:** Wednesday, October 07, 2026 10:54 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 500 (NSE constituents file) · 498 stocks with usable data  
 
 > **Strategy (calibrated on this universe):** high-energy names (typical ATR ≥3%/day)
 > showing volume-surge ignition (RVOL ≥2.5x on an up day), plus trend, levels
 > (20-day-high break, 52-week-high proximity) and accumulation.
-> **Self-check (past 1y, matched base rate 17%):** ignition days hit +10% within 10 sessions **27%** of the time (542/1994, **1.58x lift**); inside an uptrend 28% (310/1107, 1.62x).
+> **Self-check (past 1y, matched base rate 17%):** ignition days hit +10% within 10 sessions **27%** of the time (537/1988, **1.57x lift**); inside an uptrend 28% (308/1105, 1.62x).
 > Entry idea: buy strength through the Trigger (prior 20-day high) with volume;
 > stop ≈ −4%; target +10%. Not investment advice.
 
@@ -15,17 +15,17 @@
 
 | Signal | Days | Hits | Hit rate | Lift |
 |---|---:|---:|---:|---:|
-| ignition (hi-ATR + rvol>=2.5 up) | 1994 | 542 | 27.2% | 1.58x |
-| ignition + uptrend | 1107 | 310 | 28.0% | 1.62x |
-| coil | 2146 | 335 | 15.6% | 0.91x |
-| coil+breakout | 139 | 21 | 15.1% | 0.88x |
-| rvol>=2.5 up day | 3663 | 748 | 20.4% | 1.18x |
-| rvol>=2.5 up + uptrend | 1826 | 387 | 21.2% | 1.23x |
-| rvol>=2 breakout | 1994 | 404 | 20.3% | 1.18x |
-| near 52w-high + rvol>=2 | 1990 | 365 | 18.3% | 1.06x |
-| accumulation>=1.6 | 32873 | 5953 | 18.1% | 1.05x |
-| squeeze p<=10 alone | 8754 | 1188 | 13.6% | 0.79x |
-| high-ATR name (>=3%) | 43281 | 10605 | 24.5% | 1.42x |
+| ignition (hi-ATR + rvol>=2.5 up) | 1988 | 537 | 27.0% | 1.57x |
+| ignition + uptrend | 1105 | 308 | 27.9% | 1.62x |
+| coil | 2140 | 333 | 15.6% | 0.9x |
+| coil+breakout | 140 | 21 | 15.0% | 0.87x |
+| rvol>=2.5 up day | 3657 | 743 | 20.3% | 1.18x |
+| rvol>=2.5 up + uptrend | 1824 | 385 | 21.1% | 1.23x |
+| rvol>=2 breakout | 1989 | 399 | 20.1% | 1.17x |
+| near 52w-high + rvol>=2 | 1991 | 365 | 18.3% | 1.07x |
+| accumulation>=1.6 | 32815 | 5932 | 18.1% | 1.05x |
+| squeeze p<=10 alone | 8742 | 1171 | 13.4% | 0.78x |
+| high-ATR name (>=3%) | 43163 | 10551 | 24.4% | 1.42x |
 
 </details>
 
