@@ -1,39 +1,41 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Tuesday, October 06, 2026 05:01 PM IST  
+**Run time:** Wednesday, October 07, 2026 04:51 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (3)
+## 🚀 High RVOL + Breakout (7)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| TRENT | 2,906.0 | 🟢 +12.64% | **10.0x** | 20D High | 33% |
-| BHEL | 452.0 | 🟢 +5.36% | **3.7x** | 52W High | 98% |
-| MOTILALOFS | 1,081.2 | 🟢 +6.93% | **3.0x** | 20D High | 76% |
+| ADANIGREEN | 1,341.4 | 🟢 +2.16% | **4.4x** | 20D High | 75% |
+| INDIGO | 4,990.0 | 🔴 -1.20% | **3.0x** | 20D High | 28% |
+| SUPREMEIND | 3,550.0 | 🟢 +1.49% | **3.0x** | 20D High | 13% |
+| KOTAKBANK | 440.0 | 🟢 +1.88% | **2.1x** | 20D High | 28% |
+| BHEL | 448.5 | 🔴 -0.77% | **2.0x** | 52W High | 96% |
+| AXISBANK | 1,242.5 | 🔴 -0.44% | **1.9x** | 20D High | 8% |
+| MOTILALOFS | 1,067.9 | 🔴 -1.23% | **1.6x** | 52W High | 74% |
 
 ## 📈 Other Breakouts (3)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| PAGEIND | 37,970.0 | 🟢 +1.35% | **1.4x** | 20D High | 29% |
-| INDUSTOWER | 389.1 | 🟢 +2.34% | **1.2x** | 20D High | 20% |
-| VBL | 439.3 | 🔴 -0.07% | **0.8x** | 20D High | 16% |
+| LAURUSLABS | 2,052.8 | 🟢 +0.14% | **1.0x** | 52W High | 144% |
+| NYKAA | 341.2 | 🟢 +0.90% | **1.4x** | 20D High | 47% |
+| VBL | 440.8 | 🟢 +0.33% | **0.7x** | 20D High | 16% |
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (12)
+## 🔊 High RVOL (≥2x), No Breakout Yet (10)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| JINDALSTEL | 1,085.9 | 🔴 -1.04% | **6.8x** | — | 11% |
-| VOLTAS | 1,067.9 | 🟢 +0.62% | **4.2x** | — | 3% |
-| TIINDIA | 2,472.7 | 🟢 +6.58% | **3.2x** | — | 14% |
-| JSWENERGY | 494.9 | 🟢 +0.63% | **2.8x** | — | 16% |
-| RADICO | 4,460.1 | 🟢 +3.99% | **2.6x** | — | 79% |
-| KALYANKJIL | 548.2 | 🔴 -1.56% | **2.6x** | — | 68% |
-| KOTAKBANK | 431.9 | 🟢 +3.82% | **2.4x** | — | 25% |
-| APOLLOHOSP | 7,914.5 | 🔴 -0.88% | **2.4x** | — | 18% |
-| PIIND | 2,250.0 | 🟢 +1.35% | **2.4x** | — | 3% |
-| CUMMINSIND | 4,919.0 | 🟢 +1.79% | **2.3x** | — | 28% |
-| VEDL | 265.6 | 🟢 +4.14% | **2.2x** | — | 7% |
-| MFSL | 1,361.0 | 🟢 +0.96% | **2.0x** | — | 2% |
+| TITAN | 4,377.0 | 🔴 -3.80% | **4.8x** | — | 29% |
+| ITC | 265.7 | 🔴 -0.37% | **3.8x** | — | 4% |
+| KALYANKJIL | 569.0 | 🟢 +3.80% | **3.2x** | — | 75% |
+| TATACOMM | 1,659.6 | 🔴 -1.32% | **3.1x** | — | 27% |
+| BHARTIARTL | 1,833.9 | 🟢 +1.29% | **2.6x** | — | 7% |
+| AMBUJACEM | 356.9 | 🔴 -1.29% | **2.3x** | — | 1% |
+| JUBLFOOD | 460.6 | 🟢 +2.41% | **2.3x** | — | 13% |
+| TIINDIA | 2,388.0 | 🔴 -3.43% | **2.2x** | — | 10% |
+| NATIONALUM | 321.3 | 🔴 -4.73% | **2.1x** | — | 54% |
+| PFC | 325.5 | 🟢 +0.91% | **2.0x** | — | 4% |
