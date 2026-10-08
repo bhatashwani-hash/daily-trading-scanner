@@ -1,6 +1,6 @@
 # Equal-Weight Sector / Industry Group Performance
 
-**Report date:** Wednesday, October 07, 2026  
+**Report date:** Thursday, October 08, 2026  
 **Market status:** market CLOSED — data as of last close (2026-10-06)  
 **52-Weeks** = % the current price sits above its 52-week low (strength from the low)
 
@@ -13,7 +13,7 @@
 | 5 | Oil & Gas Exploration & Production | XOP | 57% | 🟢 +0.54% |
 | 6 | Energy | RSPG | 55% | 🟢 +0.57% |
 | 7 | Software & Services | XSW | 49% | 🔴 -0.03% |
-| 8 | Biotech | XBI | 48% | 🔴 -3.39% |
+| 8 | Biotech | XBI | 47% | 🔴 -3.39% |
 | 9 | Health Care Services | XHS | 38% | 🔴 -0.20% |
 | 10 | QQQ | QQQ | 37% | 🟢 +0.46% |
 | 11 | Natural Resources | GNR | 35% | 🟢 +0.41% |
@@ -35,7 +35,7 @@
 | 27 | Consumer Staples | RSPS | 6% | 🟢 +0.80% |
 | 28 | Utilities | RSPU | 5% | 🟢 +2.55% |
 | 29 | Homebuilders | XHB | 5% | 🟢 +1.11% |
-| 30 | Real Estate | RSPR | 3% | 🔴 -0.28% |
+| 30 | Real Estate | RSPR | 4% | 🟢 +0.83% |
 | 31 | Consumer Discretionary | RSPD | 3% | 🟢 +1.14% |
-| 32 | Communication | RSPC | 2% | 🟢 +1.24% |
+| 32 | Communication | RSPC | 2% | 🔴 -0.23% |
 | 33 | China | GXC | 2% | 🔴 -0.24% |

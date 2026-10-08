@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-10-07 00:40 UTC",
+ "generated_utc": "2026-10-08 00:58 UTC",
  "last_bar": "2026-10-06",
  "rows": [
   {
@@ -46,7 +46,7 @@
    "Equal Weight Industry Group": "Technology",
    "Ticker": "RSPT",
    "Price": 69.29000091552734,
-   "52-Weeks": 67.64756292287655,
+   "52-Weeks": 67.64754784601283,
    "% Daily Chg": 0.8734873384709845,
    "Last Bar": "2026-10-06",
    "Spark": [
@@ -126,7 +126,7 @@
    "Equal Weight Industry Group": "Telecom",
    "Ticker": "XTL",
    "Price": 215.64999389648438,
-   "52-Weeks": 65.89555131195434,
+   "52-Weeks": 65.89553244106324,
    "% Daily Chg": 2.228014703121972,
    "Last Bar": "2026-10-06",
    "Spark": [
@@ -206,7 +206,7 @@
    "Equal Weight Industry Group": "Energy",
    "Ticker": "RSPG",
    "Price": 112.75,
-   "52-Weeks": 54.753487914614865,
+   "52-Weeks": 54.7534718218461,
    "% Daily Chg": 0.5708673500705911,
    "Last Bar": "2026-10-06",
    "Spark": [
@@ -286,7 +286,7 @@
    "Equal Weight Industry Group": "Biotech",
    "Ticker": "XBI",
    "Price": 150.89999389648438,
-   "52-Weeks": 47.779454586589694,
+   "52-Weeks": 46.522116762597335,
    "% Daily Chg": -3.386905987728882,
    "Last Bar": "2026-10-06",
    "Spark": [
@@ -566,7 +566,7 @@
    "Equal Weight Industry Group": "Healthcare",
    "Ticker": "RSPH",
    "Price": 36.970001220703125,
-   "52-Weeks": 26.36656297805545,
+   "52-Weeks": 26.366554844529727,
    "% Daily Chg": -0.8315385427692248,
    "Last Bar": "2026-10-06",
    "Spark": [
@@ -686,7 +686,7 @@
    "Equal Weight Industry Group": "Materials",
    "Ticker": "RSPM",
    "Price": 37.7400016784668,
-   "52-Weeks": 24.091755320995013,
+   "52-Weeks": 24.091763033695745,
    "% Daily Chg": 0.23904422029313493,
    "Last Bar": "2026-10-06",
    "Spark": [
@@ -766,7 +766,7 @@
    "Equal Weight Industry Group": "S&P 500",
    "Ticker": "RSP",
    "Price": 212.3300018310547,
-   "52-Weeks": 18.45807991060349,
+   "52-Weeks": 18.458089990851942,
    "% Daily Chg": 0.5731369561635045,
    "Last Bar": "2026-10-06",
    "Spark": [
@@ -1006,7 +1006,7 @@
    "Equal Weight Industry Group": "Retail",
    "Ticker": "XRT",
    "Price": 82.94999694824219,
-   "52-Weeks": 8.35742268129228,
+   "52-Weeks": 8.357433474889863,
    "% Daily Chg": 0.03617797872565554,
    "Last Bar": "2026-10-06",
    "Spark": [
@@ -1046,7 +1046,7 @@
    "Equal Weight Industry Group": "Consumer Staples",
    "Ticker": "RSPS",
    "Price": 29.010000228881836,
-   "52-Weeks": 5.9792935612624705,
+   "52-Weeks": 5.979286176706944,
    "% Daily Chg": 0.7991644779322485,
    "Last Bar": "2026-10-06",
    "Spark": [
@@ -1165,12 +1165,11 @@
   {
    "Equal Weight Industry Group": "Real Estate",
    "Ticker": "RSPR",
-   "Price": 33.00899887084961,
-   "52-Weeks": 3.2413219134202627,
-   "% Daily Chg": -0.2839675201633418,
-   "Last Bar": "2026-10-05",
+   "Price": 33.284000396728516,
+   "52-Weeks": 4.101436489176712,
+   "% Daily Chg": 0.8331107736859032,
+   "Last Bar": "2026-10-06",
    "Spark": [
-    36.84,
     36.8,
     36.55,
     36.08,
@@ -1199,14 +1198,15 @@
     33.24,
     33.14,
     33.1,
-    33.01
+    33.01,
+    33.28
    ]
   },
   {
    "Equal Weight Industry Group": "Consumer Discretionary",
    "Ticker": "RSPD",
    "Price": 52.34000015258789,
-   "52-Weeks": 3.204683621153964,
+   "52-Weeks": 3.2046761471063676,
    "% Daily Chg": 1.1400969132133152,
    "Last Bar": "2026-10-06",
    "Spark": [
@@ -1245,12 +1245,11 @@
   {
    "Equal Weight Industry Group": "Communication",
    "Ticker": "RSPC",
-   "Price": 35.099998474121094,
-   "52-Weeks": 2.0233958674499357,
-   "% Daily Chg": 1.2402663048333877,
-   "Last Bar": "2026-10-05",
+   "Price": 35.02000045776367,
+   "52-Weeks": 1.7908696667020492,
+   "% Daily Chg": -0.22791458642485038,
+   "Last Bar": "2026-10-06",
    "Spark": [
-    37.29,
     37.78,
     37.5,
     37.13,
@@ -1279,7 +1278,8 @@
     35.08,
     34.56,
     34.67,
-    35.1
+    35.1,
+    35.02
    ]
   },
   {
