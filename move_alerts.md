@@ -1,8 +1,8 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Thursday, October 08, 2026 05:07 PM IST  
+**Run time:** Thursday, October 08, 2026 10:53 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
-**Universe:** Nifty 500 (NSE constituents file) · 498 stocks with usable data  
+**Universe:** Nifty 500 (NSE constituents file) · 499 stocks with usable data  
 
 > **Strategy (calibrated on this universe):** high-energy names (typical ATR ≥3%/day)
 > showing volume-surge ignition (RVOL ≥2.5x on an up day), plus trend, levels
@@ -17,14 +17,14 @@
 |---|---:|---:|---:|---:|
 | ignition (hi-ATR + rvol>=2.5 up) | 2013 | 545 | 27.1% | 1.57x |
 | ignition + uptrend | 1117 | 312 | 27.9% | 1.62x |
-| coil | 2110 | 331 | 15.7% | 0.91x |
+| coil | 2122 | 333 | 15.7% | 0.91x |
 | coil+breakout | 136 | 19 | 14.0% | 0.81x |
-| rvol>=2.5 up day | 3664 | 749 | 20.4% | 1.19x |
-| rvol>=2.5 up + uptrend | 1817 | 385 | 21.2% | 1.23x |
-| rvol>=2 breakout | 1991 | 401 | 20.1% | 1.17x |
-| near 52w-high + rvol>=2 | 2001 | 368 | 18.4% | 1.07x |
-| accumulation>=1.6 | 32800 | 5946 | 18.1% | 1.05x |
-| squeeze p<=10 alone | 8799 | 1196 | 13.6% | 0.79x |
+| rvol>=2.5 up day | 3672 | 750 | 20.4% | 1.19x |
+| rvol>=2.5 up + uptrend | 1823 | 385 | 21.1% | 1.23x |
+| rvol>=2 breakout | 1998 | 403 | 20.2% | 1.17x |
+| near 52w-high + rvol>=2 | 2011 | 370 | 18.4% | 1.07x |
+| accumulation>=1.6 | 32920 | 5958 | 18.1% | 1.05x |
+| squeeze p<=10 alone | 8808 | 1196 | 13.6% | 0.79x |
 | high-ATR name (>=3%) | 43749 | 10655 | 24.3% | 1.42x |
 
 </details>

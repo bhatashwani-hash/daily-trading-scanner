@@ -1,9 +1,9 @@
 {
- "run_time_ist": "2026-10-08 05:07 PM IST",
+ "run_time_ist": "2026-10-08 10:53 PM IST",
  "elapsed_frac": 1.0,
  "market_open": false,
  "universe": "Nifty 500 (NSE constituents file)",
- "scanned": 498,
+ "scanned": 499,
  "params": {
   "target_move": 0.1,
   "fwd_window_sessions": 10,
@@ -16,7 +16,7 @@
   "confirm_days": 1117,
   "confirm_hits": 312,
   "confirm_hit_rate": 0.2793,
-  "base_days": 96951,
+  "base_days": 97150,
   "base_hit_rate": 0.172,
   "lift": 1.57,
   "confirm_lift": 1.62,
@@ -37,8 +37,8 @@
    },
    {
     "name": "coil",
-    "days": 2110,
-    "hits": 331,
+    "days": 2122,
+    "hits": 333,
     "hit_rate": 0.1569,
     "lift": 0.91
    },
@@ -51,44 +51,44 @@
    },
    {
     "name": "rvol>=2.5 up day",
-    "days": 3664,
-    "hits": 749,
-    "hit_rate": 0.2044,
+    "days": 3672,
+    "hits": 750,
+    "hit_rate": 0.2042,
     "lift": 1.19
    },
    {
     "name": "rvol>=2.5 up + uptrend",
-    "days": 1817,
+    "days": 1823,
     "hits": 385,
-    "hit_rate": 0.2119,
+    "hit_rate": 0.2112,
     "lift": 1.23
    },
    {
     "name": "rvol>=2 breakout",
-    "days": 1991,
-    "hits": 401,
-    "hit_rate": 0.2014,
+    "days": 1998,
+    "hits": 403,
+    "hit_rate": 0.2017,
     "lift": 1.17
    },
    {
     "name": "near 52w-high + rvol>=2",
-    "days": 2001,
-    "hits": 368,
-    "hit_rate": 0.1839,
+    "days": 2011,
+    "hits": 370,
+    "hit_rate": 0.184,
     "lift": 1.07
    },
    {
     "name": "accumulation>=1.6",
-    "days": 32800,
-    "hits": 5946,
-    "hit_rate": 0.1813,
+    "days": 32920,
+    "hits": 5958,
+    "hit_rate": 0.181,
     "lift": 1.05
    },
    {
     "name": "squeeze p<=10 alone",
-    "days": 8799,
+    "days": 8808,
     "hits": 1196,
-    "hit_rate": 0.1359,
+    "hit_rate": 0.1358,
     "lift": 0.79
    },
    {
