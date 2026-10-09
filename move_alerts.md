@@ -1,6 +1,6 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Friday, October 09, 2026 05:01 PM IST  
+**Run time:** Friday, October 09, 2026 10:28 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 500 (NSE constituents file) · 499 stocks with usable data  
 
@@ -18,12 +18,12 @@
 | ignition (hi-ATR + rvol>=2.5 up) | 2012 | 553 | 27.5% | 1.56x |
 | ignition + uptrend | 1119 | 320 | 28.6% | 1.62x |
 | coil | 2041 | 334 | 16.4% | 0.93x |
-| coil+breakout | 138 | 21 | 15.2% | 0.86x |
+| coil+breakout | 139 | 21 | 15.1% | 0.86x |
 | rvol>=2.5 up day | 3557 | 748 | 21.0% | 1.19x |
 | rvol>=2.5 up + uptrend | 1747 | 380 | 21.8% | 1.24x |
 | rvol>=2 breakout | 1940 | 405 | 20.9% | 1.19x |
 | near 52w-high + rvol>=2 | 1956 | 364 | 18.6% | 1.06x |
-| accumulation>=1.6 | 32208 | 5931 | 18.4% | 1.05x |
+| accumulation>=1.6 | 32204 | 5931 | 18.4% | 1.05x |
 | squeeze p<=10 alone | 8432 | 1172 | 13.9% | 0.79x |
 | high-ATR name (>=3%) | 44488 | 10853 | 24.4% | 1.39x |
 

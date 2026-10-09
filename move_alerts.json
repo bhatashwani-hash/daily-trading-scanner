@@ -1,5 +1,5 @@
 {
- "run_time_ist": "2026-10-09 05:01 PM IST",
+ "run_time_ist": "2026-10-09 10:28 PM IST",
  "elapsed_frac": 1.0,
  "market_open": false,
  "universe": "Nifty 500 (NSE constituents file)",
@@ -44,9 +44,9 @@
    },
    {
     "name": "coil+breakout",
-    "days": 138,
+    "days": 139,
     "hits": 21,
-    "hit_rate": 0.1522,
+    "hit_rate": 0.1511,
     "lift": 0.86
    },
    {
@@ -79,9 +79,9 @@
    },
    {
     "name": "accumulation>=1.6",
-    "days": 32208,
+    "days": 32204,
     "hits": 5931,
-    "hit_rate": 0.1841,
+    "hit_rate": 0.1842,
     "lift": 1.05
    },
    {
