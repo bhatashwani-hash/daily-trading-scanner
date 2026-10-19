@@ -1,5 +1,5 @@
 {
- "run_time_ist": "2026-10-19 03:48 PM IST",
+ "run_time_ist": "2026-10-19 10:28 PM IST",
  "elapsed_frac": 1.0,
  "market_open": false,
  "universe": "Nifty 500 (NSE constituents file)",
@@ -79,7 +79,7 @@
    },
    {
     "name": "accumulation>=1.6",
-    "days": 32077,
+    "days": 32081,
     "hits": 5868,
     "hit_rate": 0.1829,
     "lift": 1.05

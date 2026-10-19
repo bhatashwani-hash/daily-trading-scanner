@@ -1,6 +1,6 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Monday, October 19, 2026 03:48 PM IST  
+**Run time:** Monday, October 19, 2026 10:28 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 500 (NSE constituents file) · 499 stocks with usable data  
 
@@ -23,7 +23,7 @@
 | rvol>=2.5 up + uptrend | 1695 | 373 | 22.0% | 1.26x |
 | rvol>=2 breakout | 1935 | 401 | 20.7% | 1.18x |
 | near 52w-high + rvol>=2 | 1987 | 364 | 18.3% | 1.05x |
-| accumulation>=1.6 | 32077 | 5868 | 18.3% | 1.05x |
+| accumulation>=1.6 | 32081 | 5868 | 18.3% | 1.05x |
 | squeeze p<=10 alone | 8379 | 1147 | 13.7% | 0.78x |
 | high-ATR name (>=3%) | 46574 | 11080 | 23.8% | 1.36x |
 
