@@ -1,12 +1,12 @@
 {
- "generated_utc": "2026-10-16 23:33 UTC",
+ "generated_utc": "2026-10-20 00:18 UTC",
  "last_bar": "2026-10-16",
  "rows": [
   {
    "Equal Weight Industry Group": "Oil & Gas Exploration & Production",
    "Ticker": "XOP",
    "Price": 200.3800048828125,
-   "52-Weeks": 67.15119481308027,
+   "52-Weeks": 66.45716550863919,
    "% Daily Chg": 2.8169765048784043,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -46,7 +46,7 @@
    "Equal Weight Industry Group": "Semiconductor",
    "Ticker": "XSD",
    "Price": 462.0299987792969,
-   "52-Weeks": 64.83879369673974,
+   "52-Weeks": 64.8387766352487,
    "% Daily Chg": -4.236533336723683,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -86,7 +86,7 @@
    "Equal Weight Industry Group": "Energy",
    "Ticker": "RSPG",
    "Price": 119.0199966430664,
-   "52-Weeks": 62.659949182243025,
+   "52-Weeks": 60.406735398941144,
    "% Daily Chg": 2.6919715928483807,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -120,46 +120,6 @@
     117.73,
     115.9,
     119.02
-   ]
-  },
-  {
-   "Equal Weight Industry Group": "Oil & Gas Equipment & Services",
-   "Ticker": "XES",
-   "Price": 105.91899871826172,
-   "52-Weeks": 53.328790275704506,
-   "% Daily Chg": 1.0581062737340343,
-   "Last Bar": "2026-10-16",
-   "Spark": [
-    122.08,
-    122.85,
-    123.07,
-    121.08,
-    121.62,
-    115.88,
-    119.07,
-    115.92,
-    116.22,
-    115.56,
-    114.05,
-    113.55,
-    113.02,
-    112.75,
-    112.57,
-    110.99,
-    107.79,
-    107.52,
-    109.13,
-    109.16,
-    112.4,
-    111.64,
-    109.41,
-    110.27,
-    110.78,
-    110.31,
-    110.92,
-    107.25,
-    104.81,
-    105.92
    ]
   },
   {
@@ -200,6 +160,46 @@
     65.23,
     65.27,
     63.07
+   ]
+  },
+  {
+   "Equal Weight Industry Group": "Oil & Gas Equipment & Services",
+   "Ticker": "XES",
+   "Price": 105.91999816894531,
+   "52-Weeks": 47.40373485389922,
+   "% Daily Chg": 1.0590598570818777,
+   "Last Bar": "2026-10-16",
+   "Spark": [
+    122.08,
+    122.85,
+    123.07,
+    121.08,
+    121.62,
+    115.88,
+    119.07,
+    115.92,
+    116.22,
+    115.56,
+    114.05,
+    113.55,
+    113.02,
+    112.75,
+    112.57,
+    110.99,
+    107.79,
+    107.52,
+    109.13,
+    109.16,
+    112.4,
+    111.64,
+    109.41,
+    110.27,
+    110.78,
+    110.31,
+    110.92,
+    107.25,
+    104.81,
+    105.92
    ]
   },
   {
@@ -366,7 +366,7 @@
    "Equal Weight Industry Group": "Biotech",
    "Ticker": "XBI",
    "Price": 144.32000732421875,
-   "52-Weeks": 36.34956810235648,
+   "52-Weeks": 36.34957769056082,
    "% Daily Chg": -3.645340832939588,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -446,7 +446,7 @@
    "Equal Weight Industry Group": "Pharmaceuticals",
    "Ticker": "XPH",
    "Price": 61.84000015258789,
-   "52-Weeks": 30.536458382773873,
+   "52-Weeks": 30.536468741684743,
    "% Daily Chg": -1.8724219241582258,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -486,7 +486,7 @@
    "Equal Weight Industry Group": "QQQ",
    "Ticker": "QQQ",
    "Price": 709.7999877929688,
-   "52-Weeks": 28.027450001308967,
+   "52-Weeks": 28.027435974452857,
    "% Daily Chg": -2.500001676790007,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -526,7 +526,7 @@
    "Equal Weight Industry Group": "Materials",
    "Ticker": "RSPM",
    "Price": 38.66999816894531,
-   "52-Weeks": 27.1496564885462,
+   "52-Weeks": 27.149648585787585,
    "% Daily Chg": 0.4676447976857703,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -606,7 +606,7 @@
    "Equal Weight Industry Group": "Regional Banks",
    "Ticker": "KRE",
    "Price": 69.80999755859375,
-   "52-Weeks": 23.12253136414757,
+   "52-Weeks": 22.805203392069913,
    "% Daily Chg": 0.08601800515232974,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -646,7 +646,7 @@
    "Equal Weight Industry Group": "S&P 500",
    "Ticker": "RSP",
    "Price": 214.08999633789062,
-   "52-Weeks": 19.43997398179029,
+   "52-Weeks": 19.43996381798883,
    "% Daily Chg": -0.4232575172601744,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -766,7 +766,7 @@
    "Equal Weight Industry Group": "Metal & Minings",
    "Ticker": "XME",
    "Price": 100.91999816894531,
-   "52-Weeks": 18.23396642188721,
+   "52-Weeks": 18.233956217250114,
    "% Daily Chg": -0.4144446261325518,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -926,7 +926,7 @@
    "Equal Weight Industry Group": "Retail",
    "Ticker": "XRT",
    "Price": 87.0199966430664,
-   "52-Weeks": 13.674066837154056,
+   "52-Weeks": 13.674055513961047,
    "% Daily Chg": -0.9109577027303972,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -1086,7 +1086,7 @@
    "Equal Weight Industry Group": "Real Estate",
    "Ticker": "RSPR",
    "Price": 34.130001068115234,
-   "52-Weeks": 6.747449111229853,
+   "52-Weeks": 6.74746184739962,
    "% Daily Chg": 0.30270267603919027,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -1126,7 +1126,7 @@
    "Equal Weight Industry Group": "Consumer Discretionary",
    "Ticker": "RSPD",
    "Price": 53.9900016784668,
-   "52-Weeks": 6.458177793036081,
+   "52-Weeks": 6.458170083371558,
    "% Daily Chg": -0.47925957886304726,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -1166,7 +1166,7 @@
    "Equal Weight Industry Group": "Aerospace & Defence",
    "Ticker": "XAR",
    "Price": 224.52999877929688,
-   "52-Weeks": 4.597340305926,
+   "52-Weeks": 4.597347570084203,
    "% Daily Chg": -0.151196844965217,
    "Last Bar": "2026-10-16",
    "Spark": [
@@ -1245,9 +1245,9 @@
   {
    "Equal Weight Industry Group": "Communication",
    "Ticker": "RSPC",
-   "Price": 35.10540008544922,
-   "52-Weeks": 2.039096458755024,
-   "% Daily Chg": -1.2228497998947685,
+   "Price": 35.11000061035156,
+   "52-Weeks": 2.0524685725360525,
+   "% Daily Chg": -1.2099051606605757,
    "Last Bar": "2026-10-16",
    "Spark": [
     36.95,
@@ -1286,7 +1286,7 @@
    "Equal Weight Industry Group": "China",
    "Ticker": "GXC",
    "Price": 84.04000091552734,
-   "52-Weeks": 0.14896025577814234,
+   "52-Weeks": 0.15492461893035367,
    "% Daily Chg": -0.8728448624963149,
    "Last Bar": "2026-10-16",
    "Spark": [

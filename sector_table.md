@@ -1,16 +1,16 @@
 # Equal-Weight Sector / Industry Group Performance
 
-**Report date:** Friday, October 16, 2026  
-**Market status:** market session in progress — intraday prices  
+**Report date:** Tuesday, October 20, 2026  
+**Market status:** market CLOSED — data as of last close (2026-10-16)  
 **52-Weeks** = % the current price sits above its 52-week low (strength from the low)
 
 | # | Equal Weight Industry Group | Ticker | 52-Weeks | % Daily Chg |
 |---:|---|---|---:|---:|
-| 1 | Oil & Gas Exploration & Production | XOP | 67% | 🟢 +2.82% |
+| 1 | Oil & Gas Exploration & Production | XOP | 66% | 🟢 +2.82% |
 | 2 | Semiconductor | XSD | 65% | 🔴 -4.24% |
-| 3 | Energy | RSPG | 63% | 🟢 +2.69% |
-| 4 | Oil & Gas Equipment & Services | XES | 53% | 🟢 +1.06% |
-| 5 | Technology | RSPT | 53% | 🔴 -3.37% |
+| 3 | Energy | RSPG | 60% | 🟢 +2.69% |
+| 4 | Technology | RSPT | 53% | 🔴 -3.37% |
+| 5 | Oil & Gas Equipment & Services | XES | 47% | 🟢 +1.06% |
 | 6 | Software & Services | XSW | 47% | 🔴 -3.58% |
 | 7 | Telecom | XTL | 44% | 🔴 -2.92% |
 | 8 | Health Care Services | XHS | 40% | 🔴 -2.11% |
@@ -37,5 +37,5 @@
 | 29 | Consumer Discretionary | RSPD | 6% | 🔴 -0.48% |
 | 30 | Aerospace & Defence | XAR | 5% | 🔴 -0.15% |
 | 31 | Homebuilders | XHB | 3% | 🔴 -0.88% |
-| 32 | Communication | RSPC | 2% | 🔴 -1.22% |
+| 32 | Communication | RSPC | 2% | 🔴 -1.21% |
 | 33 | China | GXC | 0% | 🔴 -0.87% |
