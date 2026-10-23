@@ -1,41 +1,39 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Thursday, October 22, 2026 03:08 PM IST  
-**Market status:** market OPEN — intraday scan, 94% of session elapsed (RVOL is pace-adjusted)  
+**Run time:** Friday, October 23, 2026 03:05 PM IST  
+**Market status:** market OPEN — intraday scan, 93% of session elapsed (RVOL is pace-adjusted)  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (3)
+## 🚀 High RVOL + Breakout (2)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| INDHOTEL | 787.4 | 🟢 +4.57% | **5.2x** | 52W High | 40% |
-| COFORGE | 1,904.1 | 🔴 -2.40% | **1.8x** | 20D High | 89% |
-| WIPRO | 190.0 | 🟢 +0.44% | **1.7x** | 20D High | 21% |
+| INFY | 1,154.3 | 🟢 +0.08% | **2.5x** | 20D High | 18% |
+| COFORGE | 1,895.7 | 🔴 -0.69% | **1.7x** | 20D High | 88% |
 
 ## 📈 Other Breakouts (4)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| TECHM | 1,800.0 | 🔴 -1.89% | **1.1x** | 52W High | 42% |
-| INFY | 1,154.2 | 🔴 -1.19% | **1.3x** | 20D High | 18% |
-| MPHASIS | 2,509.1 | 🔴 -2.56% | **0.9x** | 20D High | 28% |
-| HCLTECH | 1,415.0 | 🔴 -0.65% | **0.7x** | 20D High | 40% |
+| TECHM | 1,790.1 | 🔴 -1.32% | **0.9x** | 52W High | 42% |
+| TCS | 2,525.8 | 🟢 +0.75% | **1.2x** | 20D High | 29% |
+| WIPRO | 189.6 | 🔴 -0.44% | **1.0x** | 20D High | 21% |
+| HCLTECH | 1,419.4 | 🔴 -0.16% | **0.9x** | 20D High | 40% |
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (13)
+## 🔊 High RVOL (≥2x), No Breakout Yet (12)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| KEI | 3,871.8 | 🔴 -8.48% | **11.9x** | — | 4% |
-| SRF | 2,348.1 | 🟢 +1.87% | **9.0x** | — | 8% |
-| M&MFIN | 287.0 | 🔴 -3.53% | **7.5x** | — | 8% |
-| BPCL | 286.2 | 🔴 -0.62% | **4.1x** | — | 7% |
-| ETERNAL | 305.0 | 🔴 -2.35% | **4.0x** | — | 43% |
-| MAZDOCK | 1,911.0 | 🔴 -4.33% | **3.4x** | — | 2% |
-| BAJAJHLDNG | 11,257.0 | 🟢 +2.57% | **3.3x** | — | 33% |
-| HAVELLS | 1,080.2 | 🟢 +0.80% | **2.8x** | — | 6% |
-| AMBUJACEM | 365.1 | 🟢 +1.46% | **2.6x** | — | 7% |
-| SWIGGY | 209.2 | 🔴 -6.44% | **2.4x** | — | 1% |
-| HINDZINC | 512.9 | 🔴 -2.30% | **2.3x** | — | 15% |
-| DIVISLAB | 9,121.5 | 🔴 -0.75% | **2.0x** | — | 62% |
-| HDFCBANK | 694.2 | 🔴 -1.81% | **2.0x** | — | 2% |
+| SWIGGY | 178.4 | 🔴 -15.59% | **12.9x** | — | 2% |
+| HAVELLS | 1,026.9 | 🔴 -4.30% | **3.3x** | — | 2% |
+| CGPOWER | 812.9 | 🔴 -0.51% | **3.1x** | — | 55% |
+| SBICARD | 553.0 | 🔴 -2.35% | **3.0x** | — | 5% |
+| COLPAL | 1,587.5 | 🔴 -5.79% | **2.6x** | — | 0% |
+| GVT&D | 3,683.9 | 🔴 -1.50% | **2.4x** | — | 46% |
+| INDHOTEL | 774.1 | 🔴 -1.05% | **2.3x** | — | 38% |
+| ATGL | 530.4 | 🔴 -4.06% | **2.2x** | — | 15% |
+| ETERNAL | 315.7 | 🟢 +3.70% | **2.2x** | — | 48% |
+| ADANIPOWER | 182.1 | 🔴 -1.72% | **2.2x** | — | 42% |
+| POWERINDIA | 26,320.0 | 🔴 -2.64% | **2.1x** | — | 63% |
+| GODREJPROP | 1,489.5 | 🔴 -4.82% | **2.0x** | — | 4% |
