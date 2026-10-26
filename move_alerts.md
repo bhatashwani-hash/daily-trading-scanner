@@ -1,6 +1,6 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Monday, October 26, 2026 04:02 PM IST  
+**Run time:** Monday, October 26, 2026 10:16 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 500 (NSE constituents file) · 498 stocks with usable data  
 
