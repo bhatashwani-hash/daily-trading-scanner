@@ -1,7 +1,7 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Friday, October 23, 2026 03:05 PM IST  
-**Market status:** market OPEN — intraday scan, 93% of session elapsed (RVOL is pace-adjusted)  
+**Run time:** Monday, October 26, 2026 04:01 PM IST  
+**Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
@@ -9,31 +9,27 @@
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| INFY | 1,154.3 | 🟢 +0.08% | **2.5x** | 20D High | 18% |
-| COFORGE | 1,895.7 | 🔴 -0.69% | **1.7x** | 20D High | 88% |
+| DRREDDY | 1,310.9 | 🟢 +6.62% | **4.6x** | 20D High | 19% |
+| COFORGE | 1,993.0 | 🟢 +4.87% | **2.1x** | 20D High | 98% |
 
-## 📈 Other Breakouts (4)
-
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| TECHM | 1,790.1 | 🔴 -1.32% | **0.9x** | 52W High | 42% |
-| TCS | 2,525.8 | 🟢 +0.75% | **1.2x** | 20D High | 29% |
-| WIPRO | 189.6 | 🔴 -0.44% | **1.0x** | 20D High | 21% |
-| HCLTECH | 1,419.4 | 🔴 -0.16% | **0.9x** | 20D High | 40% |
-
-## 🔊 High RVOL (≥2x), No Breakout Yet (12)
+## 📈 Other Breakouts (1)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| SWIGGY | 178.4 | 🔴 -15.59% | **12.9x** | — | 2% |
-| HAVELLS | 1,026.9 | 🔴 -4.30% | **3.3x** | — | 2% |
-| CGPOWER | 812.9 | 🔴 -0.51% | **3.1x** | — | 55% |
-| SBICARD | 553.0 | 🔴 -2.35% | **3.0x** | — | 5% |
-| COLPAL | 1,587.5 | 🔴 -5.79% | **2.6x** | — | 0% |
-| GVT&D | 3,683.9 | 🔴 -1.50% | **2.4x** | — | 46% |
-| INDHOTEL | 774.1 | 🔴 -1.05% | **2.3x** | — | 38% |
-| ATGL | 530.4 | 🔴 -4.06% | **2.2x** | — | 15% |
-| ETERNAL | 315.7 | 🟢 +3.70% | **2.2x** | — | 48% |
-| ADANIPOWER | 182.1 | 🔴 -1.72% | **2.2x** | — | 42% |
-| POWERINDIA | 26,320.0 | 🔴 -2.64% | **2.1x** | — | 63% |
-| GODREJPROP | 1,489.5 | 🔴 -4.82% | **2.0x** | — | 4% |
+| INDHOTEL | 795.5 | 🟢 +1.76% | **1.1x** | 52W High | 41% |
+
+## 🔊 High RVOL (≥2x), No Breakout Yet (11)
+
+| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
+|---|---:|---:|---:|---|---:|
+| AUBANK | 869.0 | 🔴 -6.85% | **4.8x** | — | 5% |
+| SUPREMEIND | 3,250.0 | 🔴 -4.13% | **4.7x** | — | 4% |
+| SWIGGY | 185.8 | 🟢 +5.54% | **3.3x** | — | 7% |
+| JINDALSTEL | 1,039.9 | 🟢 +2.36% | **2.6x** | — | 7% |
+| BANKINDIA | 126.3 | 🔴 -3.57% | **2.4x** | — | 2% |
+| SHRIRAMFIN | 825.0 | 🔴 -4.62% | **2.4x** | — | 18% |
+| JUBLFOOD | 422.9 | 🟢 +4.68% | **2.4x** | — | 6% |
+| TATAPOWER | 338.5 | 🔴 -2.76% | **2.2x** | — | 2% |
+| 360ONE | 975.0 | 🔴 -2.22% | **2.1x** | — | 9% |
+| TORNTPHARM | 4,550.0 | 🟢 +0.57% | **2.1x** | — | 30% |
+| KEI | 3,899.5 | 🟢 +4.68% | **2.1x** | — | 6% |
