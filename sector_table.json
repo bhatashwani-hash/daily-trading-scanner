@@ -1,6 +1,6 @@
 {
- "generated_utc": "2026-10-23 23:51 UTC",
- "last_bar": "2026-10-23",
+ "generated_utc": "2026-10-27 00:24 UTC",
+ "last_bar": "2026-10-26",
  "rows": [
   {
    "Equal Weight Industry Group": "Oil & Gas Exploration & Production",
@@ -166,7 +166,7 @@
    "Equal Weight Industry Group": "Technology",
    "Ticker": "RSPT",
    "Price": 64.2300033569336,
-   "52-Weeks": 55.40486920249228,
+   "52-Weeks": 55.40485522663725,
    "% Daily Chg": 0.43784611517379185,
    "Last Bar": "2026-10-23",
    "Spark": [
@@ -245,12 +245,11 @@
   {
    "Equal Weight Industry Group": "Health Care Services",
    "Ticker": "XHS",
-   "Price": 141.39999389648438,
-   "52-Weeks": 44.12643814778157,
-   "% Daily Chg": -0.904063720548046,
-   "Last Bar": "2026-10-23",
+   "Price": 142.39999389648438,
+   "52-Weeks": 45.14571993256929,
+   "% Daily Chg": 0.7072136090275057,
+   "Last Bar": "2026-10-26",
    "Spark": [
-    138.81,
     137.95,
     138.24,
     137.35,
@@ -279,14 +278,15 @@
     141.19,
     140.66,
     142.69,
-    141.4
+    141.4,
+    142.4
    ]
   },
   {
    "Equal Weight Industry Group": "Telecom",
    "Ticker": "XTL",
    "Price": 185.66000366210938,
-   "52-Weeks": 42.82482281200626,
+   "52-Weeks": 42.82480656544648,
    "% Daily Chg": 0.35675873627533783,
    "Last Bar": "2026-10-23",
    "Spark": [
@@ -326,7 +326,7 @@
    "Equal Weight Industry Group": "Biotech",
    "Ticker": "XBI",
    "Price": 149.5399932861328,
-   "52-Weeks": 41.28126707191374,
+   "52-Weeks": 41.28127700691886,
    "% Daily Chg": -1.3848629068637281,
    "Last Bar": "2026-10-23",
    "Spark": [
@@ -486,7 +486,7 @@
    "Equal Weight Industry Group": "Materials",
    "Ticker": "RSPM",
    "Price": 39.13999938964844,
-   "52-Weeks": 28.695053348936835,
+   "52-Weeks": 28.69504535012685,
    "% Daily Chg": -0.5083903461202619,
    "Last Bar": "2026-10-23",
    "Spark": [
@@ -605,12 +605,11 @@
   {
    "Equal Weight Industry Group": "Transportation",
    "Ticker": "XTN",
-   "Price": 97.72000122070312,
-   "52-Weeks": 24.371033081181537,
-   "% Daily Chg": -1.7790699377539858,
-   "Last Bar": "2026-10-23",
+   "Price": 97.98999786376953,
+   "52-Weeks": 24.714677617567062,
+   "% Daily Chg": 0.276296192891578,
+   "Last Bar": "2026-10-26",
    "Spark": [
-    102.62,
     102.03,
     99.97,
     100.77,
@@ -639,7 +638,8 @@
     97.77,
     98.07,
     99.49,
-    97.72
+    97.72,
+    97.99
    ]
   },
   {
@@ -766,7 +766,7 @@
    "Equal Weight Industry Group": "S&P 500",
    "Ticker": "RSP",
    "Price": 216.5399932861328,
-   "52-Weeks": 20.80681772395033,
+   "52-Weeks": 20.806807443836654,
    "% Daily Chg": -0.7698689053122989,
    "Last Bar": "2026-10-23",
    "Spark": [
@@ -806,7 +806,7 @@
    "Equal Weight Industry Group": "Financial",
    "Ticker": "RSPF",
    "Price": 81.52999877929688,
-   "52-Weeks": 18.960073685047185,
+   "52-Weeks": 18.960060442392987,
    "% Daily Chg": -1.4505071061817458,
    "Last Bar": "2026-10-23",
    "Spark": [
@@ -926,7 +926,7 @@
    "Equal Weight Industry Group": "Retail",
    "Ticker": "XRT",
    "Price": 87.6500015258789,
-   "52-Weeks": 14.497029689846638,
+   "52-Weeks": 14.497041095016977,
    "% Daily Chg": -1.6494627192541271,
    "Last Bar": "2026-10-23",
    "Spark": [
@@ -966,7 +966,7 @@
    "Equal Weight Industry Group": "Metal & Minings",
    "Ticker": "XME",
    "Price": 96.37000274658203,
-   "52-Weeks": 12.903348282868818,
+   "52-Weeks": 12.903358027426437,
    "% Daily Chg": -0.22776022326267958,
    "Last Bar": "2026-10-23",
    "Spark": [
@@ -1085,9 +1085,9 @@
   {
    "Equal Weight Industry Group": "Real Estate",
    "Ticker": "RSPR",
-   "Price": 34.74290084838867,
-   "52-Weeks": 8.664398600169196,
-   "% Daily Chg": -0.10666455494612041,
+   "Price": 34.74300003051758,
+   "52-Weeks": 8.664721774258254,
+   "% Daily Chg": -0.10637938492775546,
    "Last Bar": "2026-10-23",
    "Spark": [
     34.98,
@@ -1245,9 +1245,9 @@
   {
    "Equal Weight Industry Group": "Communication",
    "Ticker": "RSPC",
-   "Price": 34.83089828491211,
-   "52-Weeks": 1.2412159151654403,
-   "% Daily Chg": -1.635418144579074,
+   "Price": 34.83000183105469,
+   "52-Weeks": 1.2386102379361354,
+   "% Daily Chg": -1.6379497849667746,
    "Last Bar": "2026-10-23",
    "Spark": [
     37.58,
