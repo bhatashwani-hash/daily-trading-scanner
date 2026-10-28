@@ -1,9 +1,9 @@
 {
- "run_time_ist": "2026-10-28 04:20 PM IST",
+ "run_time_ist": "2026-10-28 10:05 PM IST",
  "elapsed_frac": 1.0,
  "market_open": false,
  "universe": "Nifty 500 (NSE constituents file)",
- "scanned": 499,
+ "scanned": 498,
  "params": {
   "target_move": 0.1,
   "fwd_window_sessions": 10,
@@ -16,10 +16,10 @@
   "confirm_days": 1164,
   "confirm_hits": 317,
   "confirm_hit_rate": 0.2723,
-  "base_days": 95050,
-  "base_hit_rate": 0.1739,
+  "base_days": 94854,
+  "base_hit_rate": 0.1741,
   "lift": 1.52,
-  "confirm_lift": 1.57,
+  "confirm_lift": 1.56,
   "variants": [
    {
     "name": "ignition (hi-ATR + rvol>=2.5 up)",
@@ -33,34 +33,34 @@
     "days": 1164,
     "hits": 317,
     "hit_rate": 0.2723,
-    "lift": 1.57
+    "lift": 1.56
    },
    {
     "name": "coil",
-    "days": 1905,
+    "days": 1903,
     "hits": 329,
-    "hit_rate": 0.1727,
+    "hit_rate": 0.1729,
     "lift": 0.99
    },
    {
     "name": "coil+breakout",
-    "days": 126,
+    "days": 125,
     "hits": 19,
-    "hit_rate": 0.1508,
+    "hit_rate": 0.152,
     "lift": 0.87
    },
    {
     "name": "rvol>=2.5 up day",
-    "days": 3510,
+    "days": 3505,
     "hits": 734,
-    "hit_rate": 0.2091,
+    "hit_rate": 0.2094,
     "lift": 1.2
    },
    {
     "name": "rvol>=2.5 up + uptrend",
-    "days": 1686,
+    "days": 1685,
     "hits": 373,
-    "hit_rate": 0.2212,
+    "hit_rate": 0.2214,
     "lift": 1.27
    },
    {
@@ -72,24 +72,24 @@
    },
    {
     "name": "near 52w-high + rvol>=2",
-    "days": 1949,
+    "days": 1947,
     "hits": 351,
-    "hit_rate": 0.1801,
+    "hit_rate": 0.1803,
     "lift": 1.04
    },
    {
     "name": "accumulation>=1.6",
-    "days": 31922,
+    "days": 31897,
     "hits": 5829,
-    "hit_rate": 0.1826,
+    "hit_rate": 0.1827,
     "lift": 1.05
    },
    {
     "name": "squeeze p<=10 alone",
-    "days": 8234,
+    "days": 8216,
     "hits": 1124,
-    "hit_rate": 0.1365,
-    "lift": 0.78
+    "hit_rate": 0.1368,
+    "lift": 0.79
    },
    {
     "name": "high-ATR name (>=3%)",
