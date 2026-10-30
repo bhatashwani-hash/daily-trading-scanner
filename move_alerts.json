@@ -1,9 +1,9 @@
 {
- "run_time_ist": "2026-10-30 04:32 PM IST",
+ "run_time_ist": "2026-10-30 10:11 PM IST",
  "elapsed_frac": 1.0,
  "market_open": false,
  "universe": "Nifty 500 (NSE constituents file)",
- "scanned": 498,
+ "scanned": 499,
  "params": {
   "target_move": 0.1,
   "fwd_window_sessions": 10,
@@ -16,10 +16,10 @@
   "confirm_days": 1168,
   "confirm_hits": 317,
   "confirm_hit_rate": 0.2714,
-  "base_days": 94887,
-  "base_hit_rate": 0.1735,
+  "base_days": 95083,
+  "base_hit_rate": 0.1733,
   "lift": 1.52,
-  "confirm_lift": 1.56,
+  "confirm_lift": 1.57,
   "variants": [
    {
     "name": "ignition (hi-ATR + rvol>=2.5 up)",
@@ -33,34 +33,34 @@
     "days": 1168,
     "hits": 317,
     "hit_rate": 0.2714,
-    "lift": 1.56
+    "lift": 1.57
    },
    {
     "name": "coil",
-    "days": 1906,
+    "days": 1908,
     "hits": 331,
-    "hit_rate": 0.1737,
+    "hit_rate": 0.1735,
     "lift": 1.0
    },
    {
     "name": "coil+breakout",
-    "days": 126,
+    "days": 127,
     "hits": 19,
-    "hit_rate": 0.1508,
-    "lift": 0.87
+    "hit_rate": 0.1496,
+    "lift": 0.86
    },
    {
     "name": "rvol>=2.5 up day",
-    "days": 3479,
+    "days": 3484,
     "hits": 728,
-    "hit_rate": 0.2093,
+    "hit_rate": 0.209,
     "lift": 1.21
    },
    {
     "name": "rvol>=2.5 up + uptrend",
-    "days": 1682,
+    "days": 1683,
     "hits": 371,
-    "hit_rate": 0.2206,
+    "hit_rate": 0.2204,
     "lift": 1.27
    },
    {
@@ -72,23 +72,23 @@
    },
    {
     "name": "near 52w-high + rvol>=2",
-    "days": 1890,
+    "days": 1892,
     "hits": 345,
-    "hit_rate": 0.1825,
+    "hit_rate": 0.1823,
     "lift": 1.05
    },
    {
     "name": "accumulation>=1.6",
-    "days": 31875,
+    "days": 31894,
     "hits": 5824,
-    "hit_rate": 0.1827,
+    "hit_rate": 0.1826,
     "lift": 1.05
    },
    {
     "name": "squeeze p<=10 alone",
-    "days": 8096,
+    "days": 8114,
     "hits": 1101,
-    "hit_rate": 0.136,
+    "hit_rate": 0.1357,
     "lift": 0.78
    },
    {
@@ -96,7 +96,7 @@
     "days": 48933,
     "hits": 11412,
     "hit_rate": 0.2332,
-    "lift": 1.34
+    "lift": 1.35
    }
   ],
   "definition": "hit = high reaches +10% above the signal close within the next 10 sessions (past 1y; base rate is matched to the same price/ATR gates)"

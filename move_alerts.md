@@ -1,13 +1,13 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Friday, October 30, 2026 04:32 PM IST  
+**Run time:** Friday, October 30, 2026 10:11 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
-**Universe:** Nifty 500 (NSE constituents file) · 498 stocks with usable data  
+**Universe:** Nifty 500 (NSE constituents file) · 499 stocks with usable data  
 
 > **Strategy (calibrated on this universe):** high-energy names (typical ATR ≥3%/day)
 > showing volume-surge ignition (RVOL ≥2.5x on an up day), plus trend, levels
 > (20-day-high break, 52-week-high proximity) and accumulation.
-> **Self-check (past 1y, matched base rate 17%):** ignition days hit +10% within 10 sessions **26%** of the time (561/2130, **1.52x lift**); inside an uptrend 27% (317/1168, 1.56x).
+> **Self-check (past 1y, matched base rate 17%):** ignition days hit +10% within 10 sessions **26%** of the time (561/2130, **1.52x lift**); inside an uptrend 27% (317/1168, 1.57x).
 > Entry idea: buy strength through the Trigger (prior 20-day high) with volume;
 > stop ≈ −4%; target +10%. Not investment advice.
 
@@ -16,16 +16,16 @@
 | Signal | Days | Hits | Hit rate | Lift |
 |---|---:|---:|---:|---:|
 | ignition (hi-ATR + rvol>=2.5 up) | 2130 | 561 | 26.3% | 1.52x |
-| ignition + uptrend | 1168 | 317 | 27.1% | 1.56x |
-| coil | 1906 | 331 | 17.4% | 1.0x |
-| coil+breakout | 126 | 19 | 15.1% | 0.87x |
-| rvol>=2.5 up day | 3479 | 728 | 20.9% | 1.21x |
-| rvol>=2.5 up + uptrend | 1682 | 371 | 22.1% | 1.27x |
+| ignition + uptrend | 1168 | 317 | 27.1% | 1.57x |
+| coil | 1908 | 331 | 17.3% | 1.0x |
+| coil+breakout | 127 | 19 | 15.0% | 0.86x |
+| rvol>=2.5 up day | 3484 | 728 | 20.9% | 1.21x |
+| rvol>=2.5 up + uptrend | 1683 | 371 | 22.0% | 1.27x |
 | rvol>=2 breakout | 1880 | 389 | 20.7% | 1.19x |
-| near 52w-high + rvol>=2 | 1890 | 345 | 18.2% | 1.05x |
-| accumulation>=1.6 | 31875 | 5824 | 18.3% | 1.05x |
-| squeeze p<=10 alone | 8096 | 1101 | 13.6% | 0.78x |
-| high-ATR name (>=3%) | 48933 | 11412 | 23.3% | 1.34x |
+| near 52w-high + rvol>=2 | 1892 | 345 | 18.2% | 1.05x |
+| accumulation>=1.6 | 31894 | 5824 | 18.3% | 1.05x |
+| squeeze p<=10 alone | 8114 | 1101 | 13.6% | 0.78x |
+| high-ATR name (>=3%) | 48933 | 11412 | 23.3% | 1.35x |
 
 </details>
 
