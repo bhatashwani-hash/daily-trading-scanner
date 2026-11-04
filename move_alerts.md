@@ -1,13 +1,13 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Wednesday, November 04, 2026 06:03 PM IST  
+**Run time:** Wednesday, November 04, 2026 11:28 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
-**Universe:** Nifty 500 (NSE constituents file) · 499 stocks with usable data  
+**Universe:** Nifty 500 (NSE constituents file) · 498 stocks with usable data  
 
 > **Strategy (calibrated on this universe):** high-energy names (typical ATR ≥3%/day)
 > showing volume-surge ignition (RVOL ≥2.5x on an up day), plus trend, levels
 > (20-day-high break, 52-week-high proximity) and accumulation.
-> **Self-check (past 1y, matched base rate 17%):** ignition days hit +10% within 10 sessions **26%** of the time (558/2152, **1.49x lift**); inside an uptrend 27% (318/1184, 1.54x).
+> **Self-check (past 1y, matched base rate 17%):** ignition days hit +10% within 10 sessions **26%** of the time (554/2143, **1.48x lift**); inside an uptrend 27% (316/1178, 1.54x).
 > Entry idea: buy strength through the Trigger (prior 20-day high) with volume;
 > stop ≈ −4%; target +10%. Not investment advice.
 
@@ -15,17 +15,17 @@
 
 | Signal | Days | Hits | Hit rate | Lift |
 |---|---:|---:|---:|---:|
-| ignition (hi-ATR + rvol>=2.5 up) | 2152 | 558 | 25.9% | 1.49x |
-| ignition + uptrend | 1184 | 318 | 26.9% | 1.54x |
-| coil | 1925 | 337 | 17.5% | 1.01x |
+| ignition (hi-ATR + rvol>=2.5 up) | 2143 | 554 | 25.9% | 1.48x |
+| ignition + uptrend | 1178 | 316 | 26.8% | 1.54x |
+| coil | 1910 | 335 | 17.5% | 1.01x |
 | coil+breakout | 131 | 19 | 14.5% | 0.83x |
-| rvol>=2.5 up day | 3446 | 724 | 21.0% | 1.21x |
-| rvol>=2.5 up + uptrend | 1671 | 371 | 22.2% | 1.27x |
-| rvol>=2 breakout | 1836 | 386 | 21.0% | 1.21x |
-| near 52w-high + rvol>=2 | 1897 | 353 | 18.6% | 1.07x |
-| accumulation>=1.6 | 31654 | 5828 | 18.4% | 1.06x |
-| squeeze p<=10 alone | 7914 | 1101 | 13.9% | 0.8x |
-| high-ATR name (>=3%) | 49808 | 11576 | 23.2% | 1.33x |
+| rvol>=2.5 up day | 3437 | 720 | 20.9% | 1.2x |
+| rvol>=2.5 up + uptrend | 1665 | 369 | 22.2% | 1.27x |
+| rvol>=2 breakout | 1832 | 386 | 21.1% | 1.21x |
+| near 52w-high + rvol>=2 | 1896 | 353 | 18.6% | 1.07x |
+| accumulation>=1.6 | 31545 | 5819 | 18.4% | 1.06x |
+| squeeze p<=10 alone | 7892 | 1099 | 13.9% | 0.8x |
+| high-ATR name (>=3%) | 49612 | 11536 | 23.2% | 1.34x |
 
 </details>
 

@@ -1,45 +1,45 @@
 {
- "run_time_ist": "2026-11-04 06:03 PM IST",
+ "run_time_ist": "2026-11-04 11:28 PM IST",
  "elapsed_frac": 1.0,
  "market_open": false,
  "universe": "Nifty 500 (NSE constituents file)",
- "scanned": 499,
+ "scanned": 498,
  "params": {
   "target_move": 0.1,
   "fwd_window_sessions": 10,
   "min_atr_pct": 1.2
  },
  "validation": {
-  "setup_days": 2152,
-  "setup_hits": 558,
-  "setup_hit_rate": 0.2593,
-  "confirm_days": 1184,
-  "confirm_hits": 318,
-  "confirm_hit_rate": 0.2686,
-  "base_days": 95127,
-  "base_hit_rate": 0.1742,
-  "lift": 1.49,
+  "setup_days": 2143,
+  "setup_hits": 554,
+  "setup_hit_rate": 0.2585,
+  "confirm_days": 1178,
+  "confirm_hits": 316,
+  "confirm_hit_rate": 0.2683,
+  "base_days": 94931,
+  "base_hit_rate": 0.1741,
+  "lift": 1.48,
   "confirm_lift": 1.54,
   "variants": [
    {
     "name": "ignition (hi-ATR + rvol>=2.5 up)",
-    "days": 2152,
-    "hits": 558,
-    "hit_rate": 0.2593,
-    "lift": 1.49
+    "days": 2143,
+    "hits": 554,
+    "hit_rate": 0.2585,
+    "lift": 1.48
    },
    {
     "name": "ignition + uptrend",
-    "days": 1184,
-    "hits": 318,
-    "hit_rate": 0.2686,
+    "days": 1178,
+    "hits": 316,
+    "hit_rate": 0.2683,
     "lift": 1.54
    },
    {
     "name": "coil",
-    "days": 1925,
-    "hits": 337,
-    "hit_rate": 0.1751,
+    "days": 1910,
+    "hits": 335,
+    "hit_rate": 0.1754,
     "lift": 1.01
    },
    {
@@ -51,52 +51,52 @@
    },
    {
     "name": "rvol>=2.5 up day",
-    "days": 3446,
-    "hits": 724,
-    "hit_rate": 0.2101,
-    "lift": 1.21
+    "days": 3437,
+    "hits": 720,
+    "hit_rate": 0.2095,
+    "lift": 1.2
    },
    {
     "name": "rvol>=2.5 up + uptrend",
-    "days": 1671,
-    "hits": 371,
-    "hit_rate": 0.222,
+    "days": 1665,
+    "hits": 369,
+    "hit_rate": 0.2216,
     "lift": 1.27
    },
    {
     "name": "rvol>=2 breakout",
-    "days": 1836,
+    "days": 1832,
     "hits": 386,
-    "hit_rate": 0.2102,
+    "hit_rate": 0.2107,
     "lift": 1.21
    },
    {
     "name": "near 52w-high + rvol>=2",
-    "days": 1897,
+    "days": 1896,
     "hits": 353,
-    "hit_rate": 0.1861,
+    "hit_rate": 0.1862,
     "lift": 1.07
    },
    {
     "name": "accumulation>=1.6",
-    "days": 31654,
-    "hits": 5828,
-    "hit_rate": 0.1841,
+    "days": 31545,
+    "hits": 5819,
+    "hit_rate": 0.1845,
     "lift": 1.06
    },
    {
     "name": "squeeze p<=10 alone",
-    "days": 7914,
-    "hits": 1101,
-    "hit_rate": 0.1391,
+    "days": 7892,
+    "hits": 1099,
+    "hit_rate": 0.1393,
     "lift": 0.8
    },
    {
     "name": "high-ATR name (>=3%)",
-    "days": 49808,
-    "hits": 11576,
-    "hit_rate": 0.2324,
-    "lift": 1.33
+    "days": 49612,
+    "hits": 11536,
+    "hit_rate": 0.2325,
+    "lift": 1.34
    }
   ],
   "definition": "hit = high reaches +10% above the signal close within the next 10 sessions (past 1y; base rate is matched to the same price/ATR gates)"
