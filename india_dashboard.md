@@ -1,75 +1,80 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Tuesday, November 03, 2026 05:52 PM IST  
+**Run time:** Wednesday, November 04, 2026 06:03 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (20)
+## 🚀 High RVOL + Breakout (23)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| MARICO | 878.4 | 🟢 +10.00% | **8.2x** | 20D High | 25% |
-| SOLARINDS | 19,654.0 | 🟢 +1.11% | **4.5x** | 20D High | 69% |
-| BOSCHLTD | 49,645.0 | 🟢 +3.21% | **3.4x** | 52W High | 75% |
-| MCX | 3,490.1 | 🟢 +7.42% | **3.1x** | 52W High | 99% |
-| SBIN | 970.2 | 🔴 -1.70% | **3.1x** | 20D High | 5% |
-| ASIANPAINT | 2,437.8 | 🟢 +3.99% | **2.5x** | 20D High | 16% |
-| RELIANCE | 1,307.9 | 🟢 +0.61% | **2.3x** | 20D High | 14% |
-| BHARTIARTL | 2,065.0 | 🟢 +3.77% | **2.1x** | 20D High | 20% |
-| INDUSTOWER | 390.0 | 🟢 +1.83% | **2.1x** | 20D High | 11% |
-| GROWW | 206.0 | 🟢 +4.93% | **2.1x** | 20D High | 84% |
-| GRASIM | 3,090.0 | 🟢 +1.08% | **2.0x** | 20D High | 24% |
-| GAIL | 181.8 | 🟢 +2.68% | **2.0x** | 52W High | 36% |
-| INDIGO | 5,025.0 | 🟢 +2.14% | **1.9x** | 20D High | 29% |
-| IOC | 138.7 | 🟢 +3.03% | **1.8x** | 20D High | 11% |
-| ASHOKLEY | 152.7 | 🟢 +2.37% | **1.8x** | 20D High | 13% |
-| DLF | 709.0 | 🟢 +1.14% | **1.6x** | 20D High | 47% |
-| BSE | 3,665.7 | 🟢 +5.03% | **1.6x** | 20D High | 51% |
-| GLENMARK | 2,408.0 | 🟢 +1.09% | **1.6x** | 20D High | 34% |
-| TATACONSUM | 1,073.0 | 🟢 +4.29% | **1.5x** | 20D High | 17% |
-| ABCAPITAL | 381.0 | 🟢 +0.71% | **1.5x** | 20D High | 32% |
+| ZYDUSLIFE | 1,188.1 | 🔴 -4.23% | **3.6x** | 52W High | 42% |
+| MUTHOOTFIN | 2,709.8 | 🟢 +7.18% | **3.4x** | 20D High | 18% |
+| AUROPHARMA | 1,705.0 | 🟢 +0.62% | **2.6x** | 20D High | 54% |
+| MARICO | 890.0 | 🟢 +1.32% | **2.6x** | 52W High | 27% |
+| LUPIN | 2,008.6 | 🔴 -0.36% | **2.5x** | 20D High | 6% |
+| DABUR | 395.0 | 🟢 +3.50% | **2.3x** | 20D High | 11% |
+| BEL | 398.0 | 🟢 +4.71% | **2.3x** | 20D High | 12% |
+| GRASIM | 3,138.0 | 🟢 +1.55% | **2.2x** | 20D High | 26% |
+| GAIL | 186.2 | 🟢 +2.46% | **2.1x** | 52W High | 39% |
+| IOC | 142.0 | 🟢 +2.42% | **2.1x** | 20D High | 14% |
+| BOSCHLTD | 50,925.0 | 🟢 +2.58% | **2.0x** | 52W High | 79% |
+| ITC | 280.0 | 🟢 +2.23% | **1.9x** | 20D High | 11% |
+| HDFCAMC | 2,505.0 | 🟢 +2.66% | **1.8x** | 20D High | 16% |
+| HAL | 5,079.1 | 🟢 +2.43% | **1.8x** | 20D High | 46% |
+| BAJFINANCE | 994.0 | 🟢 +2.47% | **1.8x** | 20D High | 27% |
+| GODREJPROP | 1,739.0 | 🟢 +4.16% | **1.8x** | 20D High | 22% |
+| HDFCBANK | 736.7 | 🟢 +1.54% | **1.8x** | 20D High | 10% |
+| GMRAIRPORT | 95.0 | 🟢 +4.28% | **1.7x** | 20D High | 13% |
+| TITAN | 4,754.4 | 🟢 +4.22% | **1.6x** | 20D High | 28% |
+| ASIANPAINT | 2,418.3 | 🔴 -0.57% | **1.6x** | 20D High | 16% |
+| BAJAJFINSV | 1,756.5 | 🟢 +2.24% | **1.6x** | 20D High | 10% |
+| M&M | 2,961.9 | 🟢 +1.85% | **1.6x** | 20D High | 8% |
+| NHPC | 78.5 | 🔴 -1.15% | **1.6x** | 20D High | 14% |
 
-## 📈 Other Breakouts (28)
-
-| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
-|---|---:|---:|---:|---|---:|
-| DIVISLAB | 10,064.0 | 🟢 +1.19% | **1.0x** | 52W High | 79% |
-| INDHOTEL | 836.0 | 🟢 +1.65% | **0.9x** | 52W High | 49% |
-| ETERNAL | 349.5 | 🟢 +1.58% | **0.7x** | 52W High | 64% |
-| PIDILITIND | 1,510.9 | 🟢 +1.54% | **1.5x** | 20D High | 21% |
-| CIPLA | 1,396.9 | 🟢 +0.71% | **1.5x** | 20D High | 21% |
-| ICICIBANK | 1,424.5 | 🟢 +2.67% | **1.4x** | 20D High | 21% |
-| ITC | 273.9 | 🟢 +2.82% | **1.4x** | 20D High | 8% |
-| JSWSTEEL | 1,320.0 | 🟢 +0.77% | **1.3x** | 20D High | 24% |
-| ULTRACEMCO | 11,700.0 | 🟢 +2.75% | **1.3x** | 20D High | 16% |
-| GODREJPROP | 1,669.5 | 🟢 +2.33% | **1.3x** | 20D High | 17% |
-| ADANIPORTS | 1,866.9 | 🟢 +0.70% | **1.1x** | 20D High | 45% |
-| EICHERMOT | 7,440.0 | 🟢 +3.15% | **1.1x** | 20D High | 17% |
-| PRESTIGE | 1,537.0 | 🟢 +3.89% | **1.1x** | 20D High | 41% |
-| LT | 3,948.2 | 🟢 +0.21% | **1.0x** | 20D High | 21% |
-| HINDUNILVR | 1,962.8 | 🟢 +3.40% | **1.0x** | 20D High | 12% |
-| HYUNDAI | 2,030.0 | 🟢 +2.27% | **1.0x** | 20D High | 24% |
-| HINDPETRO | 352.5 | 🟢 +1.29% | **1.0x** | 20D High | 17% |
-| PHOENIXLTD | 2,048.7 | 🟢 +1.59% | **0.9x** | 20D High | 40% |
-| AMBUJACEM | 368.9 | 🟢 +2.42% | **0.9x** | 20D High | 8% |
-| TATAPOWER | 356.5 | 🟢 +0.18% | **0.9x** | 20D High | 7% |
-| DRREDDY | 1,368.3 | 🟢 +1.96% | **0.8x** | 20D High | 24% |
-| ADANIENSOL | 1,369.6 | 🔴 -0.60% | **0.8x** | 20D High | 71% |
-| TATACAP | 333.8 | 🟢 +2.61% | **0.8x** | 20D High | 13% |
-| MARUTI | 11,869.0 | 🟢 +1.69% | **0.8x** | 20D High | 8% |
-| CHOLAFIN | 1,650.0 | 🟢 +1.58% | **0.7x** | 20D High | 27% |
-
-_...and 3 more breakouts not shown._
-
-## 🔊 High RVOL (≥2x), No Breakout Yet (7)
+## 📈 Other Breakouts (39)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| GODFRYPHLP | 1,735.0 | 🟢 +2.05% | **5.7x** | — | 6% |
-| CONCOR | 419.1 | 🟢 +0.31% | **3.1x** | — | 4% |
-| BRITANNIA | 4,930.0 | 🟢 +6.36% | **2.7x** | — | 10% |
-| MOTILALOFS | 1,010.0 | 🟢 +4.73% | **2.6x** | — | 64% |
-| NLCINDIA | 230.3 | 🔴 -3.43% | **2.4x** | — | 4% |
-| 360ONE | 1,065.0 | 🟢 +5.34% | **2.3x** | — | 19% |
-| MAZDOCK | 1,785.1 | 🟢 +3.09% | **2.2x** | — | 6% |
+| ADANIPORTS | 1,910.0 | 🟢 +2.31% | **1.3x** | 52W High | 48% |
+| INDHOTEL | 849.0 | 🟢 +1.55% | **0.9x** | 52W High | 51% |
+| DIVISLAB | 10,037.5 | 🔴 -0.26% | **0.8x** | 52W High | 78% |
+| PRESTIGE | 1,580.0 | 🟢 +2.80% | **1.5x** | 20D High | 45% |
+| JIOFIN | 222.3 | 🟢 +3.73% | **1.5x** | 20D High | 10% |
+| EICHERMOT | 7,420.0 | 🔴 -0.27% | **1.5x** | 20D High | 16% |
+| DLF | 720.0 | 🟢 +1.55% | **1.4x** | 20D High | 49% |
+| TATAPOWER | 360.0 | 🟢 +0.97% | **1.4x** | 20D High | 8% |
+| MARUTI | 11,995.0 | 🟢 +1.06% | **1.3x** | 20D High | 9% |
+| BRITANNIA | 4,946.3 | 🟢 +0.33% | **1.3x** | 20D High | 10% |
+| LT | 3,944.4 | 🔴 -0.10% | **1.2x** | 20D High | 21% |
+| GLENMARK | 2,504.7 | 🟢 +4.02% | **1.2x** | 20D High | 39% |
+| CIPLA | 1,402.0 | 🟢 +0.37% | **1.1x** | 20D High | 21% |
+| HYUNDAI | 2,063.0 | 🟢 +1.63% | **1.0x** | 20D High | 26% |
+| HINDUNILVR | 1,977.1 | 🟢 +0.73% | **1.0x** | 20D High | 12% |
+| MAXHEALTH | 927.2 | 🟢 +3.53% | **1.0x** | 20D High | 16% |
+| INDIGO | 5,140.8 | 🟢 +2.30% | **1.0x** | 20D High | 32% |
+| LICI | 408.0 | 🟢 +3.16% | **1.0x** | 20D High | 16% |
+| ULTRACEMCO | 11,816.0 | 🟢 +0.99% | **1.0x** | 20D High | 17% |
+| ADANIGREEN | 1,388.0 | 🟢 +3.64% | **1.0x** | 20D High | 81% |
+| RELIANCE | 1,311.0 | 🟢 +0.24% | **1.0x** | 20D High | 14% |
+| GROWW | 207.2 | 🟢 +0.61% | **0.9x** | 20D High | 85% |
+| TATACONSUM | 1,068.0 | 🔴 -0.47% | **0.9x** | 20D High | 17% |
+| APOLLOHOSP | 8,599.5 | 🟢 +1.89% | **0.9x** | 20D High | 29% |
+| ICICIBANK | 1,424.1 | 🔴 -0.03% | **0.8x** | 20D High | 21% |
+
+_...and 14 more breakouts not shown._
+
+## 🔊 High RVOL (≥2x), No Breakout Yet (9)
+
+| Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
+|---|---:|---:|---:|---|---:|
+| NLCINDIA | 247.7 | 🟢 +7.54% | **7.6x** | — | 11% |
+| EXIDEIND | 368.4 | 🟢 +6.40% | **5.9x** | — | 29% |
+| MCX | 3,315.0 | 🔴 -5.02% | **3.7x** | — | 89% |
+| PIIND | 2,187.0 | 🟢 +0.09% | **3.2x** | — | 9% |
+| BIOCON | 344.5 | 🟢 +0.42% | **3.1x** | — | 8% |
+| SUNPHARMA | 1,773.4 | 🟢 +0.20% | **2.8x** | — | 13% |
+| GODFRYPHLP | 1,774.7 | 🟢 +2.29% | **2.7x** | — | 8% |
+| JUBLFOOD | 434.7 | 🟢 +3.01% | **2.6x** | — | 9% |
+| BDL | 1,075.0 | 🟢 +5.70% | **2.4x** | — | 10% |
