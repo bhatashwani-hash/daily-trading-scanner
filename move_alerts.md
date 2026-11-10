@@ -1,6 +1,6 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Tuesday, November 10, 2026 02:11 AM IST  
+**Run time:** Tuesday, November 10, 2026 06:30 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 500 (NSE constituents file) · 499 stocks with usable data  
 
@@ -23,7 +23,7 @@
 | rvol>=2.5 up + uptrend | 1669 | 370 | 22.2% | 1.23x |
 | rvol>=2 breakout | 1789 | 388 | 21.7% | 1.2x |
 | near 52w-high + rvol>=2 | 1884 | 365 | 19.4% | 1.07x |
-| accumulation>=1.6 | 31238 | 5868 | 18.8% | 1.04x |
+| accumulation>=1.6 | 31234 | 5868 | 18.8% | 1.04x |
 | squeeze p<=10 alone | 7812 | 1131 | 14.5% | 0.8x |
 | high-ATR name (>=3%) | 50789 | 12117 | 23.9% | 1.32x |
 
@@ -47,7 +47,7 @@
 | **HONASA** | 484.0 | **68** | 8.1x | p33 | +1.4% | 491.0 | high-energy name (typical ATR 3.5%/day); ignition: volume 8.1x average on an up day; 1.4% under the 20-day high |
 | **AUROPHARMA** | 1,855.3 | **68** | 2.3x | p98 | -2.7% | 1,805.0 | energetic name (typical ATR 2.5%/day); volume 2.3x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
 | **UNOMINDA** | 1,353.8 | **68** | 1.5x | p100 | -0.9% | 1,342.0 | high-energy name (typical ATR 3.1%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
-| **HUDCO** | 169.1 | **66** | 3.1x | p92 | -1.6% | 166.4 | high-energy name (typical ATR 3.0%/day); ignition: volume 3.2x average on an up day; breaking the 20-day high NOW |
+| **HUDCO** | 169.1 | **66** | 3.2x | p92 | -1.6% | 166.4 | high-energy name (typical ATR 3.0%/day); ignition: volume 3.2x average on an up day; breaking the 20-day high NOW |
 | **ATHERENERG** | 1,859.8 | **66** | 0.5x | p100 | -1.1% | 1,840.0 | very high-energy name (typical ATR 4.4%/day); uptrend: price > rising 50-DMA > 200-DMA; breaking the 20-day high NOW |
 | **GLENMARK** | 2,671.1 | **63** | 2.1x | p100 | +0.4% | 2,682.5 | energetic name (typical ATR 2.7%/day); volume 2.1x average on an up day; uptrend: price > rising 50-DMA > 200-DMA |
 | **GLAXO** | 2,710.0 | **62** | 13.7x | p38 | -3.1% | 2,625.5 | energetic name (typical ATR 2.8%/day); ignition: volume 13.7x average on an up day; breaking the 20-day high NOW |
