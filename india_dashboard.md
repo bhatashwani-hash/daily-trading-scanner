@@ -1,8 +1,8 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Monday, November 09, 2026 06:52 PM IST  
+**Run time:** Tuesday, November 10, 2026 06:29 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
-**Universe:** Nifty 200 (NSE constituents file) · 199 scanned  
+**Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
 ## 🚀 High RVOL + Breakout (25)
@@ -76,5 +76,3 @@ _...and 19 more breakouts not shown._
 | GRASIM | 3,169.7 | 🔴 -1.78% | **2.5x** | — | 27% |
 | PRESTIGE | 1,597.5 | 🔴 -1.93% | **2.2x** | — | 47% |
 | EXIDEIND | 385.0 | 🟢 +7.75% | **2.2x** | — | 35% |
-
-**No data (1):** BOSCHLTD
