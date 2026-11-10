@@ -1,31 +1,31 @@
 # ⚡ Nifty 500 — 10%+ Move Alerts
 
-**Run time:** Tuesday, November 10, 2026 06:30 PM IST  
+**Run time:** Tuesday, November 10, 2026 11:15 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
-**Universe:** Nifty 500 (NSE constituents file) · 499 stocks with usable data  
+**Universe:** Nifty 500 (NSE constituents file) · 498 stocks with usable data  
 
 > **Strategy (calibrated on this universe):** high-energy names (typical ATR ≥3%/day)
 > showing volume-surge ignition (RVOL ≥2.5x on an up day), plus trend, levels
 > (20-day-high break, 52-week-high proximity) and accumulation.
-> **Self-check (past 1y, matched base rate 18%):** ignition days hit +10% within 10 sessions **26%** of the time (568/2172, **1.45x lift**); inside an uptrend 27% (322/1196, 1.49x).
+> **Self-check (past 1y, matched base rate 18%):** ignition days hit +10% within 10 sessions **26%** of the time (566/2170, **1.45x lift**); inside an uptrend 27% (321/1195, 1.49x).
 > Entry idea: buy strength through the Trigger (prior 20-day high) with volume;
 > stop ≈ −4%; target +10%. Not investment advice.
 
-<details><summary>Signal research: hit rate of each candidate signal (past 1y, +10% within 10 sessions, matched base 18.1%)</summary>
+<details><summary>Signal research: hit rate of each candidate signal (past 1y, +10% within 10 sessions, matched base 18.0%)</summary>
 
 | Signal | Days | Hits | Hit rate | Lift |
 |---|---:|---:|---:|---:|
-| ignition (hi-ATR + rvol>=2.5 up) | 2172 | 568 | 26.2% | 1.45x |
-| ignition + uptrend | 1196 | 322 | 26.9% | 1.49x |
-| coil | 1962 | 344 | 17.5% | 0.97x |
-| coil+breakout | 129 | 19 | 14.7% | 0.81x |
-| rvol>=2.5 up day | 3409 | 726 | 21.3% | 1.18x |
-| rvol>=2.5 up + uptrend | 1669 | 370 | 22.2% | 1.23x |
-| rvol>=2 breakout | 1789 | 388 | 21.7% | 1.2x |
-| near 52w-high + rvol>=2 | 1884 | 365 | 19.4% | 1.07x |
-| accumulation>=1.6 | 31234 | 5868 | 18.8% | 1.04x |
-| squeeze p<=10 alone | 7812 | 1131 | 14.5% | 0.8x |
-| high-ATR name (>=3%) | 50789 | 12117 | 23.9% | 1.32x |
+| ignition (hi-ATR + rvol>=2.5 up) | 2170 | 566 | 26.1% | 1.45x |
+| ignition + uptrend | 1195 | 321 | 26.9% | 1.49x |
+| coil | 1956 | 339 | 17.3% | 0.96x |
+| coil+breakout | 129 | 19 | 14.7% | 0.82x |
+| rvol>=2.5 up day | 3403 | 722 | 21.2% | 1.18x |
+| rvol>=2.5 up + uptrend | 1666 | 368 | 22.1% | 1.23x |
+| rvol>=2 breakout | 1782 | 385 | 21.6% | 1.2x |
+| near 52w-high + rvol>=2 | 1875 | 360 | 19.2% | 1.06x |
+| accumulation>=1.6 | 31134 | 5831 | 18.7% | 1.04x |
+| squeeze p<=10 alone | 7806 | 1125 | 14.4% | 0.8x |
+| high-ATR name (>=3%) | 50630 | 12051 | 23.8% | 1.32x |
 
 </details>
 

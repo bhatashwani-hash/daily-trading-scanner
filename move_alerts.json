@@ -1,101 +1,101 @@
 {
- "run_time_ist": "2026-11-10 06:30 PM IST",
+ "run_time_ist": "2026-11-10 11:15 PM IST",
  "elapsed_frac": 1.0,
  "market_open": false,
  "universe": "Nifty 500 (NSE constituents file)",
- "scanned": 499,
+ "scanned": 498,
  "params": {
   "target_move": 0.1,
   "fwd_window_sessions": 10,
   "min_atr_pct": 1.2
  },
  "validation": {
-  "setup_days": 2172,
-  "setup_hits": 568,
-  "setup_hit_rate": 0.2615,
-  "confirm_days": 1196,
-  "confirm_hits": 322,
-  "confirm_hit_rate": 0.2692,
-  "base_days": 95168,
-  "base_hit_rate": 0.1808,
+  "setup_days": 2170,
+  "setup_hits": 566,
+  "setup_hit_rate": 0.2608,
+  "confirm_days": 1195,
+  "confirm_hits": 321,
+  "confirm_hit_rate": 0.2686,
+  "base_days": 94972,
+  "base_hit_rate": 0.1803,
   "lift": 1.45,
   "confirm_lift": 1.49,
   "variants": [
    {
     "name": "ignition (hi-ATR + rvol>=2.5 up)",
-    "days": 2172,
-    "hits": 568,
-    "hit_rate": 0.2615,
+    "days": 2170,
+    "hits": 566,
+    "hit_rate": 0.2608,
     "lift": 1.45
    },
    {
     "name": "ignition + uptrend",
-    "days": 1196,
-    "hits": 322,
-    "hit_rate": 0.2692,
+    "days": 1195,
+    "hits": 321,
+    "hit_rate": 0.2686,
     "lift": 1.49
    },
    {
     "name": "coil",
-    "days": 1962,
-    "hits": 344,
-    "hit_rate": 0.1753,
-    "lift": 0.97
+    "days": 1956,
+    "hits": 339,
+    "hit_rate": 0.1733,
+    "lift": 0.96
    },
    {
     "name": "coil+breakout",
     "days": 129,
     "hits": 19,
     "hit_rate": 0.1473,
-    "lift": 0.81
+    "lift": 0.82
    },
    {
     "name": "rvol>=2.5 up day",
-    "days": 3409,
-    "hits": 726,
-    "hit_rate": 0.213,
+    "days": 3403,
+    "hits": 722,
+    "hit_rate": 0.2122,
     "lift": 1.18
    },
    {
     "name": "rvol>=2.5 up + uptrend",
-    "days": 1669,
-    "hits": 370,
-    "hit_rate": 0.2217,
+    "days": 1666,
+    "hits": 368,
+    "hit_rate": 0.2209,
     "lift": 1.23
    },
    {
     "name": "rvol>=2 breakout",
-    "days": 1789,
-    "hits": 388,
-    "hit_rate": 0.2169,
+    "days": 1782,
+    "hits": 385,
+    "hit_rate": 0.216,
     "lift": 1.2
    },
    {
     "name": "near 52w-high + rvol>=2",
-    "days": 1884,
-    "hits": 365,
-    "hit_rate": 0.1937,
-    "lift": 1.07
+    "days": 1875,
+    "hits": 360,
+    "hit_rate": 0.192,
+    "lift": 1.06
    },
    {
     "name": "accumulation>=1.6",
-    "days": 31234,
-    "hits": 5868,
-    "hit_rate": 0.1879,
+    "days": 31134,
+    "hits": 5831,
+    "hit_rate": 0.1873,
     "lift": 1.04
    },
    {
     "name": "squeeze p<=10 alone",
-    "days": 7812,
-    "hits": 1131,
-    "hit_rate": 0.1448,
+    "days": 7806,
+    "hits": 1125,
+    "hit_rate": 0.1441,
     "lift": 0.8
    },
    {
     "name": "high-ATR name (>=3%)",
-    "days": 50789,
-    "hits": 12117,
-    "hit_rate": 0.2386,
+    "days": 50630,
+    "hits": 12051,
+    "hit_rate": 0.238,
     "lift": 1.32
    }
   ],
