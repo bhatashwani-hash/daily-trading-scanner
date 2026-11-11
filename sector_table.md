@@ -1,6 +1,6 @@
 # Equal-Weight Sector / Industry Group Performance
 
-**Report date:** Tuesday, November 10, 2026  
+**Report date:** Wednesday, November 11, 2026  
 **Market status:** market CLOSED — data as of last close (2026-11-09)  
 **52-Weeks** = % the current price sits above its 52-week low (strength from the low)
 
@@ -15,7 +15,7 @@
 | 7 | Telecom | XTL | 42% | 🟢 +5.37% |
 | 8 | Healthcare | RSPH | 41% | 🟢 +1.92% |
 | 9 | Energy | RSPG | 40% | 🟢 +1.01% |
-| 10 | Pharmaceuticals | XPH | 39% | 🟢 +4.05% |
+| 10 | Pharmaceuticals | XPH | 37% | 🟢 +4.05% |
 | 11 | Oil & Gas Equipment & Services | XES | 32% | 🟢 +1.80% |
 | 12 | Natural Resources | GNR | 32% | 🟢 +1.81% |
 | 13 | Transportation | XTN | 31% | 🟢 +3.72% |
