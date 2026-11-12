@@ -1,39 +1,39 @@
 {
- "run_time_ist": "2026-11-12 06:47 PM IST",
+ "run_time_ist": "2026-11-12 11:44 PM IST",
  "elapsed_frac": 1.0,
  "market_open": false,
  "universe": "Nifty 500 (NSE constituents file)",
- "scanned": 498,
+ "scanned": 499,
  "params": {
   "target_move": 0.1,
   "fwd_window_sessions": 10,
   "min_atr_pct": 1.2
  },
  "validation": {
-  "setup_days": 2213,
-  "setup_hits": 585,
-  "setup_hit_rate": 0.2643,
-  "confirm_days": 1213,
-  "confirm_hits": 327,
-  "confirm_hit_rate": 0.2696,
-  "base_days": 94994,
-  "base_hit_rate": 0.1854,
+  "setup_days": 2218,
+  "setup_hits": 588,
+  "setup_hit_rate": 0.2651,
+  "confirm_days": 1214,
+  "confirm_hits": 328,
+  "confirm_hit_rate": 0.2702,
+  "base_days": 95190,
+  "base_hit_rate": 0.1856,
   "lift": 1.43,
-  "confirm_lift": 1.45,
+  "confirm_lift": 1.46,
   "variants": [
    {
     "name": "ignition (hi-ATR + rvol>=2.5 up)",
-    "days": 2213,
-    "hits": 585,
-    "hit_rate": 0.2643,
+    "days": 2218,
+    "hits": 588,
+    "hit_rate": 0.2651,
     "lift": 1.43
    },
    {
     "name": "ignition + uptrend",
-    "days": 1213,
-    "hits": 327,
-    "hit_rate": 0.2696,
-    "lift": 1.45
+    "days": 1214,
+    "hits": 328,
+    "hit_rate": 0.2702,
+    "lift": 1.46
    },
    {
     "name": "coil",
@@ -51,51 +51,51 @@
    },
    {
     "name": "rvol>=2.5 up day",
-    "days": 3428,
-    "hits": 739,
-    "hit_rate": 0.2156,
-    "lift": 1.16
+    "days": 3436,
+    "hits": 743,
+    "hit_rate": 0.2162,
+    "lift": 1.17
    },
    {
     "name": "rvol>=2.5 up + uptrend",
-    "days": 1665,
-    "hits": 370,
-    "hit_rate": 0.2222,
+    "days": 1666,
+    "hits": 371,
+    "hit_rate": 0.2227,
     "lift": 1.2
    },
    {
     "name": "rvol>=2 breakout",
-    "days": 1790,
-    "hits": 389,
-    "hit_rate": 0.2173,
-    "lift": 1.17
+    "days": 1793,
+    "hits": 391,
+    "hit_rate": 0.2181,
+    "lift": 1.18
    },
    {
     "name": "near 52w-high + rvol>=2",
-    "days": 1883,
-    "hits": 374,
-    "hit_rate": 0.1986,
+    "days": 1885,
+    "hits": 375,
+    "hit_rate": 0.1989,
     "lift": 1.07
    },
    {
     "name": "accumulation>=1.6",
-    "days": 31007,
-    "hits": 5866,
-    "hit_rate": 0.1892,
+    "days": 31053,
+    "hits": 5893,
+    "hit_rate": 0.1898,
     "lift": 1.02
    },
    {
     "name": "squeeze p<=10 alone",
-    "days": 7754,
+    "days": 7761,
     "hits": 1156,
-    "hit_rate": 0.1491,
+    "hit_rate": 0.1489,
     "lift": 0.8
    },
    {
     "name": "high-ATR name (>=3%)",
-    "days": 51493,
-    "hits": 12478,
-    "hit_rate": 0.2423,
+    "days": 51643,
+    "hits": 12522,
+    "hit_rate": 0.2425,
     "lift": 1.31
    }
   ],
