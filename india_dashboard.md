@@ -1,6 +1,6 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Monday, November 23, 2026 08:53 PM IST  
+**Run time:** Tuesday, November 24, 2026 08:48 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
 **Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
@@ -32,7 +32,7 @@
 | EICHERMOT | 8,172.5 | 🟢 +0.73% | **1.3x** | 52W High | 28% |
 | UNIONBANK | 208.2 | 🔴 -4.87% | **1.3x** | 52W High | 47% |
 | MEESHO | 253.1 | 🔴 -2.62% | **1.2x** | 52W High | 102% |
-| DLF | 794.1 | 🟢 +1.16% | **1.0x** | 52W High | 64% |
+| DLF | 794.1 | 🟢 +1.16% | **1.1x** | 52W High | 64% |
 | KOTAKBANK | 502.9 | 🔴 -2.51% | **0.9x** | 52W High | 46% |
 | 360ONE | 1,201.2 | 🔴 -0.58% | **0.9x** | 52W High | 34% |
 | ULTRACEMCO | 12,650.0 | 🔴 -2.23% | **0.8x** | 52W High | 25% |
