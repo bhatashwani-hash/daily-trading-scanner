@@ -1,6 +1,6 @@
 # Equal-Weight Sector / Industry Group Performance
 
-**Report date:** Thursday, November 26, 2026  
+**Report date:** Friday, November 27, 2026  
 **Market status:** market CLOSED — data as of last close (2026-11-25)  
 **52-Weeks** = % the current price sits above its 52-week low (strength from the low)
 

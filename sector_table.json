@@ -1,5 +1,5 @@
 {
- "generated_utc": "2026-11-26 03:31 UTC",
+ "generated_utc": "2026-11-27 03:37 UTC",
  "last_bar": "2026-11-25",
  "rows": [
   {
@@ -86,7 +86,7 @@
    "Equal Weight Industry Group": "Oil & Gas Exploration & Production",
    "Ticker": "XOP",
    "Price": 167.92999267578125,
-   "52-Weeks": 38.11858473141711,
+   "52-Weeks": 38.118593342429214,
    "% Daily Chg": 1.0044497919652278,
    "Last Bar": "2026-11-25",
    "Spark": [
@@ -126,7 +126,7 @@
    "Equal Weight Industry Group": "Energy",
    "Ticker": "RSPG",
    "Price": 105.19000244140625,
-   "52-Weeks": 37.68081681015757,
+   "52-Weeks": 37.68083052374557,
    "% Daily Chg": 1.4955645126264123,
    "Last Bar": "2026-11-25",
    "Spark": [
@@ -446,7 +446,7 @@
    "Equal Weight Industry Group": "Materials",
    "Ticker": "RSPM",
    "Price": 39.06999969482422,
-   "52-Weeks": 22.006221599389892,
+   "52-Weeks": 22.006207065543233,
    "% Daily Chg": 2.1972277338373027,
    "Last Bar": "2026-11-25",
    "Spark": [
@@ -486,7 +486,7 @@
    "Equal Weight Industry Group": "Financial",
    "Ticker": "RSPF",
    "Price": 82.9800033569336,
-   "52-Weeks": 21.075769183415343,
+   "52-Weeks": 21.07575570524159,
    "% Daily Chg": 0.899812150274956,
    "Last Bar": "2026-11-25",
    "Spark": [
@@ -646,7 +646,7 @@
    "Equal Weight Industry Group": "Natural Resources",
    "Ticker": "GNR",
    "Price": 68.30999755859375,
-   "52-Weeks": 17.190407938508496,
+   "52-Weeks": 17.19040035896051,
    "% Daily Chg": 1.4555112147450708,
    "Last Bar": "2026-11-25",
    "Spark": [
@@ -806,7 +806,7 @@
    "Equal Weight Industry Group": "Regional Banks",
    "Ticker": "KRE",
    "Price": 69.83000183105469,
-   "52-Weeks": 14.965483660567273,
+   "52-Weeks": 14.96549072200472,
    "% Daily Chg": 0.10034359615918617,
    "Last Bar": "2026-11-25",
    "Spark": [
@@ -1126,7 +1126,7 @@
    "Equal Weight Industry Group": "Industrial",
    "Ticker": "RSPN",
    "Price": 60.36000061035156,
-   "52-Weeks": 9.989786097410894,
+   "52-Weeks": 9.98979368417383,
    "% Daily Chg": 1.0209215236009415,
    "Last Bar": "2026-11-25",
    "Spark": [
