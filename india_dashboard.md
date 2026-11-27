@@ -1,52 +1,57 @@
 # 🇮🇳 Indian Stocks Dashboard — High RVOL & Breakouts
 
-**Run time:** Thursday, November 26, 2026 07:59 PM IST  
+**Run time:** Friday, November 27, 2026 07:52 PM IST  
 **Market status:** market CLOSED — full-day data from the last session  
-**Universe:** Nifty 200 (NSE constituents file) · 200 scanned  
+**Universe:** Nifty 200 (NSE constituents file) · 199 scanned  
 **RVOL** = today's volume ÷ (20-day avg volume × fraction of session elapsed)
 
-## 🚀 High RVOL + Breakout (11)
+## 🚀 High RVOL + Breakout (8)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| PRESTIGE | 1,832.1 | 🟢 +8.72% | **8.4x** | 52W High | 68% |
-| ENRIN | 3,058.0 | 🟢 +2.96% | **5.9x** | 20D High | 45% |
-| TORNTPHARM | 5,019.1 | 🟢 +2.52% | **4.8x** | 20D High | 37% |
-| BRITANNIA | 5,185.0 | 🟢 +2.14% | **2.7x** | 20D High | 15% |
-| BAJAJHLDNG | 11,933.0 | 🟢 +4.44% | **2.0x** | 52W High | 41% |
-| LODHA | 1,261.2 | 🟢 +4.93% | **2.0x** | 20D High | 94% |
-| MCX | 3,835.0 | 🟢 +7.57% | **1.9x** | 52W High | 97% |
-| HDFCBANK | 862.0 | 🟢 +1.87% | **1.7x** | 20D High | 29% |
-| OBEROIRLTY | 1,905.2 | 🟢 +1.96% | **1.6x** | 20D High | 37% |
-| TCS | 2,640.3 | 🟢 +4.89% | **1.6x** | 20D High | 35% |
-| HINDUNILVR | 2,130.8 | 🔴 -0.51% | **1.5x** | 20D High | 22% |
+| HAL | 5,074.0 | 🟢 +3.35% | **3.0x** | 20D High | 46% |
+| LODHA | 1,251.8 | 🔴 -0.75% | **2.3x** | 20D High | 93% |
+| BANKINDIA | 162.5 | 🟢 +1.38% | **2.2x** | 20D High | 31% |
+| OBEROIRLTY | 1,889.2 | 🔴 -0.84% | **1.9x** | 20D High | 36% |
+| TORNTPHARM | 5,034.0 | 🟢 +0.30% | **1.8x** | 20D High | 38% |
+| SRF | 2,559.5 | 🟢 +1.71% | **1.7x** | 20D High | 17% |
+| PRESTIGE | 1,796.7 | 🔴 -1.93% | **1.6x** | 52W High | 65% |
+| BEL | 411.5 | 🟢 +1.72% | **1.5x** | 20D High | 16% |
 
 ## 📈 Other Breakouts (15)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| PHOENIXLTD | 2,291.0 | 🟢 +0.24% | **1.5x** | 52W High | 57% |
-| DLF | 807.8 | 🟢 +1.61% | **1.4x** | 52W High | 67% |
-| LAURUSLABS | 2,505.0 | 🟢 +1.83% | **1.0x** | 52W High | 173% |
-| ICICIBANK | 1,611.0 | 🔴 -1.77% | **0.9x** | 52W High | 37% |
-| MARICO | 939.1 | 🟢 +0.42% | **0.8x** | 52W High | 33% |
-| GLENMARK | 2,740.2 | 🟢 +0.78% | **0.5x** | 52W High | 49% |
-| GODREJPROP | 2,004.3 | 🟢 +4.39% | **1.3x** | 20D High | 40% |
-| NESTLEIND | 1,320.3 | 🔴 -2.81% | **1.2x** | 20D High | 15% |
-| CIPLA | 1,450.0 | 🟢 +1.17% | **1.1x** | 20D High | 26% |
-| HEROMOTOCO | 5,789.0 | 🟢 +0.65% | **1.1x** | 20D High | 26% |
-| POLICYBZR | 1,170.0 | 🟢 +4.11% | **1.1x** | 20D High | 28% |
-| RELIANCE | 1,396.2 | 🟢 +1.62% | **0.9x** | 20D High | 21% |
-| BEL | 404.5 | 🟢 +0.05% | **0.8x** | 20D High | 14% |
-| DMART | 3,533.0 | 🔴 -1.64% | **0.6x** | 20D High | 14% |
-| COLPAL | 1,800.0 | 🔴 -1.37% | **0.5x** | 20D High | 16% |
+| MCX | 3,900.0 | 🟢 +1.69% | **1.1x** | 52W High | 100% |
+| GLENMARK | 2,834.9 | 🟢 +3.46% | **1.0x** | 52W High | 54% |
+| DLF | 805.5 | 🔴 -0.29% | **0.9x** | 52W High | 67% |
+| TECHM | 1,813.9 | 🔴 -2.20% | **0.9x** | 52W High | 44% |
+| 360ONE | 1,230.0 | 🟢 +1.65% | **0.8x** | 52W High | 38% |
+| MANKIND | 2,689.4 | 🟢 +0.16% | **0.7x** | 52W High | 41% |
+| LAURUSLABS | 2,504.4 | 🔴 -0.02% | **0.7x** | 52W High | 173% |
+| GODREJPROP | 1,943.0 | 🔴 -3.06% | **1.4x** | 20D High | 36% |
+| POLICYBZR | 1,186.5 | 🟢 +1.41% | **1.3x** | 20D High | 30% |
+| BSE | 3,945.0 | 🔴 -1.14% | **1.2x** | 20D High | 56% |
+| IDFCFIRSTB | 86.8 | 🟢 +0.10% | **1.0x** | 20D High | 50% |
+| HEROMOTOCO | 5,701.0 | 🔴 -1.52% | **1.0x** | 20D High | 24% |
+| YESBANK | 17.8 | 🟢 +0.68% | **0.7x** | 20D High | 18% |
+| FORTIS | 832.0 | 🟢 +0.74% | **0.6x** | 20D High | 18% |
+| MAXHEALTH | 1,071.3 | 🔴 -0.92% | **0.5x** | 20D High | 34% |
 
-## 🔊 High RVOL (≥2x), No Breakout Yet (5)
+## 🔊 High RVOL (≥2x), No Breakout Yet (11)
 
 | Stock | Price ₹ | % Chg | RVOL | Breakout | Off 52W Low |
 |---|---:|---:|---:|---|---:|
-| LGEINDIA | 1,758.1 | 🔴 -3.32% | **22.3x** | — | 35% |
-| CONCOR | 421.0 | 🔴 -1.13% | **3.4x** | — | 5% |
-| COFORGE | 2,000.0 | 🔴 -2.91% | **2.5x** | — | 99% |
-| VMM | 96.1 | 🟢 +1.32% | **2.3x** | — | 14% |
-| APLAPOLLO | 1,481.5 | 🟢 +0.37% | **2.1x** | — | 10% |
+| NLCINDIA | 236.5 | 🟢 +3.32% | **4.6x** | — | 7% |
+| SHRIRAMFIN | 923.5 | 🔴 -3.99% | **3.3x** | — | 15% |
+| MAZDOCK | 1,890.0 | 🟢 +4.02% | **2.9x** | — | 12% |
+| SOLARINDS | 19,450.0 | 🟢 +6.58% | **2.7x** | — | 67% |
+| SBICARD | 565.8 | 🔴 -3.46% | **2.7x** | — | 9% |
+| BDL | 1,077.5 | 🟢 +4.13% | **2.6x** | — | 11% |
+| PREMIERENE | 811.5 | 🟢 +1.00% | **2.6x** | — | 22% |
+| APLAPOLLO | 1,509.5 | 🟢 +1.89% | **2.3x** | — | 12% |
+| ADANIPORTS | 1,880.0 | 🔴 -1.64% | **2.3x** | — | 46% |
+| HYUNDAI | 2,006.0 | 🔴 -4.67% | **2.3x** | — | 22% |
+| HINDZINC | 545.0 | 🟢 +3.49% | **2.3x** | — | 17% |
+
+**No data (1):** BHEL
